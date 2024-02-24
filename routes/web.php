@@ -20,4 +20,4 @@ use App\Http\Controllers\formController;
 // });
 
 Route::get('/', [homeController::class, 'index']);
-Route::get('/', [formController::class, 'index']);
+Route::get('/register', [formController::class, 'index']);
