@@ -1107,10 +1107,11 @@
                             </div>
                         </div>
                         <div _ngcontent-bii-c26="" class="row btn-container justify-content-center mt-4">
-                            <div _ngcontent-bii-c26="" class="col-md-12 col-sm-12 mb-2 text-center"><a
-                                    _ngcontent-bii-c26="" id="btn-check-status" target="_blank"
+                            <div _ngcontent-bii-c26="" class="col-md-12 col-sm-12 mb-2 text-center">
+                                <a
+                                    _ngcontent-bii-c26="" id="btn-check-status" target=""
                                     class="btn arrow-right darkblue-gradient"
-                                    href="https://rights.xn--b3c4a2a6ch6f.com/">
+                                    href="{{ route('register') }}">
                                     <div _ngcontent-bii-c26="">ตรวจสอบสถานะผู้ได้รับสิทธิ</div>
                                 </a></div>
                         </div>
