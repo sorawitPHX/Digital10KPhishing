@@ -24,7 +24,7 @@
     <script id="GTMscript" async="" src="./เราชนะ_form_files/gtm.js.download"></script>
 
     <title>เราชนะ</title>
-    <!--<base href="/">-->
+    <!--<base href="/">--> 
     <base href=".">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="https://rights.xn--b3c4a2a6ch6f.com/favicon.ico">
@@ -10610,7 +10610,7 @@
                         <div _ngcontent-pnd-c12="" class="col-xl-12 col-lg-12 col-md-12 col-12 logo text-center"><a
                                 _ngcontent-pnd-c12="" routerlink="/" target="_top"
                                 href="{{ route('home') }}"><img _ngcontent-pnd-c12=""
-                                    src="./เราชนะ_form_files/logo-wewin.png"></a></div>
+                                    src="./เราชนะ_files/logo_พท.png"></a></div>
                     </div>
                 </div>
             </header>

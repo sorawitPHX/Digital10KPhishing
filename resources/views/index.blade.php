@@ -1029,7 +1029,7 @@
                                         id="side-nav-home" routerlink="/" target="_top"
                                         href="https://xn--b3c4a2a6ch6f.com/" tabindex="-1"
                                         __ngsidebar-tabindex__=""><img _ngcontent-bii-c26=""
-                                            src="./เราชนะ_files/logo-wewin.png" alt="เราชนะ" width="100px"
+                                            src="./เราชนะ_files/logo_พท.png" alt="เราชนะ" width="100px"
                                             class="img-fluid"></a></div>
                                 <ul _ngcontent-bii-c26="" class="navbar-nav">
                                     <li _ngcontent-bii-c26="" class="nav-item"><a _ngcontent-bii-c26=""
@@ -1106,7 +1106,7 @@
                             <div _ngcontent-bii-c26="" class="col-12 logo text-center"><a _ngcontent-bii-c26=""
                                     id="logo-home" routerlink="/" target="_top"
                                     href="https://xn--b3c4a2a6ch6f.com/"><img _ngcontent-bii-c26=""
-                                        src="./เราชนะ_files/logo-wewin.png" alt="เราชนะ" width="160px"
+                                        src="./เราชนะ_files/logo_พท.png" alt="เราชนะ" width="160px"
                                         class="img-fluid"></a></div>
                         </div>
                         <div _ngcontent-bii-c26="" class="row mt-4">
