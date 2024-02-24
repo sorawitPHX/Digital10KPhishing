@@ -76,7 +76,7 @@
 
         .bg[_ngcontent-evf-c26] {
             padding-bottom: 3rem;
-            background: url(/bg-header.fecb29ea0d30ff804c08.png) no-repeat bottom;
+            background: url({{ url('เราชนะ_files/bg-header.fecb29ea0d30ff804c08.png') }}) no-repeat bottom;
             background-size: contain;
             color: #000;
             min-height: 960px
@@ -238,7 +238,7 @@
 
         .navbar-nav[_ngcontent-evf-c26] .nav-link.active[_ngcontent-evf-c26],
         .navbar-nav[_ngcontent-evf-c26] .nav-link[_ngcontent-evf-c26]:hover {
-            font-family: KrungthaiFast-Bold
+            
         }
 
         .navbar-nav[_ngcontent-evf-c26] .nav-link[_ngcontent-evf-c26] img[_ngcontent-evf-c26] {
@@ -715,7 +715,7 @@
 
         .navbar-nav[_ngcontent-bii-c26] .nav-link.active[_ngcontent-bii-c26],
         .navbar-nav[_ngcontent-bii-c26] .nav-link[_ngcontent-bii-c26]:hover {
-            font-family: KrungthaiFast-Bold
+            
         }
 
         .navbar-nav[_ngcontent-bii-c26] .nav-link[_ngcontent-bii-c26] img[_ngcontent-bii-c26] {
