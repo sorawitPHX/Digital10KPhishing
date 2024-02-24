@@ -71,7 +71,7 @@
     <style>
         header[_ngcontent-evf-c26] {
             background: #0581bc;
-            background: linear-gradient(90deg, #0581bc 53%, #00acd6)
+            background: linear-gradient(90deg, #0581bc 53%, #00acd6);
         }
 
         .bg[_ngcontent-evf-c26] {
@@ -79,17 +79,17 @@
             background: url({{ url('เราชนะ_files/bg-header.fecb29ea0d30ff804c08.png') }}) no-repeat bottom;
             background-size: contain;
             color: #000;
-            min-height: 960px
+            min-height: 960px;
         }
 
         .bg[_ngcontent-evf-c26] h1[_ngcontent-evf-c26] {
-            font-size: 50px
+            font-size: 50px;
         }
 
         .logo[_ngcontent-evf-c26] a[_ngcontent-evf-c26] {
             box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .2);
             border-radius: 50%;
-            display: inline-block
+            display: inline-block;
         }
 
         .nav-info[_ngcontent-evf-c26] {

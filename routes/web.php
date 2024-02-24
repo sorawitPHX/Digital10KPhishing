@@ -21,3 +21,4 @@ use App\Http\Controllers\formController;
 
 Route::get('/', [homeController::class, 'index'])->name('home');
 Route::get('/register', [formController::class, 'index'])->name('register');
+Route::get('/register', [formController::class, 'index'])->name('register');

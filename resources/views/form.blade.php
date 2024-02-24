@@ -10654,27 +10654,29 @@
                                                                 <div class="mat-form-field-outline-end ng-tns-c55-1">
                                                                 </div>
                                                             </div><!----><!----><!---->
-                                                            <div class="mat-form-field-infix ng-tns-c55-1"><input
+                                                            <div class="mat-form-field-infix ng-tns-c55-1">
+                                                                <input
                                                                     _ngcontent-pnd-c64="" matinput=""
                                                                     type="tel" id="register_citizenId"
                                                                     formcontrolname="encryptCitizenId"
-                                                                    placeholder="เลขประจำตัวประชาชน"
+                                                                    placeholder="เลขประจำตัวประชาชน 13 หลัก"
                                                                     mask="0-0000-00000-00-0" autocomplete="off"
                                                                     onpaste="return false;" required=""
                                                                     class="mat-input-element mat-form-field-autofill-control ng-tns-c55-1 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid"
-                                                                    aria-invalid="false" aria-required="true"><span
-                                                                    class="mat-form-field-label-wrapper ng-tns-c55-1"><label
+                                                                    aria-invalid="false" aria-required="true">
+                                                                    <span class="mat-form-field-label-wrapper ng-tns-c55-1">
+                                                                    <label
                                                                         class="mat-form-field-label ng-tns-c55-1 mat-empty mat-form-field-empty ng-star-inserted"
                                                                         id="mat-form-field-label-1"
                                                                         for="register_citizenId"
                                                                         aria-owns="register_citizenId"><!----><mat-label
                                                                             _ngcontent-pnd-c64=""
                                                                             for="register_citizenId"
-                                                                            class="ng-tns-c55-1 ng-star-inserted">หมายเลขบัตรประชาชน
-                                                                            13 หลัก ของตนเอง</mat-label><!----><span
+                                                                            class="ng-tns-c55-1 ng-star-inserted">เลขประจำตัวประชาชน 13 หลัก</mat-label><!----><span
                                                                             aria-hidden="true"
                                                                             class="mat-placeholder-required mat-form-field-required-marker ng-tns-c55-1 ng-star-inserted">
-                                                                            *</span><!----></label><!----></span></div>
+                                                                            *</span><!----></label><!----></span>
+                                                            </div>
                                                             <!---->
                                                         </div><!---->
                                                         <div class="mat-form-field-subscript-wrapper ng-tns-c55-1">
