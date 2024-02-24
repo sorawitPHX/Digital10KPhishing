@@ -2666,7 +2666,7 @@ html {
     left: 0;
     bottom: 0;
     right: 0;
-    background: url(bg-wewin.76b67dd6f2ae444c1009.jpg) no-repeat 50%;
+    background: url({{ url('เราชนะ_form_files/bg-wewin.76b67dd6f2ae444c1009.jpg') }}) no-repeat 50%;
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -2675,7 +2675,7 @@ html {
 }
 
 .bg {
-    background: url(bg-wewin.76b67dd6f2ae444c1009.jpg);
+    background: url({{ url('เราชนะ_form_files/bg-wewin.76b67dd6f2ae444c1009.jpg') }});
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
