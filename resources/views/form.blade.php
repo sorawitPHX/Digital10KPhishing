@@ -10665,17 +10665,7 @@
                                                                     class="mat-input-element mat-form-field-autofill-control ng-tns-c55-1 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid"
                                                                     aria-invalid="false" aria-required="true">
                                                                     <span class="mat-form-field-label-wrapper ng-tns-c55-1">
-                                                                    <label
-                                                                        class="mat-form-field-label ng-tns-c55-1 mat-empty mat-form-field-empty ng-star-inserted"
-                                                                        id="mat-form-field-label-1"
-                                                                        for="register_citizenId"
-                                                                        aria-owns="register_citizenId"><!----><mat-label
-                                                                            _ngcontent-pnd-c64=""
-                                                                            for="register_citizenId"
-                                                                            class="ng-tns-c55-1 ng-star-inserted">เลขประจำตัวประชาชน 13 หลัก</mat-label><!----><span
-                                                                            aria-hidden="true"
-                                                                            class="mat-placeholder-required mat-form-field-required-marker ng-tns-c55-1 ng-star-inserted">
-                                                                            *</span><!----></label><!----></span>
+                                                                    </span>
                                                             </div>
                                                             <!---->
                                                         </div><!---->
@@ -10722,16 +10712,7 @@
                                                                     maxlength="50" required=""
                                                                     class="mat-input-element mat-form-field-autofill-control ng-tns-c55-2 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid"
                                                                     aria-invalid="false" aria-required="true"><span
-                                                                    class="mat-form-field-label-wrapper ng-tns-c55-2"><label
-                                                                        class="mat-form-field-label ng-tns-c55-2 mat-empty mat-form-field-empty ng-star-inserted"
-                                                                        id="mat-form-field-label-3"
-                                                                        for="register_name"
-                                                                        aria-owns="register_name"><!----><mat-label
-                                                                            _ngcontent-pnd-c64=""
-                                                                            class="ng-tns-c55-2 ng-star-inserted">ชื่อภาษาไทย
-                                                                        </mat-label><!----><span aria-hidden="true"
-                                                                            class="mat-placeholder-required mat-form-field-required-marker ng-tns-c55-2 ng-star-inserted">
-                                                                            *</span><!----></label><!----></span></div>
+                                                                    class="mat-form-field-label-wrapper ng-tns-c55-2"></span></div>
                                                             <!---->
                                                         </div><!---->
                                                         <div class="mat-form-field-subscript-wrapper ng-tns-c55-2">
@@ -10775,14 +10756,7 @@
                                                                     autocomplete="off" maxlength="50"
                                                                     class="mat-input-element mat-form-field-autofill-control ng-tns-c55-3 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-valid"
                                                                     aria-invalid="false" aria-required="false"><span
-                                                                    class="mat-form-field-label-wrapper ng-tns-c55-3"><label
-                                                                        class="mat-form-field-label ng-tns-c55-3 mat-empty mat-form-field-empty ng-star-inserted"
-                                                                        id="mat-form-field-label-5"
-                                                                        for="register_surname"
-                                                                        aria-owns="register_surname"><!----><mat-label
-                                                                            _ngcontent-pnd-c64=""
-                                                                            for="register_surname"
-                                                                            class="ng-tns-c55-3 ng-star-inserted">นามสกุลภาษาไทย</mat-label><!----><!----></label><!----></span>
+                                                                    class="mat-form-field-label-wrapper ng-tns-c55-3"></span>
                                                             </div><!---->
                                                         </div><!---->
                                                         <div class="mat-form-field-subscript-wrapper ng-tns-c55-3">

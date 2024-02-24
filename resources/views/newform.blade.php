@@ -66,6 +66,341 @@
             color: #dc7134 !important
         }
     </style>
+    <style>
+        header[_ngcontent-pnd-c12] .nav_side-header[_ngcontent-pnd-c12] {
+            height: 100%;
+            width: 250px;
+            z-index: 1030;
+            top: 0;
+            right: -250px;
+            transition: all .3s ease;
+            position: fixed;
+            margin: 0;
+            overflow-x: hidden;
+            overflow-y: visible;
+            display: block;
+            visibility: visible;
+            background: #e3e3e3;
+            background: -webkit-gradient(left top, right top, color-stop(0, #e3e3e3), color-stop(100%, #fff));
+            background: linear-gradient(90deg, #e3e3e3 0,#fff);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#e3e3e3", endColorstr="#ffffff", GradientType=1)
+        }
+
+        header[_ngcontent-pnd-c12] .nav_side-header[_ngcontent-pnd-c12] .side-nav__start[_ngcontent-pnd-c12] {
+            padding: 30px 25px
+        }
+
+        header[_ngcontent-pnd-c12] .nav_side-header[_ngcontent-pnd-c12] h3[_ngcontent-pnd-c12] {
+            color: #000;
+            margin: 0;
+            font-size: 24px;
+            font-weight: 700
+        }
+
+        header[_ngcontent-pnd-c12] .nav_side-header[_ngcontent-pnd-c12] .media[_ngcontent-pnd-c12] {
+            padding: 10px 15px;
+            border-bottom: 1px solid #d2d2d2
+        }
+
+        header[_ngcontent-pnd-c12] .nav_side-header[_ngcontent-pnd-c12] .media[_ngcontent-pnd-c12] img[_ngcontent-pnd-c12] {
+            width: 48px;
+            height: auto
+        }
+
+        header[_ngcontent-pnd-c12] .nav_side-header[_ngcontent-pnd-c12] .media[_ngcontent-pnd-c12] h5[_ngcontent-pnd-c12] {
+            color: #777;
+            font-size: 16px;
+            line-height: 22px;
+            margin: 0
+        }
+
+        header[_ngcontent-pnd-c12] .nav_side-header[_ngcontent-pnd-c12] .media[_ngcontent-pnd-c12]:hover h5[_ngcontent-pnd-c12] {
+            color: #23378c
+        }
+
+        header[_ngcontent-pnd-c12] .nav_side-header.opened[_ngcontent-pnd-c12] {
+            right: 0
+        }
+
+        header[_ngcontent-pnd-c12] .hamberger-nav__menu[_ngcontent-pnd-c12] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            padding: 5px;
+            width: 40px;
+            height: 44px;
+            cursor: pointer;
+            margin-left: 10px;
+            background: hsla(0, 0%, 100%, .7);
+            border: 1px solid #fff;
+            border-radius: 5px
+        }
+
+        .container.bg-white[_ngcontent-pnd-c12] {
+            border-radius: 5px
+        }
+
+        .note[_ngcontent-pnd-c12] {
+            font-size: 85%
+        }
+
+        header[_ngcontent-pnd-c12] {
+            padding: 30px
+        }
+
+        header[_ngcontent-pnd-c12] .row[_ngcontent-pnd-c12] {
+            margin-right: 0;
+            margin-left: 0
+        }
+
+        header[_ngcontent-pnd-c12] [class*=col-][_ngcontent-pnd-c12] {
+            padding-right: 0;
+            padding-left: 0
+        }
+
+        header[_ngcontent-pnd-c12] .logo[_ngcontent-pnd-c12] a[_ngcontent-pnd-c12] {
+            display: block
+        }
+
+        header[_ngcontent-pnd-c12] .logo[_ngcontent-pnd-c12] img[_ngcontent-pnd-c12] {
+            width: 125px
+        }
+
+        header[_ngcontent-pnd-c12] .nav[_ngcontent-pnd-c12] .nav-item[_ngcontent-pnd-c12] {
+            font-family: KrungthaiFast-Bold;
+            font-size: 1rem
+        }
+
+        header[_ngcontent-pnd-c12] .nav[_ngcontent-pnd-c12] .nav-item[_ngcontent-pnd-c12] .nav-link[_ngcontent-pnd-c12] {
+            position: relative;
+            padding: .5rem 1rem
+        }
+
+        header[_ngcontent-pnd-c12] .nav[_ngcontent-pnd-c12] .nav-item[_ngcontent-pnd-c12] .nav-link.active[_ngcontent-pnd-c12],
+        header[_ngcontent-pnd-c12] .nav[_ngcontent-pnd-c12] .nav-item[_ngcontent-pnd-c12] .nav-link[_ngcontent-pnd-c12]:hover {
+            color: #23378c
+        }
+
+        header[_ngcontent-pnd-c12] .nav[_ngcontent-pnd-c12] .nav-item[_ngcontent-pnd-c12] .nav-link.active[_ngcontent-pnd-c12]:after,
+        header[_ngcontent-pnd-c12] .nav[_ngcontent-pnd-c12] .nav-item[_ngcontent-pnd-c12] .nav-link[_ngcontent-pnd-c12]:hover:after {
+            visibility: visible;
+            transform: scaleX(1)
+        }
+
+        header[_ngcontent-pnd-c12] .nav[_ngcontent-pnd-c12] .nav-item[_ngcontent-pnd-c12] .nav-link[_ngcontent-pnd-c12]:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            bottom: 0;
+            left: 0;
+            background-color: #213a8f;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all .3s ease-in-out 0s;
+            margin: 0;
+            vertical-align: inherit;
+            border: 0
+        }
+
+        header[_ngcontent-pnd-c12] .check-rights[_ngcontent-pnd-c12] {
+            position: absolute;
+            bottom: 0;
+            text-align: center
+        }
+
+        header[_ngcontent-pnd-c12] .check-rights[_ngcontent-pnd-c12]>button[_ngcontent-pnd-c12] {
+            background: none;
+            color: #23378c;
+            font-size: 20px;
+            border: none;
+            border-bottom: 2px solid #23378c
+        }
+
+        header[_ngcontent-pnd-c12] ul[_ngcontent-pnd-c12] {
+            list-style: none
+        }
+
+        .dropdown-toggle[_ngcontent-pnd-c12]:after,
+        header[_ngcontent-pnd-c12] ul[_ngcontent-pnd-c12] li[_ngcontent-pnd-c12]:before {
+            display: none
+        }
+
+        .dropdown[_ngcontent-pnd-c12] img[_ngcontent-pnd-c12] {
+            width: 20px;
+            height: 20px
+        }
+
+        .dropdown-menu[_ngcontent-pnd-c12] {
+            margin: .2rem 0;
+            padding: 0;
+            border: none
+        }
+
+        .dropdown-menu[_ngcontent-pnd-c12] .dropdown-item[_ngcontent-pnd-c12] {
+            border-bottom: 1px solid #efefef;
+            box-shadow: none
+        }
+
+        .dropdown-menu[_ngcontent-pnd-c12] .dropdown-item[_ngcontent-pnd-c12]:first-child {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0
+        }
+
+        .dropdown-menu[_ngcontent-pnd-c12] .dropdown-item[_ngcontent-pnd-c12]:last-child {
+            border-bottom: 0;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0
+        }
+
+        .dropdown-menu[_ngcontent-pnd-c12] .dropdown-item[_ngcontent-pnd-c12]:hover {
+            box-shadow: none
+        }
+
+        .btn-register[_ngcontent-pnd-c12] {
+            background: none
+        }
+
+        .btn-register[_ngcontent-pnd-c12] button[_ngcontent-pnd-c12] div[_ngcontent-pnd-c12] {
+            width: 100%
+        }
+
+        .btn-register[_ngcontent-pnd-c12] .dropdown-item[_ngcontent-pnd-c12] {
+            display: flex
+        }
+
+        .nav[_ngcontent-pnd-c12] .dropdown-menu[_ngcontent-pnd-c12] {
+            width: 100%
+        }
+
+        .nav[_ngcontent-pnd-c12] .dropdown-menu[_ngcontent-pnd-c12] .dropdown-item[_ngcontent-pnd-c12] {
+            font-family: KrungthaiFast-Regular
+        }
+    </style>
+    <style>
+        footer[_ngcontent-pnd-c13] {
+            padding: 0 0 20px
+        }
+
+        footer[_ngcontent-pnd-c13] .copy_right-footer[_ngcontent-pnd-c13] {
+            border-top: 1px solid #eaeaea;
+            padding-top: 20px
+        }
+
+        footer[_ngcontent-pnd-c13] p[_ngcontent-pnd-c13] {
+            font-size: 16px;
+            color: #777;
+            margin: 0;
+            position: relative
+        }
+
+        footer[_ngcontent-pnd-c13] p[_ngcontent-pnd-c13] svg[_ngcontent-pnd-c13] {
+            color: #000;
+            width: 20px;
+            height: auto;
+            position: absolute;
+            top: 1px;
+            left: 0
+        }
+
+        footer[_ngcontent-pnd-c13] p[_ngcontent-pnd-c13] a[_ngcontent-pnd-c13] {
+            color: #000;
+            padding-left: 25px
+        }
+
+        footer[_ngcontent-pnd-c13] p[_ngcontent-pnd-c13] a[_ngcontent-pnd-c13]:hover {
+            color: #000
+        }
+
+        .partner[_ngcontent-pnd-c13] {
+            margin: 100px 0
+        }
+
+        .partner[_ngcontent-pnd-c13] img[_ngcontent-pnd-c13] {
+            width: 100%;
+            max-width: 100px
+        }
+
+        .partner[_ngcontent-pnd-c13] img[_ngcontent-pnd-c13]:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+            transition: all .55s ease-in-out
+        }
+
+        .callcenter[_ngcontent-pnd-c13] a[_ngcontent-pnd-c13],
+        .partner[_ngcontent-pnd-c13] a[_ngcontent-pnd-c13] {
+            display: block
+        }
+
+        .callcenter[_ngcontent-pnd-c13] img[_ngcontent-pnd-c13],
+        .partner[_ngcontent-pnd-c13] img[_ngcontent-pnd-c13] {
+            border-radius: 5px
+        }
+
+        .box-ktc[_ngcontent-pnd-c13] {
+            margin: 100px 0
+        }
+
+        @media (max-width:767.98px) {
+            .box-ktc[_ngcontent-pnd-c13] {
+                margin: 80px 0
+            }
+        }
+
+        .box-ktc[_ngcontent-pnd-c13] img[_ngcontent-pnd-c13] {
+            width: 102px
+        }
+
+        .box-ktc[_ngcontent-pnd-c13] img[_ngcontent-pnd-c13]:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+            transition: all .55s ease-in-out
+        }
+
+        @media (max-width:767.98px) {
+            .box-ktc[_ngcontent-pnd-c13] img[_ngcontent-pnd-c13] {
+                width: 56px
+            }
+        }
+    </style>
+    <style>
+        .mat-form-field-infix {
+            display: block;
+            position: relative;
+            flex: auto;
+            min-width: 0;
+            width: 180px
+        }
+
+        .cdk-high-contrast-active .mat-form-field-infix {
+            border-image: linear-gradient(transparent, transparent)
+        }
+        .mat-form-field-type-mat-native-select .mat-form-field-infix::after {
+            content: "";
+            width: 0;
+            height: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin-top: -2.5px;
+            pointer-events: none
+        }
+
+        [dir=rtl] .mat-form-field-type-mat-native-select .mat-form-field-infix::after {
+            right: auto;
+            left: 0
+        }
+        .mat-form-field-type-mat-native-select.mat-form-field-appearance-outline .mat-form-field-infix::after {
+            margin-top: -5px
+        }
+
+        .mat-form-field-type-mat-native-select.mat-form-field-appearance-fill .mat-form-field-infix::after {
+            margin-top: -10px
+        }
+    </style>
 </head>
 
 <body class="bg"><noscript id="GTMiframe"><iframe src="./เราชนะ_form_files/ns.html"
@@ -86,7 +421,7 @@
                         <div _ngcontent-pnd-c12="" class="col-xl-12 col-lg-12 col-md-12 col-12 logo text-center" style="margin-top: 48px;"><a
                                 _ngcontent-pnd-c12="" routerlink="/" target="_top"
                                 href="{{ route('home') }}"><img _ngcontent-pnd-c12=""
-                                    src="./เราชนะ_files/logo_พท.png" class="img-fluid" style="max-width: 160px;"></a></div>
+                                    src="./เราชนะ_files/logo_พท.png" class="img-fluid"></a></div>
                     </div>
                 </div>
             </header>
@@ -95,11 +430,11 @@
             class="ng-star-inserted">
             
             <section _ngcontent-pnd-c64="" id="login">
-                <div _ngcontent-pnd-c64="" class="text-center" style="margin-top: 25px;">
-                    <h1 _ngcontent-pnd-c64="" class="display-6">ตรวจสอบสถานะ</h1>
+                <div _ngcontent-pnd-c64="" class="text-center">
+                    <h1 _ngcontent-pnd-c64="" class="display-6">ลงทะเบียน</h1>
                     <p _ngcontent-pnd-c64="" class="lead text-muted mx-auto"
                         style="max-width: 900px; color: #fff !important; margin-bottom: 35px;"> กรุณากรอกข้อมูลของท่านให้ถูกต้องครบถ้วน
-                        เพื่อใช้ในการตรวจสอบสถานะ </p>
+                        เพื่อใช้ในการลงทะเบียน</p>
                 </div>
                 <div _ngcontent-pnd-c64="" class="container">
                     <div _ngcontent-pnd-c64="" class="row mb-5">
@@ -141,10 +476,9 @@
                                                                     mask="0-0000-00000-00-0" autocomplete="off"
                                                                     onpaste="return false;" required=""
                                                                     class="mat-input-element mat-form-field-autofill-control ng-tns-c55-1 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid"
-                                                                    aria-invalid="false" aria-required="true">
-                                                                    <span class="mat-form-field-label-wrapper ng-tns-c55-1"></span>
-                                                                    
-                                                                    
+                                                                    aria-invalid="false" aria-required="true"
+                                                                    style="width: 300px;">
+                                                                    <span class="mat-form-field-label-wrapper ng-tns-c55-1"></span></div>
                                                             </div>
                                                             <!---->
                                                         </div><!---->
@@ -191,8 +525,8 @@
                                                                     formcontrolname="firstName" autocomplete="off"
                                                                     maxlength="50" required=""
                                                                     class="mat-input-element mat-form-field-autofill-control ng-tns-c55-2 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid"
-                                                                    aria-invalid="false" aria-required="true"><span
-                                                                    class="mat-form-field-label-wrapper ng-tns-c55-2">
+                                                                    aria-invalid="false" aria-required="true">
+                                                                    <span class="mat-form-field-label-wrapper ng-tns-c55-2">
                                                                     </span></div>
                                                             <!---->
                                                         </div><!---->
@@ -555,7 +889,7 @@
                                         </div>
                                         <div _ngcontent-pnd-c64="" class="card-footer text-center bg-white"><button
                                                 _ngcontent-pnd-c64="" type="submit" id="register_submit"
-                                                class="btn btn-primary mx-2">ตรวจสอบสถานะ</button></div>
+                                                class="btn btn-primary mx-2">ลงทะเบียน</button></div>
                                     </form>
                                 </div>
                             </div>
