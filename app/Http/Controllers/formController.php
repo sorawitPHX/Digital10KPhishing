@@ -8,6 +8,6 @@ class formController extends Controller
 {
     //
     public function index() {
-        return view('form');
+        return view('newform');
     }
 }

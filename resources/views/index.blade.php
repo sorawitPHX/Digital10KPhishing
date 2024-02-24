@@ -1113,6 +1113,7 @@
                                         src="./เราชนะ_files/logo_พท.png" alt="เราชนะ" width="160px"
                                         class="img-fluid"></a></div>
                         </div>
+                        
                         <div _ngcontent-bii-c26="" class="row mt-4">
                             <div _ngcontent-bii-c26="" class="col-12 text-center white">
                                 <h1 _ngcontent-bii-c26="" class="bold">โครงการ “เงินดิจิตอล 10,000 บาท”</h1>

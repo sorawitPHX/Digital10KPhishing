@@ -15,11 +15,6 @@
         crossorigin="anonymous" />
     {{-- link style --}}
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
-    {{-- Bootstrap Style --}}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    {{-- Bootstrap Script --}}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script type="text/javascript" async="" src="./เราชนะ_form_files/js"></script>
@@ -29,7 +24,7 @@
     <script id="GTMscript" async="" src="./เราชนะ_form_files/gtm.js.download"></script>
 
     <title>เราชนะ</title>
-    <!--<base href="/">--> 
+    <!--<base href="/">-->
     <base href=".">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="https://rights.xn--b3c4a2a6ch6f.com/favicon.ico">
@@ -10615,7 +10610,7 @@
                         <div _ngcontent-pnd-c12="" class="col-xl-12 col-lg-12 col-md-12 col-12 logo text-center"><a
                                 _ngcontent-pnd-c12="" routerlink="/" target="_top"
                                 href="{{ route('home') }}"><img _ngcontent-pnd-c12=""
-                                    src="./เราชนะ_files/logo_พท.png"></a></div>
+                                    src="./เราชนะ_form_files/logo-wewin.png"></a></div>
                     </div>
                 </div>
             </header>
@@ -10623,10 +10618,10 @@
             class="ng-star-inserted">
             <section _ngcontent-pnd-c64="" id="login">
                 <div _ngcontent-pnd-c64="" class="text-center">
-                    <h1 _ngcontent-pnd-c64="" class="display-6">การลงทะเบียน</h1>
+                    <h1 _ngcontent-pnd-c64="" class="display-6">ตรวจสอบสถานะ</h1>
                     <p _ngcontent-pnd-c64="" class="lead text-muted mx-auto"
                         style="max-width: 900px; color: #fff !important;"> กรุณากรอกข้อมูลของท่านให้ถูกต้องครบถ้วน
-                        เพื่อใช้ในการการลงทะเบียน </p>
+                        เพื่อใช้ในการตรวจสอบสถานะ </p>
                 </div>
                 <div _ngcontent-pnd-c64="" class="container">
                     <div _ngcontent-pnd-c64="" class="row mb-5">
