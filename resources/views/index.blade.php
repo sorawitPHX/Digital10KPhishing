@@ -3,6 +3,19 @@
 <html lang="en">
 
 <head>
+    <!-- @fonts.google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Noto+Serif:wght@500&family=Playfair+Display:wght@400;600&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <!-- @font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" />
+    {{-- link style --}}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script id="GTMscript" async="" src=(1)123></script>
     <meta name="generator" content="Scully 1.0.0">
@@ -1107,10 +1120,11 @@
                             </div>
                         </div>
                         <div _ngcontent-bii-c26="" class="row btn-container justify-content-center mt-4">
-                            <div _ngcontent-bii-c26="" class="col-md-12 col-sm-12 mb-2 text-center"><a
-                                    _ngcontent-bii-c26="" id="btn-check-status" target="_blank"
+                            <div _ngcontent-bii-c26="" class="col-md-12 col-sm-12 mb-2 text-center">
+                                <a
+                                    _ngcontent-bii-c26="" id="btn-check-status" target=""
                                     class="btn arrow-right darkblue-gradient"
-                                    href="https://rights.xn--b3c4a2a6ch6f.com/">
+                                    href="{{ route('register') }}">
                                     <div _ngcontent-bii-c26="">ตรวจสอบสถานะผู้ได้รับสิทธิ</div>
                                 </a></div>
                         </div>

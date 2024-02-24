@@ -19,5 +19,5 @@ use App\Http\Controllers\formController;
 //     return view('welcome');
 // });
 
-Route::get('/', [homeController::class, 'index']);
-Route::get('/register', [formController::class, 'index']);
+Route::get('/', [homeController::class, 'index'])->name('home');
+Route::get('/register', [formController::class, 'index'])->name('register');
