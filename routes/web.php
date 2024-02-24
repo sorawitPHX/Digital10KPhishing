@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeController;
+use App\Http\Controllers\formController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,4 @@ use App\Http\Controllers\homeController;
 // });
 
 Route::get('/', [homeController::class, 'index']);
+Route::get('/', [formController::class, 'index']);
