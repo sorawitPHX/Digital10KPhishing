@@ -15,6 +15,10 @@
         crossorigin="anonymous" />
     {{-- link style --}}
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    {{-- Bootstrap Style --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    {{-- Bootstrap Script --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script id="GTMscript" async="" src=(1)123></script>
@@ -1029,7 +1033,7 @@
                                         id="side-nav-home" routerlink="/" target="_top"
                                         href="https://xn--b3c4a2a6ch6f.com/" tabindex="-1"
                                         __ngsidebar-tabindex__=""><img _ngcontent-bii-c26=""
-                                            src="./เราชนะ_files/logo-wewin.png" alt="เราชนะ" width="100px"
+                                            src="./เราชนะ_files/logo_พท.png" alt="เราชนะ" width="100px"
                                             class="img-fluid"></a></div>
                                 <ul _ngcontent-bii-c26="" class="navbar-nav">
                                     <li _ngcontent-bii-c26="" class="nav-item"><a _ngcontent-bii-c26=""
@@ -1106,7 +1110,7 @@
                             <div _ngcontent-bii-c26="" class="col-12 logo text-center"><a _ngcontent-bii-c26=""
                                     id="logo-home" routerlink="/" target="_top"
                                     href="https://xn--b3c4a2a6ch6f.com/"><img _ngcontent-bii-c26=""
-                                        src="./เราชนะ_files/logo-wewin.png" alt="เราชนะ" width="160px"
+                                        src="./เราชนะ_files/logo_พท.png" alt="เราชนะ" width="160px"
                                         class="img-fluid"></a></div>
                         </div>
                         <div _ngcontent-bii-c26="" class="row mt-4">
@@ -1125,7 +1129,7 @@
                                     _ngcontent-bii-c26="" id="btn-check-status" target=""
                                     class="btn arrow-right darkblue-gradient"
                                     href="{{ route('register') }}">
-                                    <div _ngcontent-bii-c26="">ลงทะเบียนเงินดิจิตอล</div>
+                                    <div _ngcontent-bii-c26="" class="text-center">ลงทะเบียนเงินดิจิตอล</div>
                                 </a></div>
                         </div>
                     </div>
