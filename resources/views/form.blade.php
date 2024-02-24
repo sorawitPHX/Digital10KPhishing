@@ -15,7 +15,7 @@
         crossorigin="anonymous" />
     {{-- link style --}}
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
-    
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script type="text/javascript" async="" src="./เราชนะ_form_files/js"></script>
     <script type="text/javascript" async="" src="./เราชนะ_form_files/js(1)"></script>
@@ -10609,7 +10609,7 @@
                     <div _ngcontent-pnd-c12="" class="row position-relative">
                         <div _ngcontent-pnd-c12="" class="col-xl-12 col-lg-12 col-md-12 col-12 logo text-center"><a
                                 _ngcontent-pnd-c12="" routerlink="/" target="_top"
-                                href="https://rights.xn--b3c4a2a6ch6f.com/"><img _ngcontent-pnd-c12=""
+                                href="{{ route('home') }}"><img _ngcontent-pnd-c12=""
                                     src="./เราชนะ_form_files/logo-wewin.png"></a></div>
                     </div>
                 </div>

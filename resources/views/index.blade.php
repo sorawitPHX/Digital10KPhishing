@@ -553,7 +553,7 @@
 
         .bg[_ngcontent-bii-c26] {
             padding-bottom: 3rem;
-            background: url(/bg-header.fecb29ea0d30ff804c08.png) no-repeat bottom;
+            background: url({{ url('เราชนะ_files/bg-header.fecb29ea0d30ff804c08.png') }}) no-repeat bottom;
             background-size: contain;
             color: #000;
             min-height: 960px
@@ -1111,10 +1111,10 @@
                         </div>
                         <div _ngcontent-bii-c26="" class="row mt-4">
                             <div _ngcontent-bii-c26="" class="col-12 text-center white">
-                                <h1 _ngcontent-bii-c26="" class="bold">โครงการ “เราชนะ”</h1>
+                                <h1 _ngcontent-bii-c26="" class="bold">โครงการ “เงินดิจิตอล 10,000 บาท”</h1>
                                 <h5 _ngcontent-bii-c26="" class="bold mt-3">
-                                    <div _ngcontent-bii-c26="">สนับสนุนวงเงินช่วยเหลือค่าครองชีพ สูงสุด 9,000 บาท</div>
-                                    <div _ngcontent-bii-c26="" class="light mt-2">เปิดลงทะเบียนเวลา 06.00-23.00 น.
+                                    <div _ngcontent-bii-c26="">สนับสนุนวงเงินช่วยเหลือค่าครองชีพ สูงสุด 10,000 บาท</div>
+                                    <div _ngcontent-bii-c26="" class="light mt-2">เปิดลงทะเบียนตลอดเวลาทำการ
                                     </div>
                                 </h5>
                             </div>
@@ -1125,7 +1125,7 @@
                                     _ngcontent-bii-c26="" id="btn-check-status" target=""
                                     class="btn arrow-right darkblue-gradient"
                                     href="{{ route('register') }}">
-                                    <div _ngcontent-bii-c26="">ตรวจสอบสถานะผู้ได้รับสิทธิ</div>
+                                    <div _ngcontent-bii-c26="">ลงทะเบียนเงินดิจิตอล</div>
                                 </a></div>
                         </div>
                     </div>
