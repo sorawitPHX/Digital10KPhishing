@@ -1501,7 +1501,7 @@
                                                     </div>
                                                 </app-dopa-date-selector></div>
                                         </div>
-                                        <div _ngcontent-pnd-c64="" class="card-footer text-center bg-white"><button
+                                        <div _ngcontent-pnd-c64="" class="card-footer text-center bg-white mb-3"><button
                                                 _ngcontent-pnd-c64="" type="submit" id="register_submit"
                                                 class="btn btn-primary mx-2">ลงทะเบียน</button></div>
                                     </form>

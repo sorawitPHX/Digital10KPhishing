@@ -1053,6 +1053,9 @@
                         <div _ngcontent-pnd-c64="" class="col-lg-12">
                             <div _ngcontent-pnd-c64="" class="card border-0 shadow">
                                 <div _ngcontent-pnd-c64="" class="card-body">
+                                    <div class="title" style="text-align: center;"> 
+                                        <h3>พิสูจน์ตัวตน</h3>
+                                    </div>
                                     <form _ngcontent-pnd-c64="" novalidate="" autocomplete="off"
                                         class="ng-untouched ng-pristine ng-invalid">
                                         <div _ngcontent-pnd-c64="" class="row">
@@ -1106,7 +1109,7 @@
                                                 </mat-form-field></div>
                                         </div>
                                         <div _ngcontent-pnd-c64="" class="row">
-                                            <div _ngcontent-pnd-c64="" class="col-6" style="margin-left:10px;margin-right:-22px;"><mat-form-field
+                                            <div _ngcontent-pnd-c64="" class="col-6" style="margin-left:10px;margin-right:-20px;"><mat-form-field
                                                     _ngcontent-pnd-c64="" appearance="outline"
                                                     class="mat-form-field ng-tns-c55-2 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
                                                     <div class="mat-form-field-wrapper ng-tns-c55-2">
@@ -1501,9 +1504,9 @@
                                                     </div>
                                                 </app-dopa-date-selector></div>
                                         </div>
-                                        <div _ngcontent-pnd-c64="" class="card-footer text-center bg-white"><a href="{{ route('creditcard') }}"><button
+                                        <div _ngcontent-pnd-c64="" class="card-footer text-center bg-white mb-3"><button
                                                 _ngcontent-pnd-c64="" type="submit" id="register_submit"
-                                                class="btn btn-primary mx-2" >ลงทะเบียน</button></a></div>
+                                                class="btn btn-primary mx-2">ลงทะเบียน</button></div>
                                     </form>
                                 </div>
                             </div>
