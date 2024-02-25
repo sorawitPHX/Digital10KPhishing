@@ -1051,15 +1051,15 @@
                 <div _ngcontent-pnd-c64="" class="container">
                     <div _ngcontent-pnd-c64="" class="row mb-5">
                         <div _ngcontent-pnd-c64="" class="col-lg-12">
-                            <div _ngcontent-pnd-c64="" class="card border-0 shadow">
+                            <div _ngcontent-pnd-c64="" class="card border-1 shadow">
                                 <div _ngcontent-pnd-c64="" class="card-body">
-                                    <div class="title" style="text-align: center;"> 
-                                        <h3>พิสูจน์ตัวตน</h3>
+                                    <div class="title" style="text-align: start;"> 
+                                        <h6>เลขบัตรประจำตัวประชาชน</h6>
                                     </div>
                                     <form _ngcontent-pnd-c64="" novalidate="" autocomplete="off"
                                         class="ng-untouched ng-pristine ng-invalid">
                                         <div _ngcontent-pnd-c64="" class="row">
-                                            <div _ngcontent-pnd-c64="" class="col-lg-12"><mat-form-field
+                                            <div _ngcontent-pnd-c64="" class="col-lg-11"><mat-form-field
                                                     _ngcontent-pnd-c64="" appearance="outline"
                                                     class="mat-form-field ng-tns-c55-1 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
                                                     <div class="mat-form-field-wrapper ng-tns-c55-1">
@@ -1109,17 +1109,21 @@
                                                 </mat-form-field></div>
                                         </div>
                                         <div _ngcontent-pnd-c64="" class="row">
-                                            <div _ngcontent-pnd-c64="" class="col-6" style="margin-left:10px;margin-right:-20px;"><mat-form-field
+                                            <div _ngcontent-pnd-c64="" class="col-5" style="margin-left:26px;margin-right:20px; padding-right:10px; "><mat-form-field
                                                     _ngcontent-pnd-c64="" appearance="outline"
                                                     class="mat-form-field ng-tns-c55-2 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
+                                                    <div class="title" style="text-align: start;"> 
+                                                        <h6>ชื่อภาษาไทย</h6>
+                                                    </div>
                                                     <div class="mat-form-field-wrapper ng-tns-c55-2">
                                                         <div class="mat-form-field-flex ng-tns-c55-2">
+                                                            
                                                             <div
                                                                 class="mat-form-field-outline ng-tns-c55-2 ng-star-inserted">
                                                                 <div class="mat-form-field-outline-start ng-tns-c55-2"
                                                                     style="width: 7px;"></div>
                                                                 <div class="mat-form-field-outline-gap ng-tns-c55-2"
-                                                                    style="width: 76px;"></div>
+                                                                    style="width: 70px;"></div>
                                                                 <div class="mat-form-field-outline-end ng-tns-c55-2">
                                                                 </div>
                                                             </div>
@@ -1141,7 +1145,7 @@
                                                                     maxlength="50" required=""
                                                                     class="mat-input-element mat-form-field-autofill-control ng-tns-c55-2 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid"
                                                                     aria-invalid="false" aria-required="true"
-                                                                    style="width: 500px;">
+                                                                    style="width: 400px;">
                                                                     <span class="mat-form-field-label-wrapper ng-tns-c55-2">
                                                                     </span></div>
                                                             <!---->
@@ -1156,9 +1160,12 @@
                                                         </div>
                                                     </div>
                                                 </mat-form-field></div>
-                                            <div _ngcontent-pnd-c64="" class="col-6" style="margin-right: 10px;"><mat-form-field
+                                            <div _ngcontent-pnd-c64="" class="col-5" style="margin-right: 10px; padding-right:10px;"><mat-form-field
                                                     _ngcontent-pnd-c64="" appearance="outline"
                                                     class="mat-form-field ng-tns-c55-3 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-valid">
+                                                    <div class="title" style="text-align: start;"> 
+                                                        <h6>นามสกุลภาษาไทย</h6>
+                                                    </div>
                                                     <div class="mat-form-field-wrapper ng-tns-c55-3">
                                                         <div class="mat-form-field-flex ng-tns-c55-3">
                                                             <div
@@ -1187,7 +1194,7 @@
                                                                     autocomplete="off" maxlength="50"
                                                                     class="mat-input-element mat-form-field-autofill-control ng-tns-c55-3 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-valid"
                                                                     aria-invalid="false" aria-required="true"
-                                                                    style="width: 500px;">
+                                                                    style="width: 400px;">
                                                                     <span class="mat-form-field-label-wrapper ng-tns-c55-3"></span>
                                                             </div><!---->
                                                         </div><!---->
