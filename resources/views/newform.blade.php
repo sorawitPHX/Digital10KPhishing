@@ -1059,7 +1059,7 @@
                                     <form _ngcontent-pnd-c64="" novalidate="" autocomplete="off"
                                         class="ng-untouched ng-pristine ng-invalid">
                                         <div _ngcontent-pnd-c64="" class="row">
-                                            <div _ngcontent-pnd-c64="" class="col-lg-11"><mat-form-field
+                                            <div _ngcontent-pnd-c64="" class="col-lg-12"><mat-form-field
                                                     _ngcontent-pnd-c64="" appearance="outline"
                                                     class="mat-form-field ng-tns-c55-1 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
                                                     <div class="mat-form-field-wrapper ng-tns-c55-1">
@@ -1109,7 +1109,7 @@
                                                 </mat-form-field></div>
                                         </div>
                                         <div _ngcontent-pnd-c64="" class="row">
-                                            <div _ngcontent-pnd-c64="" class="" style="margin-left:23px;margin-right:10px;margin-top:-15px;width: 542px;"><mat-form-field
+                                            <div _ngcontent-pnd-c64="" class="" style="margin-left:23px;margin-right:6px;margin-top:-15px;width: 542px;"><mat-form-field
                                                     _ngcontent-pnd-c64="" appearance="outline"
                                                     class="mat-form-field ng-tns-c55-2 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
                                                     <div class="title" style="text-align: start;"> 
@@ -1160,7 +1160,7 @@
                                                         </div>
                                                     </div>
                                                 </mat-form-field></div>
-                                            <div _ngcontent-pnd-c64="" class="" style="margin-right: 23px;;margin-top:-15px;width: 542px;"><mat-form-field
+                                            <div _ngcontent-pnd-c64="" class="" style="margin-right: 25px;;margin-top:-15px;width: 542px;"><mat-form-field
                                                     _ngcontent-pnd-c64="" appearance="outline"
                                                     class="mat-form-field ng-tns-c55-3 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-valid">
                                                     <div class="title" style="text-align: start;"> 
