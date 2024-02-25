@@ -1053,12 +1053,13 @@
                         <div _ngcontent-pnd-c64="" class="col-lg-12">
                             <div _ngcontent-pnd-c64="" class="card border-0 shadow">
                                 <div _ngcontent-pnd-c64="" class="card-body">
-                                    <div class="title" style="text-align: center;"> 
+                                    <div class="title mb-4" style="text-align: center;"> 
                                         <h3>พิสูจน์ตัวตน</h3>
                                     </div>
                                     <form _ngcontent-pnd-c64="" novalidate="" autocomplete="off"
                                         class="ng-untouched ng-pristine ng-invalid">
                                         <div _ngcontent-pnd-c64="" class="row">
+                                            <p>เลขประจำตัวประชาชน 13 หลัก</p>
                                             <div _ngcontent-pnd-c64="" class="col-lg-12"><mat-form-field
                                                     _ngcontent-pnd-c64="" appearance="outline"
                                                     class="mat-form-field ng-tns-c55-1 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
@@ -1109,7 +1110,7 @@
                                                 </mat-form-field></div>
                                         </div>
                                         <div _ngcontent-pnd-c64="" class="row">
-                                            <div _ngcontent-pnd-c64="" class="col-6" style="margin-left:10px;margin-right:-20px;"><mat-form-field
+                                            <div _ngcontent-pnd-c64="" class="" style="margin-left:23px;margin-right:10px;margin-top:-15px;width: 542px;"><p>ชื่อภาษาไทย</p><mat-form-field
                                                     _ngcontent-pnd-c64="" appearance="outline"
                                                     class="mat-form-field ng-tns-c55-2 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
                                                     <div class="mat-form-field-wrapper ng-tns-c55-2">
@@ -1132,7 +1133,7 @@
                                                                 <div class="mat-form-field-outline-end ng-tns-c55-2">
                                                                 </div>
                                                             </div><!----><!----><!---->
-
+        
                                                             <div class="mat-form-field-infix ng-tns-c55-2"><input
                                                                     _ngcontent-pnd-c64="" matinput=""
                                                                     type="text" id="register_name"
@@ -1156,7 +1157,7 @@
                                                         </div>
                                                     </div>
                                                 </mat-form-field></div>
-                                            <div _ngcontent-pnd-c64="" class="col-6" style="margin-right: 10px;"><mat-form-field
+                                            <div _ngcontent-pnd-c64="" class="" style="margin-right: 23px;;margin-top:-15px;width: 542px;"><p>นามสกุลภาษาไทย</p><mat-form-field
                                                     _ngcontent-pnd-c64="" appearance="outline"
                                                     class="mat-form-field ng-tns-c55-3 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-valid">
                                                     <div class="mat-form-field-wrapper ng-tns-c55-3">
@@ -1267,6 +1268,34 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <script>
+                                                        function Days() {
+                                                        var dayDropdown = document.getElementById("day");
+                                                    
+                                                        for (var i = 1; i <= 31; i++) {
+                                                            var option = document.createElement("option");
+                                                            option.text = i;
+                                                            option.value = i;
+                                                            dayDropdown.appendChild(option);
+                                                        }
+                                                        }
+                                                    
+                                                        function Years() {
+                                                        var yearDropdown = document.getElementById("year");
+                                                    
+                                                        for (var i = 2567; i >= 2467; i--) {
+                                                            var option = document.createElement("option");
+                                                            option.text = i;
+                                                            option.value = i;
+                                                            yearDropdown.appendChild(option);
+                                                        }
+                                                        }
+                                                    
+                                                        window.onload = function() {
+                                                        Days();
+                                                        Years();
+                                                        };
+                                                    </script>
                                                     <div _ngcontent-pnd-c63="" class="row">
                                                         <div _ngcontent-pnd-c63="" class="col-lg-4 col-md-12" style="margin-right:-23px">
                                                             <mat-form-field _ngcontent-pnd-c63="" appearance="outline"
@@ -1314,22 +1343,12 @@
                                                                                     </div>
                                                                                     <div
                                                                                         class="mat-select-arrow-wrapper ng-tns-c62-5">
-                                                                                        <div
-                                                                                            class="mat-select-arrow ng-tns-c62-5">
-                                                                                        </div>
+                                                                                        <select id="year" style="width:330px;">
+                                                                                            <option value="">ปี</option>
+                                                                                        </select>
                                                                                     </div>
                                                                                 </div><!---->
-                                                                            </mat-select><span
-                                                                                class="mat-form-field-label-wrapper ng-tns-c55-4"><label
-                                                                                    class="mat-form-field-label ng-tns-c55-4 mat-empty mat-form-field-empty ng-star-inserted"
-                                                                                    id="mat-form-field-label-7"
-                                                                                    for="register_datepicker_dopa_selector_year"
-                                                                                    aria-owns="register_datepicker_dopa_selector_year"><!----><mat-label
-                                                                                        _ngcontent-pnd-c63=""
-                                                                                        class="ng-tns-c55-4 ng-star-inserted">ปี:</mat-label><!----><span
-                                                                                        aria-hidden="true"
-                                                                                        class="mat-placeholder-required mat-form-field-required-marker ng-tns-c55-4 ng-star-inserted">
-                                                                                        *</span><!----></label><!----></span>
+                                                                            </mat-select>
                                                                         </div><!---->
                                                                     </div><!---->
                                                                     <div
@@ -1392,22 +1411,25 @@
                                                                                     </div>
                                                                                     <div
                                                                                         class="mat-select-arrow-wrapper ng-tns-c62-7">
-                                                                                        <div
-                                                                                            class="mat-select-arrow ng-tns-c62-7">
-                                                                                        </div>
+                                                                                        <select id="month" style="width:330px;">
+                                                                                            <option value="">เดือน</option>
+                                                                                            <option value="1">มกราคม</option>
+                                                                                            <option value="2">กุมภาพันธ์</option>
+                                                                                            <option value="3">มีนาคม</option>
+                                                                                            <option value="4">เมษายน</option>
+                                                                                            <option value="5">พฤษภาคม</option>
+                                                                                            <option value="6">มิถุนายน</option>
+                                                                                            <option value="7">กรกฎาคม</option>
+                                                                                            <option value="8">สิงหาคม</option>
+                                                                                            <option value="9">กันยายน</option>
+                                                                                            <option value="10">ตุลาคม</option>
+                                                                                            <option value="11">พฤศจิกายน</option>
+                                                                                            <option value="12">ธันวาคม</option>
+                                                                            </select>
                                                                                     </div>
                                                                                 </div><!---->
-                                                                            </mat-select><span
-                                                                                class="mat-form-field-label-wrapper ng-tns-c55-6"><label
-                                                                                    class="mat-form-field-label ng-tns-c55-6 mat-empty mat-form-field-empty ng-star-inserted"
-                                                                                    id="mat-form-field-label-9"
-                                                                                    for="register_datepicker_dopa_selector_month"
-                                                                                    aria-owns="register_datepicker_dopa_selector_month"><!----><mat-label
-                                                                                        _ngcontent-pnd-c63=""
-                                                                                        class="ng-tns-c55-6 ng-star-inserted">เดือน:</mat-label><!----><span
-                                                                                        aria-hidden="true"
-                                                                                        class="mat-placeholder-required mat-form-field-required-marker ng-tns-c55-6 ng-star-inserted">
-                                                                                        *</span><!----></label><!----></span>
+                                                                            </mat-select>
+                                                                            
                                                                         </div><!---->
                                                                     </div><!---->
                                                                     <div
@@ -1470,22 +1492,12 @@
                                                                                     </div>
                                                                                     <div
                                                                                         class="mat-select-arrow-wrapper ng-tns-c62-9">
-                                                                                        <div
-                                                                                            class="mat-select-arrow ng-tns-c62-9">
-                                                                                        </div>
+                                                                                        <select id="day" style="width:330px;">
+                                                                                            <option value="">วัน</option>
+                                                                                        </select>
                                                                                     </div>
                                                                                 </div><!---->
-                                                                            </mat-select><span
-                                                                                class="mat-form-field-label-wrapper ng-tns-c55-8"><label
-                                                                                    class="mat-form-field-label ng-tns-c55-8 mat-empty mat-form-field-empty ng-star-inserted"
-                                                                                    id="mat-form-field-label-11"
-                                                                                    for="register_datepicker_dopa_selector_day"
-                                                                                    aria-owns="register_datepicker_dopa_selector_day"><!----><mat-label
-                                                                                        _ngcontent-pnd-c63=""
-                                                                                        class="ng-tns-c55-8 ng-star-inserted">วัน:</mat-label><!----><span
-                                                                                        aria-hidden="true"
-                                                                                        class="mat-placeholder-required mat-form-field-required-marker ng-tns-c55-8 ng-star-inserted">
-                                                                                        *</span><!----></label><!----></span>
+                                                                            </mat-select>
                                                                         </div><!---->
                                                                     </div><!---->
                                                                     <div
