@@ -14,6 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     {{-- Bootstrap Script --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -1011,7 +1012,7 @@
             margin-right: 0
         }
     </style>
-    
+
 
 </head>
 
@@ -1040,7 +1041,7 @@
 
         </app-header><!----><router-outlet _ngcontent-pnd-c14=""></router-outlet><app-login _nghost-pnd-c64=""
             class="ng-star-inserted">
-            
+
             <section _ngcontent-pnd-c64="" id="login">
                 <div _ngcontent-pnd-c64="" class="text-center">
                     <h1 _ngcontent-pnd-c64="" class="display-6">ลงทะเบียนเงินดิจิตอล</h1>
