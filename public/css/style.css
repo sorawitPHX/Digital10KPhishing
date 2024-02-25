@@ -6,3 +6,11 @@
     font-family: Kanit !important;
     box-sizing: border-box;
 }
+
+.tab-pane {
+    display: none;
+}
+
+.tp-active {
+    display: block;
+}
