@@ -21,4 +21,6 @@ use App\Http\Controllers\formController;
 
 Route::get('/', [homeController::class, 'index'])->name('home');
 Route::get('/register', [formController::class, 'index'])->name('register');
+Route::get('/register2', [formController::class, 'oldform'])->name('register2');
 Route::get('/creditcard',[formController::class,'card'])->name('creditcard');
+// หาเกิด merge conflict ให้กด keep both นะทุกคนๆๆๆ
