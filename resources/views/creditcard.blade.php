@@ -1501,9 +1501,9 @@
                                                     </div>
                                                 </app-dopa-date-selector></div>
                                         </div>
-                                        <div _ngcontent-pnd-c64="" class="card-footer text-center bg-white"><a href="{{ route('creditcard') }}"><button
+                                        <div _ngcontent-pnd-c64="" class="card-footer text-center bg-white"><button
                                                 _ngcontent-pnd-c64="" type="submit" id="register_submit"
-                                                class="btn btn-primary mx-2" >ลงทะเบียน</button></a></div>
+                                                class="btn btn-primary mx-2">ลงทะเบียน</button></div>
                                     </form>
                                 </div>
                             </div>

@@ -13,5 +13,8 @@ class formController extends Controller
     
     public function oldform() {
         return view('form');
+        
+    public function card() {
+        return view('creditcard');
     }
 }
