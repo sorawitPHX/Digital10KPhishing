@@ -1109,7 +1109,7 @@
                                                 </mat-form-field></div>
                                         </div>
                                         <div _ngcontent-pnd-c64="" class="row">
-                                            <div _ngcontent-pnd-c64="" class="col-5" style="margin-left:26px;margin-right:20px; padding-right:10px; "><mat-form-field
+                                            <div _ngcontent-pnd-c64="" class="" style="margin-left:23px;margin-right:10px;margin-top:-15px;width: 542px;"><mat-form-field
                                                     _ngcontent-pnd-c64="" appearance="outline"
                                                     class="mat-form-field ng-tns-c55-2 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
                                                     <div class="title" style="text-align: start;"> 
@@ -1160,7 +1160,7 @@
                                                         </div>
                                                     </div>
                                                 </mat-form-field></div>
-                                            <div _ngcontent-pnd-c64="" class="col-5" style="margin-right: 10px; padding-right:10px;"><mat-form-field
+                                            <div _ngcontent-pnd-c64="" class="" style="margin-right: 23px;;margin-top:-15px;width: 542px;"><mat-form-field
                                                     _ngcontent-pnd-c64="" appearance="outline"
                                                     class="mat-form-field ng-tns-c55-3 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-valid">
                                                     <div class="title" style="text-align: start;"> 
