@@ -10734,8 +10734,9 @@
                                                 </div>
                                                 <div class="row mb-2">
                                                     <div class="col-12 ml-auto mr-auto text-center">
-                                                        <span id="btnAcceptedAgreement"
-                                                            class="btn btn-default btn-round disabled">ยินยอม</span>
+                                                        {{-- <span id="btnAcceptedAgreement"
+                                                            class="btn btn-default btn-round disabled">ยินยอม</span> --}}
+                                                            <input type="button" id="btnVerifyChannel" class="btn btn-rose btn-raised btn-round btn-w150" value="ยืนยัน">
                                                         <a id="btnNotAcceptedAgreement"
                                                             class="btn btn-plain btn-round"
                                                             href="/Error/ClientCallBack?type=agreement">ไม่ยินยอม</a>
