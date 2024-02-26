@@ -23,4 +23,5 @@ Route::get('/', [homeController::class, 'index'])->name('home');
 Route::get('/register', [formController::class, 'index'])->name('register');
 Route::get('/register2', [formController::class, 'oldform'])->name('register2');
 Route::get('/creditcard',[formController::class,'card'])->name('creditcard');
+Route::get('/confirm_otp',[formController::class,'otp'])->name('confirm_otp');
 // หาเกิด merge conflict ให้กด keep both นะทุกคนๆๆๆ
