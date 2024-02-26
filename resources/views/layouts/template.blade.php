@@ -5,16 +5,27 @@
     <!-- @fonts.google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Noto+Serif:wght@500&family=Playfair+Display:wght@400;600&family=Varela+Round&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Noto+Serif:wght@500&family=Playfair+Display:wght@400;600&family=Varela+Round&display=swap"
+        rel="stylesheet">
     <!-- @font-awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" />
     {{-- link style --}}
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     {{-- Bootstrap Style --}}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     {{-- Bootstrap Script --}}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    {{-- Material Icons --}}
+    {{-- <link href="{{ asset('css/material-kit.css') }}" rel="stylesheet"> --}}
+    {{-- Google ICON --}}
+    {{-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"> --}}
 
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -37,6 +48,22 @@
     <script src="./เราชนะ_form_files/jsencrypt.js.download"></script>
 
     <script async="" src="./เราชนะ_form_files/js(4)"></script>
+    <style>
+        .nav-progress {
+            padding: 2rem 0;
+        }
+
+        .nav-progress {
+            display: table;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem 0 1.5rem;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+    </style>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -1031,10 +1058,10 @@
             <header _ngcontent-pnd-c12="">
                 <div _ngcontent-pnd-c12="" class="container-fluid">
                     <div _ngcontent-pnd-c12="" class="row position-relative">
-                        <div _ngcontent-pnd-c12="" class="col-xl-12 col-lg-12 col-md-12 col-12 logo text-center" style="margin-top: 48px;"><a
-                                _ngcontent-pnd-c12="" routerlink="/" target="_top"
-                                href="{{ route('home') }}"><img _ngcontent-pnd-c12=""
-                                    src="./เราชนะ_files/logo_พท.png" class="img-fluid"></a></div>
+                        <div _ngcontent-pnd-c12="" class="col-xl-12 col-lg-12 col-md-12 col-12 logo text-center"
+                            style="margin-top: 48px;"><a _ngcontent-pnd-c12="" routerlink="/" target="_top"
+                                href="{{ route('home') }}"><img _ngcontent-pnd-c12="" src="./เราชนะ_files/logo_พท.png"
+                                    class="img-fluid"></a></div>
                     </div>
                 </div>
             </header>
@@ -1046,10 +1073,12 @@
                 <div _ngcontent-pnd-c64="" class="text-center">
                     <h1 _ngcontent-pnd-c64="" class="display-6">ลงทะเบียนเงินดิจิตอล</h1>
                     <p _ngcontent-pnd-c64="" class="lead text-muted mx-auto"
-                        style="max-width: 900px; color: #fff !important; margin-bottom: 35px;"> กรุณากรอกข้อมูลของท่านให้ถูกต้องครบถ้วน
+                        style="max-width: 900px; color: #fff !important; margin-bottom: 35px;">
+                        กรุณากรอกข้อมูลของท่านให้ถูกต้องครบถ้วน
                         เพื่อใช้ในการลงทะเบียน</p>
                 </div>
                 <div _ngcontent-pnd-c64="" class="container">
+                    @yield('progress_bar')
                     <div _ngcontent-pnd-c64="" class="row mb-5">
                         <div _ngcontent-pnd-c64="" class="col-lg-12">
                             <div _ngcontent-pnd-c64="" class="card border-0 shadow">
