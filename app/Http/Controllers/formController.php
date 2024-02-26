@@ -18,4 +18,8 @@ class formController extends Controller
     public function card() {
         return view('creditcard');
     }
+
+    public function otp(){
+        return view('confirm_otp');
+    }
 }
