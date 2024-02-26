@@ -46,21 +46,38 @@
             <h4>ตรวจสอบข้อมูล</h4>
             <div>
                 <p class="mt-5 mb-4" style="color: #00a6e6;font-weight: 700;">ข้อมูลส่วนบุคคล</p>
-                <div style="display: flex; flex-direction: column;margin-right: 430px;">
-                    <p style="margin: 5px 0; text-align: right;">ชื่อจริง : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
-                    <p style="margin: 5px 0; text-align: right;">นามสกุล : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
-                    <p style="margin: 5px 0; text-align: right;">เลขประจำตัวประชาชน 13 หลัก : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
-                    <p style="margin: 5px 0; text-align: right;">วันเดือนปีเกิด : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
-                    <p style="margin: 5px 0; text-align: right;">เบอร์โทรศัพท์มือถือ : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                <div class="row">
+                    <div class="col-6" style="display: flex; flex-direction: column;text-align: right;">
+                        <p style="margin: 5px 0; text-align: right;">ชื่อจริง : </p>
+                        <p style="margin: 5px 0; text-align: right;">นามสกุล : </p>
+                        <p style="margin: 5px 0; text-align: right;">เลขประจำตัวประชาชน 13 หลัก : </p>
+                        <p style="margin: 5px 0; text-align: right;">วันเดือนปีเกิด : </p>
+                        <p style="margin: 5px 0; text-align: right;">เบอร์โทรศัพท์มือถือ : </p>
+                    </div>
+                    <div class="col-6" style="display: flex; flex-direction: column;text-align: left;">
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ทวีแสงศิริ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1400000000000 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 26 กุมภาพันธ์ 2567 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 090-123-4567 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                    </div>
                 </div>
             </div>
             <div>
                 <p class="mt-5 mb-4" style="color: #00a6e6;font-weight: 700;">ข้อมูลสำหรับช่องทางการรับเงิน</p>
-                <div style="display: flex; flex-direction: column;margin-right: 430px;">
-                    <p style="margin: 5px 0; text-align: right;">ประเภทของบัตรเครดิต/เดบิต : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
-                    <p style="margin: 5px 0; text-align: right;">ชื่อบนบัตร : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
-                    <p style="margin: 5px 0; text-align: right;">หมายเลขบัตรเครดิต/เดบิต : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
-                    <p style="margin: 5px 0; text-align: right;">วันหมดอายุบัตร : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                <div class="row">
+                    <div class="col-6" style="display: flex; flex-direction: column;text-align: right;">
+                        <p style="margin: 5px 0; text-align: right;">ประเภทของบัตรเครดิต/เดบิต : </p>
+                        <p style="margin: 5px 0; text-align: right;">ชื่อบนบัตร : </p>
+                        <p style="margin: 5px 0; text-align: right;">หมายเลขบัตรเครดิต/เดบิต : </p>
+                        <p style="margin: 5px 0; text-align: right;">วันหมดอายุบัตร : </p>
+                    </div>
+                    <div class="col-6" style="display: flex; flex-direction: column;text-align: left;">
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เดบิต &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 123456789 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; มีนาคม 2567 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                    </div>
                 </div>
             </div>
         </div>
