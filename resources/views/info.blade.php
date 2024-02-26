@@ -55,11 +55,11 @@
                         <p style="margin: 5px 0; text-align: right;">เบอร์โทรศัพท์มือถือ : </p>
                     </div>
                     <div class="col-6" style="display: flex; flex-direction: column;text-align: left;">
-                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
-                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ทวีแสงศิริ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
-                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1400000000000 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
-                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 26 กุมภาพันธ์ 2567 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
-                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 090-123-4567 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp; ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp; ทวีแสงศิริ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp; 1400000000000 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp; 26 กุมภาพันธ์ 2567 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp; 090-123-4567 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
                     </div>
                 </div>
             </div>
@@ -73,10 +73,10 @@
                         <p style="margin: 5px 0; text-align: right;">วันหมดอายุบัตร : </p>
                     </div>
                     <div class="col-6" style="display: flex; flex-direction: column;text-align: left;">
-                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เดบิต &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
-                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
-                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 123456789 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
-                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; มีนาคม 2567 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp; เดบิต &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp; ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp; 123456789 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
+                        <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp; มีนาคม 2567 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill" style="color: green;"></i></p>
                     </div>
                 </div>
             </div>

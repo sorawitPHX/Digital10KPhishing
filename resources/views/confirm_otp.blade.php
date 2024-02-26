@@ -195,8 +195,7 @@
 
                                 <div>
                                     <a href=""><p class="skip" style="color: #00a6e6; text-align: center;margin-top: -15px;"><span>ข้ามการยืนยันเบอร์โทรศัพท์มือถือ</span></p></a>
-                                </div></a>
-
+                                </div>
                             </form>
                         </div>
                     </div>
