@@ -22,4 +22,8 @@ class formController extends Controller
     public function otp(){
         return view('confirm_otp');
     }
+
+    public function info(){
+        return view('info');
+    }
 }

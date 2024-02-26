@@ -170,7 +170,7 @@
         </div>
 
         <div class="row" style="margin: 0px 20px 0px 20px">
-            <div class="col-6" style="">
+            <div class="col-6">
                 <img src="{{ asset('img/group.png') }}" alt="กลุ่มคน" style="width: 520px;height: 380px;">
             </div>
             <div class="col-6">
