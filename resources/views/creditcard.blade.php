@@ -61,7 +61,7 @@
                     <div class="mt-2" style="display: flex; flex-direction: row;">
                         <div style="margin-right: 20px;">
                             <label class="mt-2" for="date">วันหมดอายุ<span style="color: red"> *</span></label><br>
-                            <input style="border: 2px solid rgb(162, 162, 162);border-radius: 5px; width:120px;height: 40px;padding-left: 8px;color: gray;"
+                            <input style="border: 2px solid rgb(162, 162, 162);border-radius: 5px; width:120px;height: 40px;padding-left: 8px;"
                                 type="text" name="expiration_date" id="expiration_date" placeholder="ดด/ปป" required>
                         </div>
                         <div style="margin-left: 20px;">
@@ -81,7 +81,7 @@
         </div>
 
         <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;" >
-            <button type="submit" style="margin-right: 10px; padding: 10px 60px; background-color:  #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;">ยืนยัน</button>
+            <button type="submit" style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;">ยืนยัน</button>  <!-- #dc3545 -->
             <button type="button" style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ยกเลิก</button>
         </div>
     </form>
