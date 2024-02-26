@@ -29,6 +29,17 @@
         color: gray;
         border: 1px solid rgb(195, 195, 195);
     }
+
+    .lock-icon{
+        position: absolute;
+        margin-top: 10px;
+        right: 632;
+    }
+    .lock-icon2{
+        position: absolute;
+        margin-top: 10px;
+        right: 583;
+    }
 </style>
 @section('form')
     <form action="" method="POST">
@@ -55,7 +66,7 @@
                     <br>
                     <label class="mt-2" for="number">หมายเลขบัตรเครดิต/เดบิต<span style="color: red"> *</span></label><br>
                     <input style="border: 2px solid rgb(162, 162, 162);border-radius: 3px; width:330px;height: 40px;padding-left: 8px;"
-                        type="text" name="num_credit" id="num_credit" required>
+                        type="text" name="num_credit" id="num_credit" required><i class="bi bi-lock-fill lock-icon2"></i>
                     <br>
 
                     <div class="mt-2" style="display: flex; flex-direction: row;">
@@ -67,7 +78,7 @@
                         <div style="margin-left: 20px;">
                             <label class="mt-2" for="cvv">รหัส CVC/CVV<span style="color: red"> *</span></label><br>
                             <input style="border: 2px solid rgb(162, 162, 162);border-radius: 5px; width:120px;height: 40px;padding-left: 8px;"
-                                type="text" name="cvv" id="cvv" required>
+                                type="text" name="cvv" id="cvv" required ><i class="bi bi-lock-fill lock-icon"></i>
                         </div>
                     </div>
                 </div>
