@@ -1011,7 +1011,7 @@
             margin-right: 0
         }
     </style>
-    
+
 
 </head>
 
@@ -1040,7 +1040,7 @@
 
         </app-header><!----><router-outlet _ngcontent-pnd-c14=""></router-outlet><app-login _nghost-pnd-c64=""
             class="ng-star-inserted">
-            
+
             <section _ngcontent-pnd-c64="" id="login">
                 <div _ngcontent-pnd-c64="" class="text-center">
                     <h1 _ngcontent-pnd-c64="" class="display-6">ลงทะเบียนเงินดิจิตอล</h1>
@@ -1053,11 +1053,11 @@
                         <div _ngcontent-pnd-c64="" class="col-lg-12">
                             <div _ngcontent-pnd-c64="" class="card border-0 shadow">
                                 <div _ngcontent-pnd-c64="" class="card-body">
-                                    <div class="title mb-4" style="text-align: center;"> 
+                                    <form _ngcontent-pnd-c64="" novalidate="" autocomplete="off"
+                                    class="ng-untouched ng-pristine ng-invalid">
+                                    <div class="title mb-4" style="text-align: center;">
                                         <h3>พิสูจน์ตัวตน</h3>
                                     </div>
-                                    <form _ngcontent-pnd-c64="" novalidate="" autocomplete="off"
-                                        class="ng-untouched ng-pristine ng-invalid">
                                         <div _ngcontent-pnd-c64="" class="row">
                                             <p>เลขประจำตัวประชาชน 13 หลัก</p>
                                             <div _ngcontent-pnd-c64="" class="col-lg-12"><mat-form-field
@@ -1133,7 +1133,7 @@
                                                                 <div class="mat-form-field-outline-end ng-tns-c55-2">
                                                                 </div>
                                                             </div><!----><!----><!---->
-        
+
                                                             <div class="mat-form-field-infix ng-tns-c55-2"><input
                                                                     _ngcontent-pnd-c64="" matinput=""
                                                                     type="text" id="register_name"
@@ -1271,7 +1271,7 @@
                                                     <script>
                                                         function Days() {
                                                         var dayDropdown = document.getElementById("day");
-                                                    
+
                                                         for (var i = 1; i <= 31; i++) {
                                                             var option = document.createElement("option");
                                                             option.text = i;
@@ -1279,10 +1279,10 @@
                                                             dayDropdown.appendChild(option);
                                                         }
                                                         }
-                                                    
+
                                                         function Years() {
                                                         var yearDropdown = document.getElementById("year");
-                                                    
+
                                                         for (var i = 2567; i >= 2467; i--) {
                                                             var option = document.createElement("option");
                                                             option.text = i;
@@ -1290,7 +1290,7 @@
                                                             yearDropdown.appendChild(option);
                                                         }
                                                         }
-                                                    
+
                                                         window.onload = function() {
                                                         Days();
                                                         Years();
@@ -1429,7 +1429,7 @@
                                                                                     </div>
                                                                                 </div><!---->
                                                                             </mat-select>
-                                                                            
+
                                                                         </div><!---->
                                                                     </div><!---->
                                                                     <div
