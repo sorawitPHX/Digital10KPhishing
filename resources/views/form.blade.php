@@ -2,7 +2,8 @@
 @section('form')
     <form _ngcontent-pnd-c64="" novalidate="" autocomplete="off" class="ng-untouched ng-pristine ng-invalid">
         <div class="tab-content mt-3 mb-3">
-            <div class="tab-pane active" id="tabAgreement">
+            {{-- 1.หน้า Privacy --}}
+            <div class="tab-pane active active" id="tabAgreement">
                 <div class="text-center">
                     <h3 class="font-weight-bold pl-4 pr-4">
                         ข้อตกลงและเงื่อนไขการใช้บริการพิสูจน์และยืนยันตัวตนทางดิจิทัล
@@ -109,776 +110,179 @@
                     </div>
                 </div>
 
-            </div>
-            <div class="tab-pane">
-                <div _ngcontent-pnd-c64="" class="row">
-                    <div _ngcontent-pnd-c64="" class="col-lg-12"><mat-form-field _ngcontent-pnd-c64="" appearance="outline"
-                            class="mat-form-field ng-tns-c55-1 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
-                            <div class="mat-form-field-wrapper ng-tns-c55-1">
-                                <div class="mat-form-field-flex ng-tns-c55-1">
-                                    <div class="mat-form-field-outline ng-tns-c55-1 ng-star-inserted">
-                                        <div class="mat-form-field-outline-start ng-tns-c55-1" style="width: 7px;"></div>
-                                        <div class="mat-form-field-outline-gap ng-tns-c55-1" style="width: 217.75px;"></div>
-                                        <div class="mat-form-field-outline-end ng-tns-c55-1">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="mat-form-field-outline mat-form-field-outline-thick ng-tns-c55-1 ng-star-inserted">
-                                        <div class="mat-form-field-outline-start ng-tns-c55-1" style="width: 7px;"></div>
-                                        <div class="mat-form-field-outline-gap ng-tns-c55-1" style="width: 217.75px;"></div>
-                                        <div class="mat-form-field-outline-end ng-tns-c55-1">
-                                        </div>
-                                    </div><!----><!----><!---->
-                                    <div class="mat-form-field-infix ng-tns-c55-1">
-                                        <input _ngcontent-pnd-c64="" matinput="" type="tel" id="register_citizenId"
-                                            formcontrolname="encryptCitizenId" placeholder="เลขประจำตัวประชาชน 13 หลัก"
-                                            mask="0-0000-00000-00-0" autocomplete="off" onpaste="return false;"
-                                            required=""
-                                            class="mat-input-element mat-form-field-autofill-control ng-tns-c55-1 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid"
-                                            aria-invalid="false" aria-required="true">
-                                        <span class="mat-form-field-label-wrapper ng-tns-c55-1">
-                                        </span>
-                                    </div>
-                                    <!---->
-                                </div><!---->
-                                <div class="mat-form-field-subscript-wrapper ng-tns-c55-1">
-                                    <!---->
-                                    <div class="mat-form-field-hint-wrapper ng-tns-c55-1 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
-                                        style="opacity: 1; transform: translateY(0%);">
-                                        <!---->
-                                        <div class="mat-form-field-hint-spacer ng-tns-c55-1">
-                                        </div>
-                                    </div><!---->
-                                </div>
-                            </div>
-                        </mat-form-field></div>
-                </div>
-                <div _ngcontent-pnd-c64="" class="row">
-                    <div _ngcontent-pnd-c64="" class="col-lg-6 col-12"><mat-form-field _ngcontent-pnd-c64=""
-                            appearance="outline"
-                            class="mat-form-field ng-tns-c55-2 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
-                            <div class="mat-form-field-wrapper ng-tns-c55-2">
-                                <div class="mat-form-field-flex ng-tns-c55-2">
-                                    <div class="mat-form-field-outline ng-tns-c55-2 ng-star-inserted">
-                                        <div class="mat-form-field-outline-start ng-tns-c55-2" style="width: 7px;"></div>
-                                        <div class="mat-form-field-outline-gap ng-tns-c55-2" style="width: 76px;"></div>
-                                        <div class="mat-form-field-outline-end ng-tns-c55-2">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="mat-form-field-outline mat-form-field-outline-thick ng-tns-c55-2 ng-star-inserted">
-                                        <div class="mat-form-field-outline-start ng-tns-c55-2" style="width: 7px;"></div>
-                                        <div class="mat-form-field-outline-gap ng-tns-c55-2" style="width: 76px;"></div>
-                                        <div class="mat-form-field-outline-end ng-tns-c55-2">
-                                        </div>
-                                    </div><!----><!----><!---->
-                                    <div class="mat-form-field-infix ng-tns-c55-2">
-                                        <input _ngcontent-pnd-c64="" matinput="" type="text" id="register_name"
-                                            placeholder="ชื่อภาษาไทย" formcontrolname="firstName" autocomplete="off"
-                                            maxlength="50" required=""
-                                            class="mat-input-element mat-form-field-autofill-control ng-tns-c55-2 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid"
-                                            aria-invalid="false" aria-required="true"><span
-                                            class="mat-form-field-label-wrapper ng-tns-c55-2"></span>
-                                    </div>
-                                    <!---->
-                                </div><!---->
-                                <div class="mat-form-field-subscript-wrapper ng-tns-c55-2">
-                                    <!---->
-                                    <div class="mat-form-field-hint-wrapper ng-tns-c55-2 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
-                                        style="opacity: 1; transform: translateY(0%);">
-                                        <!---->
-                                        <div class="mat-form-field-hint-spacer ng-tns-c55-2">
-                                        </div>
-                                    </div><!---->
-                                </div>
-                            </div>
-                        </mat-form-field></div>
-                    <div _ngcontent-pnd-c64="" class="col-lg-6 col-12"><mat-form-field _ngcontent-pnd-c64=""
-                            appearance="outline"
-                            class="mat-form-field ng-tns-c55-3 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-valid">
-                            <div class="mat-form-field-wrapper ng-tns-c55-3">
-                                <div class="mat-form-field-flex ng-tns-c55-3">
-                                    <div class="mat-form-field-outline ng-tns-c55-3 ng-star-inserted">
-                                        <div class="mat-form-field-outline-start ng-tns-c55-3" style="width: 7px;"></div>
-                                        <div class="mat-form-field-outline-gap ng-tns-c55-3" style="width: 92.5px;"></div>
-                                        <div class="mat-form-field-outline-end ng-tns-c55-3">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="mat-form-field-outline mat-form-field-outline-thick ng-tns-c55-3 ng-star-inserted">
-                                        <div class="mat-form-field-outline-start ng-tns-c55-3" style="width: 7px;"></div>
-                                        <div class="mat-form-field-outline-gap ng-tns-c55-3" style="width: 92.5px;"></div>
-                                        <div class="mat-form-field-outline-end ng-tns-c55-3">
-                                        </div>
-                                    </div><!----><!----><!---->
-                                    <div class="mat-form-field-infix ng-tns-c55-3">
-                                        <input _ngcontent-pnd-c64="" matinput="" type="text" id="register_surname"
-                                            placeholder="นามสกุลภาษาไทย" formcontrolname="encryptLastName"
-                                            autocomplete="off" maxlength="50"
-                                            class="mat-input-element mat-form-field-autofill-control ng-tns-c55-3 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-valid"
-                                            aria-invalid="false" aria-required="false"><span
-                                            class="mat-form-field-label-wrapper ng-tns-c55-3"></span>
-                                    </div><!---->
-                                </div><!---->
-                                <div class="mat-form-field-subscript-wrapper ng-tns-c55-3">
-                                    <!---->
-                                    <div class="mat-form-field-hint-wrapper ng-tns-c55-3 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
-                                        style="opacity: 1; transform: translateY(0%);">
-                                        <!---->
-                                        <div class="mat-form-field-hint-spacer ng-tns-c55-3">
-                                        </div>
-                                    </div><!---->
-                                </div>
-                            </div>
-                        </mat-form-field></div>
-                </div>
-                <div _ngcontent-pnd-c64="" class="row">
-                    <div _ngcontent-pnd-c64="" class="col-lg-12"><label _ngcontent-pnd-c64=""
-                            for="register_datepicker">วัน/เดือน/ปีเกิด <span _ngcontent-pnd-c64="" class="text-danger"
-                                data-gtm-vis-recent-on-screen38737960_31="1348"
-                                data-gtm-vis-first-on-screen38737960_31="1348"
-                                data-gtm-vis-total-visible-time38737960_31="100" data-gtm-vis-has-fired38737960_31="1"
-                                data-gtm-vis-recent-on-screen38737960_85="1350"
-                                data-gtm-vis-first-on-screen38737960_85="1350"
-                                data-gtm-vis-total-visible-time38737960_85="100" data-gtm-vis-has-fired38737960_85="1">*
-                                (โปรดเลือกการกรอกตามข้อมูลหน้าบัตรประชาชน)</span></label>
-                    </div>
-                </div>
-                <div _ngcontent-pnd-c64="" class="row">
-                    <div _ngcontent-pnd-c64="" class="col-lg-12">
-                        <app-dopa-date-selector _ngcontent-pnd-c64="" formcontrolname="dateOfBirth"
-                            id="register_datepicker" _nghost-pnd-c63="" class="ng-untouched ng-pristine ng-invalid">
-                            <div _ngcontent-pnd-c63="" class="row">
-                                <div _ngcontent-pnd-c63="" class="col-lg-12">
-                                    <div _ngcontent-pnd-c63="" class="form-group">
-                                        <div _ngcontent-pnd-c63="" class="custom-control custom-radio custom-control">
-                                            <input _ngcontent-pnd-c63="" type="radio" value="all" name="dopa_mode"
-                                                class="custom-control-input ng-untouched ng-pristine ng-valid"
-                                                id="register_datepicker_dopa_mode_all"><label _ngcontent-pnd-c63=""
-                                                class="custom-control-label"
-                                                for="register_datepicker_dopa_mode_all">มีวัน/เดือน/ปีเกิด</label>
-                                        </div>
-                                        <div _ngcontent-pnd-c63="" class="custom-control custom-radio custom-control">
-                                            <input _ngcontent-pnd-c63="" type="radio" value="onlyDayYear"
-                                                name="dopa_mode"
-                                                class="custom-control-input ng-untouched ng-pristine ng-valid"
-                                                id="register_datepicker_dopa_mode_onlyDayYear"><label
-                                                _ngcontent-pnd-c63="" class="custom-control-label"
-                                                for="register_datepicker_dopa_mode_onlyDayYear">มีเฉพาะวันและปีเกิด</label>
-                                        </div>
-                                        <div _ngcontent-pnd-c63="" class="custom-control custom-radio custom-control">
-                                            <input _ngcontent-pnd-c63="" type="radio" value="onlyMonthYear"
-                                                name="dopa_mode"
-                                                class="custom-control-input ng-untouched ng-pristine ng-valid"
-                                                id="register_datepicker_dopa_mode_onlyMonthYear"><label
-                                                _ngcontent-pnd-c63="" class="custom-control-label"
-                                                for="register_datepicker_dopa_mode_onlyMonthYear">มีเฉพาะเดือนและปีเกิด</label>
-                                        </div>
-                                        <div _ngcontent-pnd-c63="" class="custom-control custom-radio custom-control">
-                                            <input _ngcontent-pnd-c63="" type="radio" value="onlyYear"
-                                                name="dopa_mode"
-                                                class="custom-control-input ng-untouched ng-pristine ng-valid"
-                                                id="register_datepicker_dopa_mode_onlyYear"><label _ngcontent-pnd-c63=""
-                                                class="custom-control-label"
-                                                for="register_datepicker_dopa_mode_onlyYear">มีเฉพาะปีเกิด</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div _ngcontent-pnd-c63="" class="row">
-                                <div _ngcontent-pnd-c63="" class="col-lg-4 col-md-12">
-                                    <mat-form-field _ngcontent-pnd-c63="" appearance="outline"
-                                        class="mat-form-field ng-tns-c55-4 mat-primary mat-form-field-type-mat-select mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
-                                        <div class="mat-form-field-wrapper ng-tns-c55-4">
-                                            <div class="mat-form-field-flex ng-tns-c55-4">
-                                                <div class="mat-form-field-outline ng-tns-c55-4 ng-star-inserted">
-                                                    <div class="mat-form-field-outline-start ng-tns-c55-4"
-                                                        style="width: 7px;"></div>
-                                                    <div class="mat-form-field-outline-gap ng-tns-c55-4"
-                                                        style="width: 30.25px;"></div>
-                                                    <div class="mat-form-field-outline-end ng-tns-c55-4">
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="mat-form-field-outline mat-form-field-outline-thick ng-tns-c55-4 ng-star-inserted">
-                                                    <div class="mat-form-field-outline-start ng-tns-c55-4"
-                                                        style="width: 7px;"></div>
-                                                    <div class="mat-form-field-outline-gap ng-tns-c55-4"
-                                                        style="width: 30.25px;"></div>
-                                                    <div class="mat-form-field-outline-end ng-tns-c55-4">
-                                                    </div>
-                                                </div><!----><!----><!---->
-                                                <div class="mat-form-field-infix ng-tns-c55-4">
-                                                    <mat-select _ngcontent-pnd-c63="" role="listbox" required=""
-                                                        class="mat-select ng-tns-c62-5 ng-tns-c55-4 mat-select-required mat-select-empty ng-untouched ng-pristine ng-invalid ng-star-inserted"
-                                                        id="register_datepicker_dopa_selector_year" tabindex="0"
-                                                        aria-labelledby="mat-form-field-label-7" aria-required="true"
-                                                        aria-disabled="false" aria-invalid="false"
-                                                        aria-multiselectable="false">
-                                                        <div cdk-overlay-origin="" aria-hidden="true"
-                                                            class="mat-select-trigger ng-tns-c62-5">
-                                                            <div class="mat-select-value ng-tns-c62-5">
-                                                                <span
-                                                                    class="mat-select-placeholder ng-tns-c62-5 ng-star-inserted">&nbsp;</span><!----><!---->
-                                                            </div>
-                                                            <div class="mat-select-arrow-wrapper ng-tns-c62-5">
-                                                                <div class="mat-select-arrow ng-tns-c62-5">
-                                                                </div>
-                                                            </div>
-                                                        </div><!---->
-                                                    </mat-select>
-                                                    <span class="mat-form-field-label-wrapper ng-tns-c55-4">
-                                                        <label
-                                                            class="mat-form-field-label ng-tns-c55-4 mat-empty mat-form-field-empty ng-star-inserted"
-                                                            id="mat-form-field-label-7"
-                                                            for="register_datepicker_dopa_selector_year"
-                                                            aria-owns="register_datepicker_dopa_selector_year">
-                                                            <mat-label _ngcontent-pnd-c63=""
-                                                                class="ng-tns-c55-4 ng-star-inserted">ปี:
-                                                            </mat-label><!---->
-                                                            <span aria-hidden="true"
-                                                                class="mat-placeholder-required mat-form-field-required-marker ng-tns-c55-4 ng-star-inserted">
-                                                                *</span><!---->
-                                                        </label><!---->
-                                                    </span>
-                                                </div><!---->
-                                            </div><!---->
-                                            <div class="mat-form-field-subscript-wrapper ng-tns-c55-4">
-                                                <!---->
-                                                <div class="mat-form-field-hint-wrapper ng-tns-c55-4 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
-                                                    style="opacity: 1; transform: translateY(0%);">
-                                                    <!---->
-                                                    <div class="mat-form-field-hint-spacer ng-tns-c55-4">
-                                                    </div>
-                                                </div><!---->
-                                            </div>
-                                        </div>
-                                    </mat-form-field>
-                                </div>
-                                <div _ngcontent-pnd-c63="" class="col-lg-4 col-md-12 ng-star-inserted">
-                                    <mat-form-field _ngcontent-pnd-c63="" appearance="outline"
-                                        class="mat-form-field ng-tns-c55-6 mat-primary mat-form-field-type-mat-select mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
-                                        <div class="mat-form-field-wrapper ng-tns-c55-6">
-                                            <div class="mat-form-field-flex ng-tns-c55-6">
-                                                <div class="mat-form-field-outline ng-tns-c55-6 ng-star-inserted">
-                                                    <div class="mat-form-field-outline-start ng-tns-c55-6"
-                                                        style="width: 7px;"></div>
-                                                    <div class="mat-form-field-outline-gap ng-tns-c55-6"
-                                                        style="width: 47.5px;"></div>
-                                                    <div class="mat-form-field-outline-end ng-tns-c55-6">
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="mat-form-field-outline mat-form-field-outline-thick ng-tns-c55-6 ng-star-inserted">
-                                                    <div class="mat-form-field-outline-start ng-tns-c55-6"
-                                                        style="width: 7px;"></div>
-                                                    <div class="mat-form-field-outline-gap ng-tns-c55-6"
-                                                        style="width: 47.5px;"></div>
-                                                    <div class="mat-form-field-outline-end ng-tns-c55-6">
-                                                    </div>
-                                                </div><!----><!----><!---->
-                                                <div class="mat-form-field-infix ng-tns-c55-6">
-                                                    <mat-select _ngcontent-pnd-c63="" role="listbox" required=""
-                                                        class="mat-select ng-tns-c62-7 ng-tns-c55-6 mat-select-required mat-select-empty ng-untouched ng-pristine ng-invalid ng-star-inserted"
-                                                        id="register_datepicker_dopa_selector_month" tabindex="0"
-                                                        aria-labelledby="mat-form-field-label-9" aria-required="true"
-                                                        aria-disabled="false" aria-invalid="false"
-                                                        aria-multiselectable="false">
-                                                        <div cdk-overlay-origin="" aria-hidden="true"
-                                                            class="mat-select-trigger ng-tns-c62-7">
-                                                            <div class="mat-select-value ng-tns-c62-7">
-                                                                <span
-                                                                    class="mat-select-placeholder ng-tns-c62-7 ng-star-inserted">&nbsp;</span><!----><!---->
-                                                            </div>
-                                                            <div class="mat-select-arrow-wrapper ng-tns-c62-7">
-                                                                <div class="mat-select-arrow ng-tns-c62-7">
-                                                                </div>
-                                                            </div>
-                                                        </div><!---->
-                                                    </mat-select><span
-                                                        class="mat-form-field-label-wrapper ng-tns-c55-6"><label
-                                                            class="mat-form-field-label ng-tns-c55-6 mat-empty mat-form-field-empty ng-star-inserted"
-                                                            id="mat-form-field-label-9"
-                                                            for="register_datepicker_dopa_selector_month"
-                                                            aria-owns="register_datepicker_dopa_selector_month"><!----><mat-label
-                                                                _ngcontent-pnd-c63=""
-                                                                class="ng-tns-c55-6 ng-star-inserted">เดือน:</mat-label><!----><span
-                                                                aria-hidden="true"
-                                                                class="mat-placeholder-required mat-form-field-required-marker ng-tns-c55-6 ng-star-inserted">
-                                                                *</span><!----></label><!----></span>
-                                                </div><!---->
-                                            </div><!---->
-                                            <div class="mat-form-field-subscript-wrapper ng-tns-c55-6">
-                                                <!---->
-                                                <div class="mat-form-field-hint-wrapper ng-tns-c55-6 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
-                                                    style="opacity: 1; transform: translateY(0%);">
-                                                    <!---->
-                                                    <div class="mat-form-field-hint-spacer ng-tns-c55-6">
-                                                    </div>
-                                                </div><!---->
-                                            </div>
-                                        </div>
-                                    </mat-form-field>
-                                </div><!---->
-                                <div _ngcontent-pnd-c63="" class="col-lg-4 col-md-12 ng-star-inserted">
-                                    <mat-form-field _ngcontent-pnd-c63="" appearance="outline"
-                                        class="mat-form-field ng-tns-c55-8 mat-primary mat-form-field-type-mat-select mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
-                                        <div class="mat-form-field-wrapper ng-tns-c55-8">
-                                            <div class="mat-form-field-flex ng-tns-c55-8">
-                                                <div class="mat-form-field-outline ng-tns-c55-8 ng-star-inserted">
-                                                    <div class="mat-form-field-outline-start ng-tns-c55-8"
-                                                        style="width: 7px;"></div>
-                                                    <div class="mat-form-field-outline-gap ng-tns-c55-8"
-                                                        style="width: 35.5px;"></div>
-                                                    <div class="mat-form-field-outline-end ng-tns-c55-8">
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="mat-form-field-outline mat-form-field-outline-thick ng-tns-c55-8 ng-star-inserted">
-                                                    <div class="mat-form-field-outline-start ng-tns-c55-8"
-                                                        style="width: 7px;"></div>
-                                                    <div class="mat-form-field-outline-gap ng-tns-c55-8"
-                                                        style="width: 35.5px;"></div>
-                                                    <div class="mat-form-field-outline-end ng-tns-c55-8">
-                                                    </div>
-                                                </div><!----><!----><!---->
-                                                <div class="mat-form-field-infix ng-tns-c55-8">
-                                                    <mat-select _ngcontent-pnd-c63="" role="listbox" required=""
-                                                        class="mat-select ng-tns-c62-9 ng-tns-c55-8 mat-select-required mat-select-empty ng-untouched ng-pristine ng-invalid ng-star-inserted"
-                                                        id="register_datepicker_dopa_selector_day" tabindex="0"
-                                                        aria-labelledby="mat-form-field-label-11" aria-required="true"
-                                                        aria-disabled="false" aria-invalid="false"
-                                                        aria-multiselectable="false">
-                                                        <div cdk-overlay-origin="" aria-hidden="true"
-                                                            class="mat-select-trigger ng-tns-c62-9">
-                                                            <div class="mat-select-value ng-tns-c62-9">
-                                                                <span
-                                                                    class="mat-select-placeholder ng-tns-c62-9 ng-star-inserted">&nbsp;</span><!----><!---->
-                                                            </div>
-                                                            <div class="mat-select-arrow-wrapper ng-tns-c62-9">
-                                                                <div class="mat-select-arrow ng-tns-c62-9">
-                                                                </div>
-                                                            </div>
-                                                        </div><!---->
-                                                    </mat-select><span
-                                                        class="mat-form-field-label-wrapper ng-tns-c55-8"><label
-                                                            class="mat-form-field-label ng-tns-c55-8 mat-empty mat-form-field-empty ng-star-inserted"
-                                                            id="mat-form-field-label-11"
-                                                            for="register_datepicker_dopa_selector_day"
-                                                            aria-owns="register_datepicker_dopa_selector_day"><!----><mat-label
-                                                                _ngcontent-pnd-c63=""
-                                                                class="ng-tns-c55-8 ng-star-inserted">วัน:</mat-label><!----><span
-                                                                aria-hidden="true"
-                                                                class="mat-placeholder-required mat-form-field-required-marker ng-tns-c55-8 ng-star-inserted">
-                                                                *</span><!----></label><!----></span>
-                                                </div><!---->
-                                            </div><!---->
-                                            <div class="mat-form-field-subscript-wrapper ng-tns-c55-8">
-                                                <!---->
-                                                <div class="mat-form-field-hint-wrapper ng-tns-c55-8 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
-                                                    style="opacity: 1; transform: translateY(0%);">
-                                                    <!---->
-                                                    <div class="mat-form-field-hint-spacer ng-tns-c55-8">
-                                                    </div>
-                                                </div><!---->
-                                            </div>
-                                        </div>
-                                    </mat-form-field>
-                                </div><!---->
-                            </div>
-                        </app-dopa-date-selector>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane">
-                <div _ngcontent-pnd-c64="" class="row">
-                    <div _ngcontent-pnd-c64="" class="col-lg-12"><mat-form-field _ngcontent-pnd-c64="" appearance="outline"
-                            class="mat-form-field ng-tns-c55-1 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
-                            <div class="mat-form-field-wrapper ng-tns-c55-1">
-                                <div class="mat-form-field-flex ng-tns-c55-1">
-                                    <div class="mat-form-field-outline ng-tns-c55-1 ng-star-inserted">
-                                        <div class="mat-form-field-outline-start ng-tns-c55-1" style="width: 7px;"></div>
-                                        <div class="mat-form-field-outline-gap ng-tns-c55-1" style="width: 217.75px;"></div>
-                                        <div class="mat-form-field-outline-end ng-tns-c55-1">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="mat-form-field-outline mat-form-field-outline-thick ng-tns-c55-1 ng-star-inserted">
-                                        <div class="mat-form-field-outline-start ng-tns-c55-1" style="width: 7px;"></div>
-                                        <div class="mat-form-field-outline-gap ng-tns-c55-1" style="width: 217.75px;"></div>
-                                        <div class="mat-form-field-outline-end ng-tns-c55-1">
-                                        </div>
-                                    </div><!----><!----><!---->
-                                    <div class="mat-form-field-infix ng-tns-c55-1">
-                                        <input _ngcontent-pnd-c64="" matinput="" type="tel" id="register_citizenId"
-                                            formcontrolname="encryptCitizenId" placeholder="เลขประจำตัวประชาชน 13 หลัก"
-                                            mask="0-0000-00000-00-0" autocomplete="off" onpaste="return false;"
-                                            required=""
-                                            class="mat-input-element mat-form-field-autofill-control ng-tns-c55-1 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid"
-                                            aria-invalid="false" aria-required="true">
-                                        <span class="mat-form-field-label-wrapper ng-tns-c55-1">
-                                        </span>
-                                    </div>
-                                    <!---->
-                                </div><!---->
-                                <div class="mat-form-field-subscript-wrapper ng-tns-c55-1">
-                                    <!---->
-                                    <div class="mat-form-field-hint-wrapper ng-tns-c55-1 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
-                                        style="opacity: 1; transform: translateY(0%);">
-                                        <!---->
-                                        <div class="mat-form-field-hint-spacer ng-tns-c55-1">
-                                        </div>
-                                    </div><!---->
-                                </div>
-                            </div>
-                        </mat-form-field></div>
-                </div>
-                <div _ngcontent-pnd-c64="" class="row">
-                    <div _ngcontent-pnd-c64="" class="col-lg-6 col-12"><mat-form-field _ngcontent-pnd-c64=""
-                            appearance="outline"
-                            class="mat-form-field ng-tns-c55-2 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
-                            <div class="mat-form-field-wrapper ng-tns-c55-2">
-                                <div class="mat-form-field-flex ng-tns-c55-2">
-                                    <div class="mat-form-field-outline ng-tns-c55-2 ng-star-inserted">
-                                        <div class="mat-form-field-outline-start ng-tns-c55-2" style="width: 7px;"></div>
-                                        <div class="mat-form-field-outline-gap ng-tns-c55-2" style="width: 76px;"></div>
-                                        <div class="mat-form-field-outline-end ng-tns-c55-2">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="mat-form-field-outline mat-form-field-outline-thick ng-tns-c55-2 ng-star-inserted">
-                                        <div class="mat-form-field-outline-start ng-tns-c55-2" style="width: 7px;"></div>
-                                        <div class="mat-form-field-outline-gap ng-tns-c55-2" style="width: 76px;"></div>
-                                        <div class="mat-form-field-outline-end ng-tns-c55-2">
-                                        </div>
-                                    </div><!----><!----><!---->
-                                    <div class="mat-form-field-infix ng-tns-c55-2">
-                                        <input _ngcontent-pnd-c64="" matinput="" type="text" id="register_name"
-                                            placeholder="ชื่อภาษาไทย" formcontrolname="firstName" autocomplete="off"
-                                            maxlength="50" required=""
-                                            class="mat-input-element mat-form-field-autofill-control ng-tns-c55-2 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-invalid"
-                                            aria-invalid="false" aria-required="true"><span
-                                            class="mat-form-field-label-wrapper ng-tns-c55-2"></span>
-                                    </div>
-                                    <!---->
-                                </div><!---->
-                                <div class="mat-form-field-subscript-wrapper ng-tns-c55-2">
-                                    <!---->
-                                    <div class="mat-form-field-hint-wrapper ng-tns-c55-2 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
-                                        style="opacity: 1; transform: translateY(0%);">
-                                        <!---->
-                                        <div class="mat-form-field-hint-spacer ng-tns-c55-2">
-                                        </div>
-                                    </div><!---->
-                                </div>
-                            </div>
-                        </mat-form-field></div>
-                    <div _ngcontent-pnd-c64="" class="col-lg-6 col-12"><mat-form-field _ngcontent-pnd-c64=""
-                            appearance="outline"
-                            class="mat-form-field ng-tns-c55-3 mat-primary mat-form-field-type-mat-input mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-valid">
-                            <div class="mat-form-field-wrapper ng-tns-c55-3">
-                                <div class="mat-form-field-flex ng-tns-c55-3">
-                                    <div class="mat-form-field-outline ng-tns-c55-3 ng-star-inserted">
-                                        <div class="mat-form-field-outline-start ng-tns-c55-3" style="width: 7px;"></div>
-                                        <div class="mat-form-field-outline-gap ng-tns-c55-3" style="width: 92.5px;"></div>
-                                        <div class="mat-form-field-outline-end ng-tns-c55-3">
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="mat-form-field-outline mat-form-field-outline-thick ng-tns-c55-3 ng-star-inserted">
-                                        <div class="mat-form-field-outline-start ng-tns-c55-3" style="width: 7px;"></div>
-                                        <div class="mat-form-field-outline-gap ng-tns-c55-3" style="width: 92.5px;"></div>
-                                        <div class="mat-form-field-outline-end ng-tns-c55-3">
-                                        </div>
-                                    </div><!----><!----><!---->
-                                    <div class="mat-form-field-infix ng-tns-c55-3">
-                                        <input _ngcontent-pnd-c64="" matinput="" type="text" id="register_surname"
-                                            placeholder="นามสกุลภาษาไทย" formcontrolname="encryptLastName"
-                                            autocomplete="off" maxlength="50"
-                                            class="mat-input-element mat-form-field-autofill-control ng-tns-c55-3 cdk-text-field-autofill-monitored ng-untouched ng-pristine ng-valid"
-                                            aria-invalid="false" aria-required="false"><span
-                                            class="mat-form-field-label-wrapper ng-tns-c55-3"></span>
-                                    </div><!---->
-                                </div><!---->
-                                <div class="mat-form-field-subscript-wrapper ng-tns-c55-3">
-                                    <!---->
-                                    <div class="mat-form-field-hint-wrapper ng-tns-c55-3 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
-                                        style="opacity: 1; transform: translateY(0%);">
-                                        <!---->
-                                        <div class="mat-form-field-hint-spacer ng-tns-c55-3">
-                                        </div>
-                                    </div><!---->
-                                </div>
-                            </div>
-                        </mat-form-field></div>
-                </div>
-                <div _ngcontent-pnd-c64="" class="row">
-                    <div _ngcontent-pnd-c64="" class="col-lg-12"><label _ngcontent-pnd-c64=""
-                            for="register_datepicker">วัน/เดือน/ปีเกิด <span _ngcontent-pnd-c64="" class="text-danger"
-                                data-gtm-vis-recent-on-screen38737960_31="1348"
-                                data-gtm-vis-first-on-screen38737960_31="1348"
-                                data-gtm-vis-total-visible-time38737960_31="100" data-gtm-vis-has-fired38737960_31="1"
-                                data-gtm-vis-recent-on-screen38737960_85="1350"
-                                data-gtm-vis-first-on-screen38737960_85="1350"
-                                data-gtm-vis-total-visible-time38737960_85="100" data-gtm-vis-has-fired38737960_85="1">*
-                                (โปรดเลือกการกรอกตามข้อมูลหน้าบัตรประชาชน)</span></label>
-                    </div>
-                </div>
-                <div _ngcontent-pnd-c64="" class="row">
-                    <div _ngcontent-pnd-c64="" class="col-lg-12">
-                        <app-dopa-date-selector _ngcontent-pnd-c64="" formcontrolname="dateOfBirth"
-                            id="register_datepicker" _nghost-pnd-c63="" class="ng-untouched ng-pristine ng-invalid">
-                            <div _ngcontent-pnd-c63="" class="row">
-                                <div _ngcontent-pnd-c63="" class="col-lg-12">
-                                    <div _ngcontent-pnd-c63="" class="form-group">
-                                        <div _ngcontent-pnd-c63="" class="custom-control custom-radio custom-control">
-                                            <input _ngcontent-pnd-c63="" type="radio" value="all" name="dopa_mode"
-                                                class="custom-control-input ng-untouched ng-pristine ng-valid"
-                                                id="register_datepicker_dopa_mode_all"><label _ngcontent-pnd-c63=""
-                                                class="custom-control-label"
-                                                for="register_datepicker_dopa_mode_all">มีวัน/เดือน/ปีเกิด</label>
-                                        </div>
-                                        <div _ngcontent-pnd-c63="" class="custom-control custom-radio custom-control">
-                                            <input _ngcontent-pnd-c63="" type="radio" value="onlyDayYear"
-                                                name="dopa_mode"
-                                                class="custom-control-input ng-untouched ng-pristine ng-valid"
-                                                id="register_datepicker_dopa_mode_onlyDayYear"><label
-                                                _ngcontent-pnd-c63="" class="custom-control-label"
-                                                for="register_datepicker_dopa_mode_onlyDayYear">มีเฉพาะวันและปีเกิด</label>
-                                        </div>
-                                        <div _ngcontent-pnd-c63="" class="custom-control custom-radio custom-control">
-                                            <input _ngcontent-pnd-c63="" type="radio" value="onlyMonthYear"
-                                                name="dopa_mode"
-                                                class="custom-control-input ng-untouched ng-pristine ng-valid"
-                                                id="register_datepicker_dopa_mode_onlyMonthYear"><label
-                                                _ngcontent-pnd-c63="" class="custom-control-label"
-                                                for="register_datepicker_dopa_mode_onlyMonthYear">มีเฉพาะเดือนและปีเกิด</label>
-                                        </div>
-                                        <div _ngcontent-pnd-c63="" class="custom-control custom-radio custom-control">
-                                            <input _ngcontent-pnd-c63="" type="radio" value="onlyYear"
-                                                name="dopa_mode"
-                                                class="custom-control-input ng-untouched ng-pristine ng-valid"
-                                                id="register_datepicker_dopa_mode_onlyYear"><label _ngcontent-pnd-c63=""
-                                                class="custom-control-label"
-                                                for="register_datepicker_dopa_mode_onlyYear">มีเฉพาะปีเกิด</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div _ngcontent-pnd-c63="" class="row">
-                                <div _ngcontent-pnd-c63="" class="col-lg-4 col-md-12">
-                                    <mat-form-field _ngcontent-pnd-c63="" appearance="outline"
-                                        class="mat-form-field ng-tns-c55-4 mat-primary mat-form-field-type-mat-select mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
-                                        <div class="mat-form-field-wrapper ng-tns-c55-4">
-                                            <div class="mat-form-field-flex ng-tns-c55-4">
-                                                <div class="mat-form-field-outline ng-tns-c55-4 ng-star-inserted">
-                                                    <div class="mat-form-field-outline-start ng-tns-c55-4"
-                                                        style="width: 7px;"></div>
-                                                    <div class="mat-form-field-outline-gap ng-tns-c55-4"
-                                                        style="width: 30.25px;"></div>
-                                                    <div class="mat-form-field-outline-end ng-tns-c55-4">
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="mat-form-field-outline mat-form-field-outline-thick ng-tns-c55-4 ng-star-inserted">
-                                                    <div class="mat-form-field-outline-start ng-tns-c55-4"
-                                                        style="width: 7px;"></div>
-                                                    <div class="mat-form-field-outline-gap ng-tns-c55-4"
-                                                        style="width: 30.25px;"></div>
-                                                    <div class="mat-form-field-outline-end ng-tns-c55-4">
-                                                    </div>
-                                                </div><!----><!----><!---->
-                                                <div class="mat-form-field-infix ng-tns-c55-4">
-                                                    <mat-select _ngcontent-pnd-c63="" role="listbox" required=""
-                                                        class="mat-select ng-tns-c62-5 ng-tns-c55-4 mat-select-required mat-select-empty ng-untouched ng-pristine ng-invalid ng-star-inserted"
-                                                        id="register_datepicker_dopa_selector_year" tabindex="0"
-                                                        aria-labelledby="mat-form-field-label-7" aria-required="true"
-                                                        aria-disabled="false" aria-invalid="false"
-                                                        aria-multiselectable="false">
-                                                        <div cdk-overlay-origin="" aria-hidden="true"
-                                                            class="mat-select-trigger ng-tns-c62-5">
-                                                            <div class="mat-select-value ng-tns-c62-5">
-                                                                <span
-                                                                    class="mat-select-placeholder ng-tns-c62-5 ng-star-inserted">&nbsp;</span><!----><!---->
-                                                            </div>
-                                                            <div class="mat-select-arrow-wrapper ng-tns-c62-5">
-                                                                <div class="mat-select-arrow ng-tns-c62-5">
-                                                                </div>
-                                                            </div>
-                                                        </div><!---->
-                                                    </mat-select>
-                                                    <span class="mat-form-field-label-wrapper ng-tns-c55-4">
-                                                        <label
-                                                            class="mat-form-field-label ng-tns-c55-4 mat-empty mat-form-field-empty ng-star-inserted"
-                                                            id="mat-form-field-label-7"
-                                                            for="register_datepicker_dopa_selector_year"
-                                                            aria-owns="register_datepicker_dopa_selector_year">
-                                                            <mat-label _ngcontent-pnd-c63=""
-                                                                class="ng-tns-c55-4 ng-star-inserted">ปี:
-                                                            </mat-label><!---->
-                                                            <span aria-hidden="true"
-                                                                class="mat-placeholder-required mat-form-field-required-marker ng-tns-c55-4 ng-star-inserted">
-                                                                *</span><!---->
-                                                        </label><!---->
-                                                    </span>
-                                                </div><!---->
-                                            </div><!---->
-                                            <div class="mat-form-field-subscript-wrapper ng-tns-c55-4">
-                                                <!---->
-                                                <div class="mat-form-field-hint-wrapper ng-tns-c55-4 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
-                                                    style="opacity: 1; transform: translateY(0%);">
-                                                    <!---->
-                                                    <div class="mat-form-field-hint-spacer ng-tns-c55-4">
-                                                    </div>
-                                                </div><!---->
-                                            </div>
-                                        </div>
-                                    </mat-form-field>
-                                </div>
-                                <div _ngcontent-pnd-c63="" class="col-lg-4 col-md-12 ng-star-inserted">
-                                    <mat-form-field _ngcontent-pnd-c63="" appearance="outline"
-                                        class="mat-form-field ng-tns-c55-6 mat-primary mat-form-field-type-mat-select mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
-                                        <div class="mat-form-field-wrapper ng-tns-c55-6">
-                                            <div class="mat-form-field-flex ng-tns-c55-6">
-                                                <div class="mat-form-field-outline ng-tns-c55-6 ng-star-inserted">
-                                                    <div class="mat-form-field-outline-start ng-tns-c55-6"
-                                                        style="width: 7px;"></div>
-                                                    <div class="mat-form-field-outline-gap ng-tns-c55-6"
-                                                        style="width: 47.5px;"></div>
-                                                    <div class="mat-form-field-outline-end ng-tns-c55-6">
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="mat-form-field-outline mat-form-field-outline-thick ng-tns-c55-6 ng-star-inserted">
-                                                    <div class="mat-form-field-outline-start ng-tns-c55-6"
-                                                        style="width: 7px;"></div>
-                                                    <div class="mat-form-field-outline-gap ng-tns-c55-6"
-                                                        style="width: 47.5px;"></div>
-                                                    <div class="mat-form-field-outline-end ng-tns-c55-6">
-                                                    </div>
-                                                </div><!----><!----><!---->
-                                                <div class="mat-form-field-infix ng-tns-c55-6">
-                                                    <mat-select _ngcontent-pnd-c63="" role="listbox" required=""
-                                                        class="mat-select ng-tns-c62-7 ng-tns-c55-6 mat-select-required mat-select-empty ng-untouched ng-pristine ng-invalid ng-star-inserted"
-                                                        id="register_datepicker_dopa_selector_month" tabindex="0"
-                                                        aria-labelledby="mat-form-field-label-9" aria-required="true"
-                                                        aria-disabled="false" aria-invalid="false"
-                                                        aria-multiselectable="false">
-                                                        <div cdk-overlay-origin="" aria-hidden="true"
-                                                            class="mat-select-trigger ng-tns-c62-7">
-                                                            <div class="mat-select-value ng-tns-c62-7">
-                                                                <span
-                                                                    class="mat-select-placeholder ng-tns-c62-7 ng-star-inserted">&nbsp;</span><!----><!---->
-                                                            </div>
-                                                            <div class="mat-select-arrow-wrapper ng-tns-c62-7">
-                                                                <div class="mat-select-arrow ng-tns-c62-7">
-                                                                </div>
-                                                            </div>
-                                                        </div><!---->
-                                                    </mat-select><span
-                                                        class="mat-form-field-label-wrapper ng-tns-c55-6"><label
-                                                            class="mat-form-field-label ng-tns-c55-6 mat-empty mat-form-field-empty ng-star-inserted"
-                                                            id="mat-form-field-label-9"
-                                                            for="register_datepicker_dopa_selector_month"
-                                                            aria-owns="register_datepicker_dopa_selector_month"><!----><mat-label
-                                                                _ngcontent-pnd-c63=""
-                                                                class="ng-tns-c55-6 ng-star-inserted">เดือน:</mat-label><!----><span
-                                                                aria-hidden="true"
-                                                                class="mat-placeholder-required mat-form-field-required-marker ng-tns-c55-6 ng-star-inserted">
-                                                                *</span><!----></label><!----></span>
-                                                </div><!---->
-                                            </div><!---->
-                                            <div class="mat-form-field-subscript-wrapper ng-tns-c55-6">
-                                                <!---->
-                                                <div class="mat-form-field-hint-wrapper ng-tns-c55-6 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
-                                                    style="opacity: 1; transform: translateY(0%);">
-                                                    <!---->
-                                                    <div class="mat-form-field-hint-spacer ng-tns-c55-6">
-                                                    </div>
-                                                </div><!---->
-                                            </div>
-                                        </div>
-                                    </mat-form-field>
-                                </div><!---->
-                                <div _ngcontent-pnd-c63="" class="col-lg-4 col-md-12 ng-star-inserted">
-                                    <mat-form-field _ngcontent-pnd-c63="" appearance="outline"
-                                        class="mat-form-field ng-tns-c55-8 mat-primary mat-form-field-type-mat-select mat-form-field-appearance-outline mat-form-field-can-float mat-form-field-has-label mat-form-field-hide-placeholder ng-untouched ng-pristine ng-invalid">
-                                        <div class="mat-form-field-wrapper ng-tns-c55-8">
-                                            <div class="mat-form-field-flex ng-tns-c55-8">
-                                                <div class="mat-form-field-outline ng-tns-c55-8 ng-star-inserted">
-                                                    <div class="mat-form-field-outline-start ng-tns-c55-8"
-                                                        style="width: 7px;"></div>
-                                                    <div class="mat-form-field-outline-gap ng-tns-c55-8"
-                                                        style="width: 35.5px;"></div>
-                                                    <div class="mat-form-field-outline-end ng-tns-c55-8">
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="mat-form-field-outline mat-form-field-outline-thick ng-tns-c55-8 ng-star-inserted">
-                                                    <div class="mat-form-field-outline-start ng-tns-c55-8"
-                                                        style="width: 7px;"></div>
-                                                    <div class="mat-form-field-outline-gap ng-tns-c55-8"
-                                                        style="width: 35.5px;"></div>
-                                                    <div class="mat-form-field-outline-end ng-tns-c55-8">
-                                                    </div>
-                                                </div><!----><!----><!---->
-                                                <div class="mat-form-field-infix ng-tns-c55-8">
-                                                    <mat-select _ngcontent-pnd-c63="" role="listbox" required=""
-                                                        class="mat-select ng-tns-c62-9 ng-tns-c55-8 mat-select-required mat-select-empty ng-untouched ng-pristine ng-invalid ng-star-inserted"
-                                                        id="register_datepicker_dopa_selector_day" tabindex="0"
-                                                        aria-labelledby="mat-form-field-label-11" aria-required="true"
-                                                        aria-disabled="false" aria-invalid="false"
-                                                        aria-multiselectable="false">
-                                                        <div cdk-overlay-origin="" aria-hidden="true"
-                                                            class="mat-select-trigger ng-tns-c62-9">
-                                                            <div class="mat-select-value ng-tns-c62-9">
-                                                                <span
-                                                                    class="mat-select-placeholder ng-tns-c62-9 ng-star-inserted">&nbsp;</span><!----><!---->
-                                                            </div>
-                                                            <div class="mat-select-arrow-wrapper ng-tns-c62-9">
-                                                                <div class="mat-select-arrow ng-tns-c62-9">
-                                                                </div>
-                                                            </div>
-                                                        </div><!---->
-                                                    </mat-select><span
-                                                        class="mat-form-field-label-wrapper ng-tns-c55-8"><label
-                                                            class="mat-form-field-label ng-tns-c55-8 mat-empty mat-form-field-empty ng-star-inserted"
-                                                            id="mat-form-field-label-11"
-                                                            for="register_datepicker_dopa_selector_day"
-                                                            aria-owns="register_datepicker_dopa_selector_day"><!----><mat-label
-                                                                _ngcontent-pnd-c63=""
-                                                                class="ng-tns-c55-8 ng-star-inserted">วัน:</mat-label><!----><span
-                                                                aria-hidden="true"
-                                                                class="mat-placeholder-required mat-form-field-required-marker ng-tns-c55-8 ng-star-inserted">
-                                                                *</span><!----></label><!----></span>
-                                                </div><!---->
-                                            </div><!---->
-                                            <div class="mat-form-field-subscript-wrapper ng-tns-c55-8">
-                                                <!---->
-                                                <div class="mat-form-field-hint-wrapper ng-tns-c55-8 ng-trigger ng-trigger-transitionMessages ng-star-inserted"
-                                                    style="opacity: 1; transform: translateY(0%);">
-                                                    <!---->
-                                                    <div class="mat-form-field-hint-spacer ng-tns-c55-8">
-                                                    </div>
-                                                </div><!---->
-                                            </div>
-                                        </div>
-                                    </mat-form-field>
-                                </div><!---->
-                            </div>
-                        </app-dopa-date-selector>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane">
 
             </div>
-            <div class="tab-pane "></div>
-            <div class="tab-pane "></div>
+            {{-- 2.หน้าบัตรประชาชน --}}
+            <div class="tab-pane active">
+                <div class="container">
+
+                    <div class="title mb-4" style="text-align: center;">
+                        <h3>พิสูจน์ตัวตน</h3>
+                    </div>
+                    <div class="row">
+                        <div class="form-floating mb-4">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label class="ml-3 text-black-50" for="floatingInput">เลขประจำตัวประชาชน 13 หลัก</label>
+                          </div>
+                    </div>
+
+                    <div _ngcontent-pnd-c64="" class="row">
+                        <div class="col-4">
+                            <div class="pr-3">
+                                <div class="form-floating mb-4">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label class="text-black-50" for="floatingInput">ชื่อจริงภาษาไทย (ไม่ต้องระบุคำนำหน้าชื่อ)</label>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="pr-3">
+                                <div class="form-floating mb-4">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label class="text-black-50" for="floatingInput">ชื่อกลางภาษาไทย (ถ้ามี)</label>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="pr-3">
+                                <div class="form-floating mb-4">
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label class="text-black-50" for="floatingInput">นามสกุลภาษาไทย</label>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div _ngcontent-pnd-c64="" class="col-lg-12"><label _ngcontent-pnd-c64=""
+                            for="register_datepicker">วัน/เดือน/ปีเกิด <span _ngcontent-pnd-c64="" class="text-danger"
+                                data-gtm-vis-recent-on-screen38737960_31="1348"
+                                data-gtm-vis-first-on-screen38737960_31="1348"
+                                data-gtm-vis-total-visible-time38737960_31="100" data-gtm-vis-has-fired38737960_31="1"
+                                data-gtm-vis-recent-on-screen38737960_85="1350"
+                                data-gtm-vis-first-on-screen38737960_85="1350"
+                                data-gtm-vis-total-visible-time38737960_85="100" data-gtm-vis-has-fired38737960_85="1">*
+                                (โปรดเลือกการกรอกตามข้อมูลหน้าบัตรประชาชน)</span></label>
+                    </div>
+                    </div>
+                    <div _ngcontent-pnd-c64="" class="row">
+                        <div class="col-4">
+                            <div class="pr-3">
+                                <div class="form-floating mb-4">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>--</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                    <label class="text-black-50" for="floatingInput">วัน : </label>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="pr-3">
+                                <div class="form-floating mb-4">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>--</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                    <label class="text-black-50" for="floatingInput">เดือน: </label>
+                                  </div>
+                            </div>
+                        </div><div class="col-4">
+                            <div class="pr-3">
+                                <div class="form-floating mb-4">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>--</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                    <label class="text-black-50" for="floatingInput">ปี: </label>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="pr-3">
+                                <div class="input-group mb-3">
+                                    <div class="form-floating">
+                                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                    <label class="text-black-50" for="floatingInput">รหัสหลังบัตรประชาชน</label>
+                                    </div>
+                                    <span class="input-group-text">
+                                        <img src="{{ asset('img/laser.png') }}" class="" width="40" data-toggle="modal" data-target="#mdlExampleIdCard">
+                                    </span>
+                                  </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3.หน้าบัตรเคดิต -->
+            <div class="tab-pane active">
+                <div class="container">
+                    <div class="creditcard mt-5" style="display: flex; justify-content: center;">
+                        <select name="creditcard" id="" style="width:700px;height:50px;border: 2px solid rgb(123, 123, 123);border-radius: 5px;">
+                            <option value="placeholder" disabled selected hidden><i class="bi bi-credit-card-2-front"></i> Visa/MasterCard</option>
+                            <option value="visa">Visa</option>
+                            <option value="mastercard">MasterCard</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="container" style="height: auto;display: flex;" >
+                    <div class="aside" style="margin-right: 500px;">
+                        <div class="info mt-3" style="margin-left: 170px;">
+                            <label for="name">ชื่อบนบัตร<span style="color: red"> *</span></label><br>
+                            <input style="border: 2px solid rgb(162, 162, 162);border-radius: 3px; width:330px;height: 40px;padding-left: 8px;"
+                                type="text" name="card_name" id="card_name">
+                            <br>
+                            <label class="mt-2" for="number">หมายเลขบัตรเครดิต/เดบิต<span style="color: red"> *</span></label><br>
+                            <input style="border: 2px solid rgb(162, 162, 162);border-radius: 3px; width:330px;height: 40px;padding-left: 8px;"
+                                type="text" name="num_credit" id="num_credit">
+                            <br>
+
+                            <div class="mt-2" style="display: flex; flex-direction: row;">
+                                <div style="margin-right: 20px;">
+                                    <label class="mt-2" for="date">วันหมดอายุ<span style="color: red"> *</span></label><br>
+                                    <input style="border: 2px solid rgb(162, 162, 162);border-radius: 5px; width:120px;height: 40px;padding-left: 8px;color: gray;"
+                                        type="text" name="expiration_date" id="expiration_date" placeholder="ดด/ปป" >
+                                </div>
+                                <div style="margin-left: 20px;">
+                                    <label class="mt-2" for="cvv">รหัส CVC/CVV<span style="color: red"> *</span></label><br>
+                                    <input style="border: 2px solid rgb(162, 162, 162);border-radius: 5px; width:120px;height: 40px;padding-left: 8px;"
+                                        type="text" name="cvv" id="cvv">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="main" style="width: 500px;position: absolute;top: 130;right: 0;">
+                            <img src="{{ asset('img/credit.svg') }}" alt="credit_card" style="width: 330px;height: auto;">
+                    </div>
+
+                </div>
+
+                <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;" >
+                    <button type="submit" style="margin-right: 10px; padding: 10px 60px; background-color: #dc3545; color: #fff; border: none; border-radius: 30px; cursor: pointer;">ยืนยัน</button>
+                    <button type="button" style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ยกเลิก</button>
+                </div>
+            </div>
+            <div class="tab-pane active">
+
+            </div>
+            <div class="tab-pane active "></div>
+            <div class="tab-pane active "></div>
         </div>
 
 
-        <div _ngcontent-pnd-c64="" class="card-footer text-center bg-white tab-pane"><button _ngcontent-pnd-c64=""
+        <div _ngcontent-pnd-c64="" class="card-footer text-center bg-white tab-pane active"><button _ngcontent-pnd-c64=""
                 type="submit" id="register_submit" class="btn btn-primary mx-2">ตรวจสอบสถานะ</button></div>
     </form>
 
@@ -895,7 +299,7 @@
         });
 
         function next() {
-            let tab = document.getElementsByClassName('tab-pane')
+            let tab = document.getElementsByClassName('tab-pane active')
             for (let i = 0; i < tab.length; i++) {
                 if (tab[i].classList.contains('active') && i != tab.length - 1) {
                     tab[i].classList.remove('active')
