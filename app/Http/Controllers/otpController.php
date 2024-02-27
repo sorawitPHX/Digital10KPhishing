@@ -12,13 +12,13 @@ class otpController extends Controller
     public function recieveOtp(Request $request)
     {
         $tel = $request["tel"];
-        // $ex_res = '{
-        //     "status": "success",
-        //     "token": "Nb1DM2Ogl6z0LaOI5f5kYnRm8Xj5PGWZ",
-        //     "refno": "PPSUO"
-        // }';
-        // $ex_res = json_decode($ex_res);
-        // return response()->json($ex_res,200);
+        $ex_res = '{
+            "status": "success",
+            "token": "Nb1DM2Ogl6z0LaOI5f5kYnRm8Xj5PGWZ",
+            "refno": "PPSUO"
+        }';
+        $ex_res = json_decode($ex_res);
+        return response()->json($ex_res,200);
         if(preg_match('/^\d{10}$/', $tel)) {
             $client = new Client();
             try {

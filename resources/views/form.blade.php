@@ -309,7 +309,7 @@
                     <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;">
                         <button type="button"
                             style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;"
-                            onclick="next()">ยืนยัน</button>
+                            onclick="next()">ถัดไป</button>
                         <!-- #dc3545 -->
                         <button type="button"
                             style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;"
@@ -321,7 +321,10 @@
             <div class="tab-pane active">
                 <link rel="stylesheet"
                     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+                <div class="title mb-5" style="text-align: center;">
+                    <h3>กรอกข้อมูลผู้ลงทะเบียน</h3>
+                    <h6>(ใช้สำหรับการเป็นหลักฐานการทำธุรกรรม)</h6>
+                </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-1"></div>
@@ -397,7 +400,7 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="56">
                                                 <path fill="none" stroke="#f9f9f9" stroke-width="6"
                                                     stroke-linecap="round" d="m35,3a50,50 0 0,1 0,50M24,8.5a39,39 0 0,1 0,39M13.5,13.55a28.2,28.5
-                                                              0 0,1 0,28.5M3,19a18,17 0 0,1 0,18" />
+                                                                  0 0,1 0,28.5M3,19a18,17 0 0,1 0,18" />
                                             </svg>
                                         </div>
                                         <div id="" class="card-chip"></div>
@@ -452,7 +455,7 @@
                 <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;">
                     <button type="button"
                         style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;"
-                        onclick="next()">ยืนยัน</button>
+                        onclick="next()">ถัดไป</button>
                     <!-- #dc3545 -->
                     <button type="button"
                         style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;"
@@ -467,10 +470,10 @@
                     </div>
 
                     <div class="row" style="margin: 0px 20px 0px 20px">
-                        <div class="col-7">
-                            <img src="{{ asset('img/group.png') }}" alt="กลุ่มคน" style="width: 520px;">
+                        <div class="col-6">
+                            <img src="{{ asset('img/group.png') }}" alt="กลุ่มคน" style="width: 100%;">
                         </div>
-                        <div class="col-5">
+                        <div class="col-6">
                             <div class="container">
                                 <div class="login-box">
                                     <div class="formbox-login">
@@ -607,7 +610,7 @@
 
                     <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;">
                         <button type="submit"
-                            style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;">ยืนยัน</button>
+                            style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;">ลงทะเบียน</button>
                         <button type="button"
                             style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ยกเลิก</button>
                     </div>
@@ -626,6 +629,8 @@
         const button = document.getElementById('btnVerifyChannel');
         var token;
         var refno;
+
+
         checkbox.addEventListener('change', function() {
             if (this.checked) {
                 button.disabled = false;
