@@ -242,7 +242,7 @@
 
         .navbar-nav[_ngcontent-evf-c26] .nav-link.active[_ngcontent-evf-c26],
         .navbar-nav[_ngcontent-evf-c26] .nav-link[_ngcontent-evf-c26]:hover {
-            
+
         }
 
         .navbar-nav[_ngcontent-evf-c26] .nav-link[_ngcontent-evf-c26] img[_ngcontent-evf-c26] {
@@ -719,7 +719,7 @@
 
         .navbar-nav[_ngcontent-bii-c26] .nav-link.active[_ngcontent-bii-c26],
         .navbar-nav[_ngcontent-bii-c26] .nav-link[_ngcontent-bii-c26]:hover {
-            
+
         }
 
         .navbar-nav[_ngcontent-bii-c26] .nav-link[_ngcontent-bii-c26] img[_ngcontent-bii-c26] {
@@ -1113,7 +1113,7 @@
                                         src="./เราชนะ_files/logo_พท.png" alt="เราชนะ" width="160px"
                                         class="img-fluid"></a></div>
                         </div>
-                        
+
                         <div _ngcontent-bii-c26="" class="row mt-4">
                             <div _ngcontent-bii-c26="" class="col-12 text-center white">
                                 <h1 _ngcontent-bii-c26="" class="bold">โครงการ “เงินดิจิตอล 10,000 บาท”</h1>
@@ -1129,7 +1129,7 @@
                                 <a
                                     _ngcontent-bii-c26="" id="btn-check-status" target=""
                                     class="btn arrow-right darkblue-gradient"
-                                    href="{{ route('register') }}">
+                                    href="{{ route('register2') }}">
                                     <div _ngcontent-bii-c26="" class="text-center">ลงทะเบียนเงินดิจิตอล</div>
                                 </a></div>
                         </div>
