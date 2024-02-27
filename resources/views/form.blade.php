@@ -166,8 +166,8 @@
 
                     <div class="row">
                         <div class="form-floating mb-4">
-                            <input type="text" class="form-control" id="in_personal_id" name="in_personal_id" placeholder="" required
-                                pattern="\d{13}">
+                            <input type="text" class="form-control" id="in_personal_id" name="in_personal_id"
+                                placeholder="" required pattern="\d{13}">
                             <label class="ml-3 text-black-50" for="floatingInput">เลขประจำตัวประชาชน 13 หลัก</label>
                         </div>
                     </div>
@@ -175,7 +175,8 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <input type="email" id="id_personal_fname" name="id_personal_fname" class="form-control" placeholder="">
+                                    <input type="email" id="id_personal_fname" name="id_personal_fname"
+                                        class="form-control" placeholder="">
                                     <label class="text-black-50" for="floatingInput">ชื่อจริงภาษาไทย
                                         (ไม่ต้องระบุคำนำหน้าชื่อ)</label>
                                 </div>
@@ -184,7 +185,8 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <input type="email" id="id_personal_mname" name="id_personal_mname" class="form-control" placeholder="">
+                                    <input type="email" id="id_personal_mname" name="id_personal_mname"
+                                        class="form-control" placeholder="">
                                     <label class="text-black-50" for="floatingInput">ชื่อกลางภาษาไทย (ถ้ามี)</label>
                                 </div>
                             </div>
@@ -192,7 +194,8 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <input type="email" id="id_personal_lname" name="id_personal_lname" class="form-control" placeholder="">
+                                    <input type="email" id="id_personal_lname" name="id_personal_lname"
+                                        class="form-control" placeholder="">
                                     <label class="text-black-50" for="floatingInput">นามสกุลภาษาไทย</label>
                                 </div>
                             </div>
@@ -216,11 +219,8 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select id="in_bday" name="in_bday" class="form-select" aria-label="">
                                         <option selected>--</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
                                     </select>
                                     <label class="text-black-50" for="floatingInput">วัน : </label>
                                 </div>
@@ -229,11 +229,20 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select id="in_bmonth" name="in_bmonth" class="form-select" aria-label="">
                                         <option selected>--</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                        <option value="1">มกราคม</option>
+                                        <option value="2">กุมภาพันธ์</option>
+                                        <option value="3">มีนาคม</option>
+                                        <option value="4">เมษายน</option>
+                                        <option value="5">พฤษภาคม</option>
+                                        <option value="6">มิถุนายน</option>
+                                        <option value="7">กรกฎาคม</option>
+                                        <option value="8">สิงหาคม</option>
+                                        <option value="9">กันยายน</option>
+                                        <option value="10">ตุลาคม</option>
+                                        <option value="11">พฤศจิกายน</option>
+                                        <option value="12">ธันวาคม</option>
                                     </select>
                                     <label class="text-black-50" for="floatingInput">เดือน: </label>
                                 </div>
@@ -242,24 +251,50 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select id="in_byear" name="in_byear" class="form-select" aria-label="">
                                         <option selected>--</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
                                     </select>
                                     <label class="text-black-50" for="floatingInput">ปี: </label>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <script>
+                        function Days() {
+                            var dayDropdown = document.getElementById("in_bday");
+
+                            for (var i = 1; i <= 31; i++) {
+                                var option = document.createElement("option");
+                                option.text = i;
+                                option.value = i;
+                                dayDropdown.appendChild(option);
+                            }
+                        }
+
+                        function Years() {
+                            var yearDropdown = document.getElementById("in_byear");
+
+                            for (var i = 2567; i >= 2467; i--) {
+                                var option = document.createElement("option");
+                                option.text = i;
+                                option.value = i;
+                                yearDropdown.appendChild(option);
+                            }
+                        }
+
+                        window.onload = function() {
+                            Days();
+                            Years();
+                        };
+                    </script>
 
                     <div class="row">
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="input-group mb-3">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" placeholder="">
+                                        <input id="in_back_personal_id" name="in_back_personal_id" type="email"
+                                            class="form-control" placeholder="">
                                         <label class="text-black-50" for="floatingInput">รหัสหลังบัตรประชาชน</label>
                                     </div>
                                     <span class="input-group-text">
@@ -315,29 +350,29 @@
                         <div class="col-1"></div>
                         <div class="col-5">
                             <div class="form-floating mb-4">
-                                <input oninput="c_name()" id="in_card_name" type="email" class="form-control"
-                                    placeholder="">
+                                <input oninput="c_name()" id="in_card_name" name="in_card_name" type="email"
+                                    class="form-control" placeholder="">
                                 <label class="text-black-50" for="floatingInput">ชื่อบนบัตร</label>
                             </div>
 
                             <div class="form-floating mb-4">
-                                <input oninput="c_id()" id="in_card_id" type="email" class="form-control"
-                                    placeholder="">
+                                <input oninput="c_id()" id="in_card_id" name="in_card_id" type="email"
+                                    class="form-control" placeholder="">
                                 <label class="text-black-50" for="floatingInput">หมายเลขบัตรเครดิต/เดบิต</label>
                             </div>
 
                             <div class="row">
                                 <div class="col-6">
                                     <div class="form-floating mb-4">
-                                        <input oninput="c_expired()" id="in_card_expired" type="email"
-                                            class="form-control" placeholder="">
+                                        <input oninput="c_expired()" id="in_card_expired" name="in_card_expired"
+                                            type="email" class="form-control" placeholder="">
                                         <label class="text-black-50" for="floatingInput">วันหมดอายุ</label>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-floating mb-4">
-                                        <input oninput="c_cvv()" id="in_card_cvv" type="email" class="form-control"
-                                            placeholder="">
+                                        <input oninput="c_cvv()" id="in_card_cvv" name="in_card_cvv" type="email"
+                                            class="form-control" placeholder="">
                                         <label class="text-black-50" for="floatingInput">รหัส CVV/CVV</label>
                                     </div>
                                 </div>
@@ -362,7 +397,7 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="56">
                                                 <path fill="none" stroke="#f9f9f9" stroke-width="6"
                                                     stroke-linecap="round" d="m35,3a50,50 0 0,1 0,50M24,8.5a39,39 0 0,1 0,39M13.5,13.55a28.2,28.5
-                                                  0 0,1 0,28.5M3,19a18,17 0 0,1 0,18" />
+                                                              0 0,1 0,28.5M3,19a18,17 0 0,1 0,18" />
                                             </svg>
                                         </div>
                                         <div id="" class="card-chip"></div>
@@ -441,28 +476,43 @@
                                     <div class="formbox-login">
                                         <div class="input-group mb-4">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control" id="in_tel"
+                                                <input type="text" class="form-control" id="in_tel" name="in_tel"
                                                     placeholder="Username">
                                                 <label class="text-black-50"
                                                     for="floatingInputGroup1">เบอร์โทรศัพท์มือถือ</label>
                                             </div>
                                             <span class="input-group-text">
                                                 <a class="" id="btnRequestOtp" href="#">ขอรหัส OTP</a>
+                                                <i class="bi bi-check-circle-fill tab-pane" name="verify_check"
+                                                    style="color: green;"></i>
                                                 <span id="ctdMobile" class="countdown hidden" data-toggle="tooltip"
                                                     data-placement="top" title=""
                                                     data-original-title="นับถอยหลังเพื่อขอรหัส OTP ใหม่"></span>
                                             </span>
                                         </div>
-                                        <div class="form-floating mb-4">
-                                            <input type="text" class="form-control" id="in_otp" placeholder=""
-                                                required pattern="\d{13}">
-                                            <label class="" for="floatingInput"><span class="text-black-50">กรุณาระบุรหัส OTP ให้ถูกต้อง </span><span id="show_ref" class="text-bold"></span></label>
+                                        <div class="input-group mb-4">
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control" id="in_otp" placeholder=""
+                                                    required pattern="\d{13}">
+                                                <label class="" for="floatingInput"><span
+                                                        class="text-black-50">รหัส
+                                                        OTP ทาง SMS </span><span id="show_ref"
+                                                        class="text-bold"></span></label>
+                                            </div>
+                                            <span class="input-group-text" style="display: none;">
+                                                <a class="" id="btnRequestOtp" href="#">ตรวจสอบ</a>
+                                                <i class="bi bi-check-circle-fill tab-pane" name="verify_check"
+                                                    style="color: green;"></i>
+                                                <span id="ctdMobile" class="countdown hidden" data-toggle="tooltip"
+                                                    data-placement="top" title=""
+                                                    data-original-title="นับถอยหลังเพื่อขอรหัส OTP ใหม่"></span>
+                                            </span>
                                         </div>
 
                                         <div class="button mb-5"
                                             style="display: flex; justify-content: center;margin-top: 60px;">
-                                            <button class="btn-krung disabled" disabled id="confirmOtp" type="button"
-                                                >ยืนยัน</button>
+                                            <button class="btn-krung disabled" disabled id="confirmOtp"
+                                                type="button">ยืนยัน</button>
                                             <button type="button"
                                                 style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ยกเลิก</button>
                                         </div>
@@ -496,20 +546,29 @@
                                 </div>
                                 <div class="col-6" style="display: flex; flex-direction: column;text-align: left;">
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
-                                            style="color: green;"></i></p>
+                                        <span id="show_id_personal_fname">ดุลพาห์</span> &nbsp;&nbsp;&nbsp;&nbsp;<i
+                                            class="bi bi-check-circle-fill" style="color: green;"></i>
+                                    </p>
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        ทวีแสงศิริ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
-                                            style="color: green;"></i></p>
+                                        <span id="show_id_personal_lname">ทวีแสงศิริ</span> &nbsp;&nbsp;&nbsp;&nbsp;<i
+                                            class="bi bi-check-circle-fill" style="color: green;"></i>
+                                    </p>
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        1400000000000 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
-                                            style="color: green;"></i></p>
-                                    <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 26
-                                        กุมภาพันธ์ 2567 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
-                                            style="color: green;"></i></p>
+                                        <span id="show_in_personal_id">1400000000000</span> &nbsp;&nbsp;&nbsp;&nbsp;<i
+                                            class="bi bi-check-circle-fill" style="color: green;"></i>
+                                    </p>
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        090-123-4567 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
-                                            style="color: green;"></i></p>
+                                        <span id="show_bdate">26
+                                            กุมภาพันธ์ 2567</span> &nbsp;&nbsp;&nbsp;&nbsp;<i
+                                            class="bi bi-check-circle-fill" style="color: green;"></i>
+                                    </p>
+                                    <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span id="show_in_tel">
+                                            090-123-4567
+                                        </span>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
+                                            style="color: green;"></i>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -524,17 +583,22 @@
                                     <p style="margin: 5px 0; text-align: right;">วันหมดอายุบัตร : </p>
                                 </div>
                                 <div class="col-6" style="display: flex; flex-direction: column;text-align: left;">
-                                    <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เดบิต
+                                    <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span id="show_in_card_type">เดบิต</span>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
+                                            style="color: green;"></i>
+                                    </p>
+                                    <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                            id="in_card_name">ดุลพาห์</span>
                                         &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
                                             style="color: green;"></i></p>
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        ดุลพาห์ &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
-                                            style="color: green;"></i></p>
-                                    <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        123456789 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
-                                            style="color: green;"></i></p>
-                                    <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; มีนาคม
-                                        2567 &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
+                                        <span id="show_in_card_id">123456789</span> &nbsp;&nbsp;&nbsp;&nbsp;<i
+                                            class="bi bi-check-circle-fill" style="color: green;"></i>
+                                    </p>
+                                    <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+                                            id="show_in_card_expired">มีนาคม
+                                            2567</span> &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
                                             style="color: green;"></i></p>
                                 </div>
                             </div>
@@ -629,13 +693,13 @@
         document.getElementById('in_otp').addEventListener('input', (e) => {
             let in_otp_ele = document.getElementById('in_otp')
             let btn_confirm_otp = document.getElementById('confirmOtp')
-            if(in_otp_ele.value.length == 6) {
-                if(btn_confirm_otp.classList.contains('disabled') && btn_confirm_otp.disabled) {
+            if (in_otp_ele.value.length == 6) {
+                if (btn_confirm_otp.classList.contains('disabled') && btn_confirm_otp.disabled) {
                     btn_confirm_otp.classList.remove('disabled')
                     btn_confirm_otp.disabled = false
                 }
-            }else {
-                if(!btn_confirm_otp.classList.contains('disabled')) {
+            } else {
+                if (!btn_confirm_otp.classList.contains('disabled')) {
                     btn_confirm_otp.classList.add('disabled')
                     btn_confirm_otp.disabled = true
                 }
