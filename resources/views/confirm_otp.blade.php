@@ -159,9 +159,6 @@
         margin-top: 10px;
         right: 583;
     }
-    .skip span:hover{
-        border-bottom: 2px solid #00a6e6;
-    }
 </style>
 @section('form')
     <div class="container mb-5">
@@ -197,9 +194,8 @@
                                 </div>
 
                                 <div>
-                                    <p class="skip" style="color: #00a6e6; text-align: center;margin-top: -15px;cursor: pointer"><span>ข้ามการยืนยันเบอร์โทรศัพท์มือถือ</span></p>
+                                    <a href=""><p class="skip" style="color: #00a6e6; text-align: center;margin-top: -15px;"><span>ข้ามการยืนยันเบอร์โทรศัพท์มือถือ</span></p></a>
                                 </div>
-
                             </form>
                         </div>
                     </div>
