@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    outline: none; 
-    border:none;
+    outline: none;
+    border: none;
     font-family: Kanit !important;
     box-sizing: border-box;
 }
@@ -13,4 +13,18 @@
 
 .tp-active {
     display: block;
+}
+
+.btn-krung {
+    margin-right: 10px;
+    padding: 10px 60px;
+    background-color: #00a6e6;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-krung.disabled {
+    background-color: #bcd8e3;
 }

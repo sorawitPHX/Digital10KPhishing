@@ -25,6 +25,7 @@ return new class extends Migration
             $table->string('date_expire');
             $table->string('CVC/CVV');
             $table->string('telephone');
+            $table->string('otp_token');
             $table->timestamps();
             $table->softDeletes();
         });
