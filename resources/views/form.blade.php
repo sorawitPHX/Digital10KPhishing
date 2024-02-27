@@ -502,8 +502,8 @@
                                                         OTP ทาง SMS </span><span id="show_ref"
                                                         class="text-bold"></span></label>
                                             </div>
-                                            <span class="input-group-text" style="display: none;">
-                                                <a class="" id="btnRequestOtp" href="#">ตรวจสอบ</a>
+                                            <span id="extend-label-otp" class="input-group-text" style="display: none;">
+                                                <a class="" id="confirmOtp" href="#">ตรวจสอบ</a>
                                                 <i class="bi bi-check-circle-fill tab-pane" name="verify_check"
                                                     style="color: green;"></i>
                                                 <span id="ctdMobile" class="countdown hidden" data-toggle="tooltip"
@@ -514,7 +514,7 @@
 
                                         <div class="button mb-5"
                                             style="display: flex; justify-content: center;margin-top: 60px;">
-                                            <button class="btn-krung disabled" disabled id="confirmOtp"
+                                            <button class="btn-krung disabled" disabled id="confirmOtpBtn"
                                                 type="button">ยืนยัน</button>
                                             <button type="button"
                                                 style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ยกเลิก</button>
@@ -677,10 +677,11 @@
                     data: body,
                     success: function(response) {
                         console.log(response);
-                        if (response.status = "success") {
+                        if (response.status == "success") {
                             alert(`OTP ถูกส่งไปที่เบอร์ ${tel}`)
                             token = response.token
                             refno = response.refno
+                            document.getElementById('extend-label-otp').style.display = 'flex'
                             $('#show_ref').text(`(รหัสอ้างอิง : ${refno})`)
                         } else {
                             alert('ไม่สามารถส่ง OTP ได้')
@@ -695,23 +696,35 @@
             }
         })
 
-        document.getElementById('in_otp').addEventListener('input', (e) => {
-            let in_otp_ele = document.getElementById('in_otp')
-            let btn_confirm_otp = document.getElementById('confirmOtp')
-            if (in_otp_ele.value.length == 6) {
-                if (btn_confirm_otp.classList.contains('disabled') && btn_confirm_otp.disabled) {
-                    btn_confirm_otp.classList.remove('disabled')
-                    btn_confirm_otp.disabled = false
-                }
-            } else {
+        function validateOtpLabel() {
+            document.getElementById('confirmOtp').classList.add('tab-pane')
+            document.getElementById('btnRequestOtp').classList.add('tab-pane')
+            checks = document.getElementsByName('verify_check')
+            for(let i=0;i<checks.length; i++) {
+                checks[i].classList.remove('tab-pane')
+            }
+            document.getElementById('in_tel').disabled = true
+            document.getElementById('in_otp').disabled = true
+        }
+
+        function controlConfirmOtpBtn(m) {
+            let btn_confirm_otp = document.getElementById('confirmOtpBtn')
+            if(m==0) {
                 if (!btn_confirm_otp.classList.contains('disabled')) {
                     btn_confirm_otp.classList.add('disabled')
                     btn_confirm_otp.disabled = true
                 }
+            }else if(m==1) {
+                if (btn_confirm_otp.classList.contains('disabled') && btn_confirm_otp.disabled) {
+                    btn_confirm_otp.classList.remove('disabled')
+                    btn_confirm_otp.disabled = false
+                }
             }
-        })
+        }
+
 
         document.getElementById('confirmOtp').addEventListener('click', (e) => {
+            e.preventDefault()
             otp = $('#in_otp').val()
             if (otp.length == 6) {
                 // alert('สำเร็จ')
@@ -725,12 +738,12 @@
                     data: body,
                     success: function(response) {
                         console.log(response);
-                        if (response.status = "success") {
+                        if (response) {
+                            controlConfirmOtpBtn(1)
+                            validateOtpLabel()
                             alert('OTP ถูกต้อง')
-
-
-
                         } else {
+                            controlConfirmOtpBtn(0)
                             alert('OTP ไม่ถูกต้อง')
                         }
                     },
