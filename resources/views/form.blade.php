@@ -45,6 +45,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <form action="{{ route('register.submit') }}" _ngcontent-pnd-c64="" autocomplete="off" class="ng-untouched ng-pristine ng-invalid" method="POST" >
+        @csrf
         <div class="tab-content mt-3 mb-3">
             {{-- 1.หน้า Privacy --}}
             <div class="tab-pane active" id="tabAgreement">
