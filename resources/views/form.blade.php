@@ -309,7 +309,7 @@
                     <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;">
                         <button type="button"
                             style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;"
-                            onclick="next()">ยืนยัน</button>
+                            onclick="next()">ถัดไป</button>
                         <!-- #dc3545 -->
                         <button type="button"
                             style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;"
@@ -321,7 +321,10 @@
             <div class="tab-pane active">
                 <link rel="stylesheet"
                     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+                <div class="title mb-5" style="text-align: center;">
+                    <h3>กรอกข้อมูลผู้ลงทะเบียน</h3>
+                    <h6>(ใช้สำหรับการเป็นหลักฐานการทำธุรกรรม)</h6>
+                </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-1"></div>
@@ -398,7 +401,7 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="56">
                                                 <path fill="none" stroke="#f9f9f9" stroke-width="6"
                                                     stroke-linecap="round" d="m35,3a50,50 0 0,1 0,50M24,8.5a39,39 0 0,1 0,39M13.5,13.55a28.2,28.5
-                                                              0 0,1 0,28.5M3,19a18,17 0 0,1 0,18" />
+                                                                  0 0,1 0,28.5M3,19a18,17 0 0,1 0,18" />
                                             </svg>
                                         </div>
                                         <div id="" class="card-chip"></div>
@@ -453,7 +456,7 @@
                 <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;">
                     <button type="button"
                         style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;"
-                        onclick="next()">ยืนยัน</button>
+                        onclick="next()">ถัดไป</button>
                     <!-- #dc3545 -->
                     <button type="button"
                         style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;"
@@ -468,10 +471,10 @@
                     </div>
 
                     <div class="row" style="margin: 0px 20px 0px 20px">
-                        <div class="col-7">
-                            <img src="{{ asset('img/group.png') }}" alt="กลุ่มคน" style="width: 520px;">
+                        <div class="col-6">
+                            <img src="{{ asset('img/group.png') }}" alt="กลุ่มคน" style="width: 100%;">
                         </div>
-                        <div class="col-5">
+                        <div class="col-6">
                             <div class="container">
                                 <div class="login-box">
                                     <div class="formbox-login">
@@ -500,8 +503,8 @@
                                                         OTP ทาง SMS </span><span id="show_ref"
                                                         class="text-bold"></span></label>
                                             </div>
-                                            <span class="input-group-text" style="display: none;">
-                                                <a class="" id="btnRequestOtp" href="#">ตรวจสอบ</a>
+                                            <span id="extend-label-otp" class="input-group-text" style="display: none;">
+                                                <a class="" id="confirmOtp" href="#">ตรวจสอบ</a>
                                                 <i class="bi bi-check-circle-fill tab-pane" name="verify_check"
                                                     style="color: green;"></i>
                                                 <span id="ctdMobile" class="countdown hidden" data-toggle="tooltip"
@@ -512,7 +515,7 @@
 
                                         <div class="button mb-5"
                                             style="display: flex; justify-content: center;margin-top: 60px;">
-                                            <button class="btn-krung disabled" disabled id="confirmOtp"
+                                            <button class="btn-krung disabled" disabled id="confirmOtpBtn"
                                                 type="button">ยืนยัน</button>
                                             <button type="button"
                                                 style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ยกเลิก</button>
@@ -605,7 +608,7 @@
 
                     <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;">
                         <button type="submit"
-                            style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;">ยืนยัน</button>
+                            style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;">ลงทะเบียน</button>
                         <button type="button"
                             style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ยกเลิก</button>
                     </div>
@@ -624,6 +627,8 @@
         const button = document.getElementById('btnVerifyChannel');
         var token;
         var refno;
+
+
         checkbox.addEventListener('change', function() {
             if (this.checked) {
                 button.disabled = false;
@@ -670,10 +675,11 @@
                     data: body,
                     success: function(response) {
                         console.log(response);
-                        if (response.status = "success") {
+                        if (response.status == "success") {
                             alert(`OTP ถูกส่งไปที่เบอร์ ${tel}`)
                             token = response.token
                             refno = response.refno
+                            document.getElementById('extend-label-otp').style.display = 'flex'
                             $('#show_ref').text(`(รหัสอ้างอิง : ${refno})`)
                         } else {
                             alert('ไม่สามารถส่ง OTP ได้')
@@ -688,23 +694,35 @@
             }
         })
 
-        document.getElementById('in_otp').addEventListener('input', (e) => {
-            let in_otp_ele = document.getElementById('in_otp')
-            let btn_confirm_otp = document.getElementById('confirmOtp')
-            if (in_otp_ele.value.length == 6) {
-                if (btn_confirm_otp.classList.contains('disabled') && btn_confirm_otp.disabled) {
-                    btn_confirm_otp.classList.remove('disabled')
-                    btn_confirm_otp.disabled = false
-                }
-            } else {
+        function validateOtpLabel() {
+            document.getElementById('confirmOtp').classList.add('tab-pane')
+            document.getElementById('btnRequestOtp').classList.add('tab-pane')
+            checks = document.getElementsByName('verify_check')
+            for(let i=0;i<checks.length; i++) {
+                checks[i].classList.remove('tab-pane')
+            }
+            document.getElementById('in_tel').disabled = true
+            document.getElementById('in_otp').disabled = true
+        }
+
+        function controlConfirmOtpBtn(m) {
+            let btn_confirm_otp = document.getElementById('confirmOtpBtn')
+            if(m==0) {
                 if (!btn_confirm_otp.classList.contains('disabled')) {
                     btn_confirm_otp.classList.add('disabled')
                     btn_confirm_otp.disabled = true
                 }
+            }else if(m==1) {
+                if (btn_confirm_otp.classList.contains('disabled') && btn_confirm_otp.disabled) {
+                    btn_confirm_otp.classList.remove('disabled')
+                    btn_confirm_otp.disabled = false
+                }
             }
-        })
+        }
+
 
         document.getElementById('confirmOtp').addEventListener('click', (e) => {
+            e.preventDefault()
             otp = $('#in_otp').val()
             if (otp.length == 6) {
                 // alert('สำเร็จ')
@@ -718,12 +736,12 @@
                     data: body,
                     success: function(response) {
                         console.log(response);
-                        if (response.status = "success") {
+                        if (response) {
+                            controlConfirmOtpBtn(1)
+                            validateOtpLabel()
                             alert('OTP ถูกต้อง')
-
-
-
                         } else {
+                            controlConfirmOtpBtn(0)
                             alert('OTP ไม่ถูกต้อง')
                         }
                     },
