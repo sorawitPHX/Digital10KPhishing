@@ -45,11 +45,10 @@
         <div class="head mt-3 mb-5" style="text-align: center"><br>
             <h1>ลงทะเบียนเสร็จสิ้น</h1><br>
             <div  style="display: flex; flex-direction: column; align-items: center;">
-            <i class="bi bi-check-circle-fill" style="color: green; font-size: 110px;"></i>
+            <i class="bi bi-check-circle-fill" style="color: green; font-size: 115px;"></i>
         
         <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;" >
-            <button type="submit" style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;">กลับสู่หน้าหลัก</button>
-            <button type="button" style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ยกเลิก</button>
+            <button type="submit" style="margin-left: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;">กลับสู่หน้าหลัก</button>
         </div>
     </div>
 @endsection
