@@ -40,12 +40,12 @@
         right: 583;
     }
 </style>
-@section('success')
+@section('form')
     <div class="container">
-        <div class="head mt-3 mb-5" style="text-align: center">
-            <h1>ลงทะเบียนเสร็จสิ้น</h1>
-            <div class="col-6" style="display: flex; flex-direction: column; align-items: center;">
-            <i class="bi bi-check-circle-fill" style="color: green; font-size: 64px;"></i>
+        <div class="head mt-3 mb-5" style="text-align: center"><br>
+            <h1>ลงทะเบียนเสร็จสิ้น</h1><br>
+            <div  style="display: flex; flex-direction: column; align-items: center;">
+            <i class="bi bi-check-circle-fill" style="color: green; font-size: 110px;"></i>
         
         <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;" >
             <button type="submit" style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;">กลับสู่หน้าหลัก</button>
