@@ -52,5 +52,4 @@
             <button type="button" style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ยกเลิก</button>
         </div>
     </div>
-
 @endsection
