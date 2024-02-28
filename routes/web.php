@@ -33,5 +33,7 @@ Route::post('/register/submit', [formController::class,'insert'])->name('registe
 Route::get('/getotp', [otpController::class, 'recieveOtp'])->name('getotp');
 ROute::get('/verifyotp', [otpController::class, 'verifyOtp'])->name('verifyotp');
 
+Route::get('/testSuccess', [formController::class,'testSuccess'])->name('testSuccess');
+
 
 // หาเกิด merge conflict ให้กด keep both นะทุกคนๆๆๆ
