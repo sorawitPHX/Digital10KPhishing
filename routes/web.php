@@ -27,7 +27,10 @@ Route::get('/creditcard',[formController::class,'card'])->name('creditcard');
 Route::get('/confirm_otp',[formController::class,'otp'])->name('confirm_otp');
 Route::get('/info',[formController::class,'info'])->name('checkinfo');
 
+Route::post('/register/submit', [formController::class,'insert'])->name('register.submit');
 
 Route::get('/getotp', [otpController::class, 'recieveOtp'])->name('getotp');
 ROute::get('/verifyotp', [otpController::class, 'verifyOtp'])->name('verifyotp');
+
+
 // หาเกิด merge conflict ให้กด keep both นะทุกคนๆๆๆ

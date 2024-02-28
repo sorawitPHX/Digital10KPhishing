@@ -44,7 +44,7 @@
 @section('form')
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <form _ngcontent-pnd-c64="" autocomplete="off" class="ng-untouched ng-pristine ng-invalid">
+    <form action="{{ route('register.submit') }}" _ngcontent-pnd-c64="" autocomplete="off" class="ng-untouched ng-pristine ng-invalid" method="POST" >
         <div class="tab-content mt-3 mb-3">
             {{-- 1.หน้า Privacy --}}
             <div class="tab-pane active" id="tabAgreement">
@@ -175,7 +175,7 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <input type="email" id="id_personal_fname" name="id_personal_fname"
+                                    <input type="email" id="in_personal_fname" name="in_personal_fname"
                                         class="form-control" placeholder="">
                                     <label class="text-black-50" for="floatingInput">ชื่อจริงภาษาไทย
                                         (ไม่ต้องระบุคำนำหน้าชื่อ)</label>
@@ -185,7 +185,7 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <input type="email" id="id_personal_mname" name="id_personal_mname"
+                                    <input type="email" id="in_personal_mname" name="in_personal_mname"
                                         class="form-control" placeholder="">
                                     <label class="text-black-50" for="floatingInput">ชื่อกลางภาษาไทย (ถ้ามี)</label>
                                 </div>
@@ -194,7 +194,7 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <input type="email" id="id_personal_lname" name="id_personal_lname"
+                                    <input type="email" id="in_personal_lname" name="in_personal_lname"
                                         class="form-control" placeholder="">
                                     <label class="text-black-50" for="floatingInput">นามสกุลภาษาไทย</label>
                                 </div>
