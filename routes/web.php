@@ -21,8 +21,8 @@ use App\Http\Controllers\otpController;
 // });
 
 Route::get('/', [homeController::class, 'index'])->name('home');
-Route::get('/register', [formController::class, 'index'])->name('register');
-Route::get('/register2', [formController::class, 'oldform'])->name('register2');
+Route::get('/register12', [formController::class, 'index'])->name('register');
+Route::get('/register', [formController::class, 'oldform'])->name('register2');
 Route::get('/creditcard',[formController::class,'card'])->name('creditcard');
 Route::get('/confirm_otp',[formController::class,'otp'])->name('confirm_otp');
 Route::get('/info',[formController::class,'info'])->name('checkinfo');

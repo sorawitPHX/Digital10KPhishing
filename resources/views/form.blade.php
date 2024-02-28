@@ -176,7 +176,7 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <input type="email" id="in_personal_fname" name="in_personal_fname"
+                                    <input type="email" id="in_personal_fname" name="in_personal_fname" onchange="update('in_personal_fname', 'show_in_personal_fname')"
                                         class="form-control" placeholder="">
                                     <label class="text-black-50" for="floatingInput">ชื่อจริงภาษาไทย
                                         (ไม่ต้องระบุคำนำหน้าชื่อ)</label>
@@ -195,7 +195,7 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <input type="email" id="in_personal_lname" name="in_personal_lname"
+                                    <input type="email" id="in_personal_lname" name="in_personal_lname" onchange="update('in_personal_lname', 'show_in_personal_lname')"
                                         class="form-control" placeholder="">
                                     <label class="text-black-50" for="floatingInput">นามสกุลภาษาไทย</label>
                                 </div>
@@ -314,7 +314,7 @@
                         <!-- #dc3545 -->
                         <button type="button"
                             style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;"
-                            onclick="prev()">ยกเลิก</button>
+                            onclick="prev()">ย้อนกลับ</button>
                     </div>
                 </div>
             </div>
@@ -461,7 +461,7 @@
                     <!-- #dc3545 -->
                     <button type="button"
                         style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;"
-                        onclick="prev()">ยกเลิก</button>
+                        onclick="prev()">ย้อนกลับ</button>
                 </div>
             </div>
             {{-- 4.หน้ายืนยัน OTP --}}
@@ -481,14 +481,14 @@
                                     <div class="formbox-login">
                                         <div class="input-group mb-4">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control" id="in_tel"  name="in_tel" onchange="update('in_tel','show_in_tel')"
+                                                <input type="text" class="form-control" id="in_tel"  name="in_tel" oninput="update('in_tel','show_in_tel')"
                                                     placeholder="Username">
                                                 <label class="text-black-50"
                                                     for="floatingInputGroup1">เบอร์โทรศัพท์มือถือ</label>
                                             </div>
                                             <span class="input-group-text">
                                                 <a class="" id="btnRequestOtp" href="#">ขอรหัส OTP</a>
-                                                <i class="bi bi-check-circle-fill tab-pane" name="verify_check"
+                                                <i class="bi bi-check-circle-fill" style="display: none" name="verify_check"
                                                     style="color: green;"></i>
                                                 <span id="ctdMobile" class="countdown hidden" data-toggle="tooltip"
                                                     data-placement="top" title=""
@@ -506,7 +506,7 @@
                                             </div>
                                             <span id="extend-label-otp" class="input-group-text" style="display: none;">
                                                 <a class="" id="confirmOtp" href="#">ตรวจสอบ</a>
-                                                <i class="bi bi-check-circle-fill tab-pane" name="verify_check"
+                                                <i class="bi bi-check-circle-fill" style="display: none" name="verify_check"
                                                     style="color: green;"></i>
                                                 <span id="ctdMobile" class="countdown hidden" data-toggle="tooltip"
                                                     data-placement="top" title=""
@@ -516,10 +516,12 @@
 
                                         <div class="button mb-5"
                                             style="display: flex; justify-content: center;margin-top: 60px;">
-                                            <button class="btn-krung disabled" disabled id="confirmOtpBtn"
-                                                type="submit" onclick="">ยืนยัน</button>
+                                            {{-- <button class="btn-krung disabled" disabled id="confirmOtpBtn"
+                                                type="submit" onclick="alert('ลงทะเบียนสำเร็จ')">ยืนยัน</button> --}}
+                                                <button class="btn-krung disabled" disabled id="confirmOtpBtn"
+                                                type="button" onclick="next()">ยืนยัน</button>
                                             <button type="button" onclick="prev()"
-                                                style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ยกเลิก</button>
+                                                style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ย้อนกลับ</button>
                                         </div>
 
                                         <div>
@@ -549,11 +551,11 @@
                                 </div>
                                 <div class="col-6" style="display: flex; flex-direction: column;text-align: left;">
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span id="show_id_personal_fname"></span> &nbsp;&nbsp;&nbsp;&nbsp;<i
+                                        <span id="show_in_personal_fname"></span> &nbsp;&nbsp;&nbsp;&nbsp;<i
                                             class="bi bi-check-circle-fill" style="color: green;"></i>
                                     </p>
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <span id="show_id_personal_lname"></span> &nbsp;&nbsp;&nbsp;&nbsp;<i
+                                        <span id="show_in_personal_lname"></span> &nbsp;&nbsp;&nbsp;&nbsp;<i
                                             class="bi bi-check-circle-fill" style="color: green;"></i>
                                     </p>
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -606,7 +608,7 @@
                     </div>
 
                     <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;">
-                        <button type="submit"
+                        <button type="submit" onclick="alert('ลงทะเบียนสำเร็จ')"
                             style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;">ลงทะเบียน</button>
                         {{-- <button type="button" onclick="prev()"
                             style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ยกเลิก</button> --}}
@@ -639,6 +641,11 @@
             let tab = document.getElementsByClassName('tab-pane')
             for (let i = 0; i < tab.length; i++) {
                 if (tab[i].classList.contains('active') && i != tab.length - 1) {
+                    // if(i==3) {
+                    //     tab[i].classList.remove('active')
+                    //     tab[tab.length-1].classList.add('active')
+                    //     break
+                    // }
                     tab[i].classList.remove('active')
                     tab[i + 1].classList.add('active')
                     console.log('next active')
@@ -693,11 +700,11 @@
         })
 
         function validateOtpLabel() {
-            document.getElementById('confirmOtp').classList.add('tab-pane')
-            document.getElementById('btnRequestOtp').classList.add('tab-pane')
+            document.getElementById('confirmOtp').style.display = 'none'
+            document.getElementById('btnRequestOtp').style.display = 'none'
             checks = document.getElementsByName('verify_check')
             for(let i=0;i<checks.length; i++) {
-                checks[i].classList.remove('tab-pane')
+                checks[i].style.display = 'flex'
             }
             document.getElementById('in_tel').readonly = true
             document.getElementById('in_otp').disabled = true
@@ -734,7 +741,8 @@
                     data: body,
                     success: function(response) {
                         console.log(response);
-                        if (response) {
+                        // if (response.status == 'success') {
+                            if (response) {
                             controlConfirmOtpBtn(1)
                             validateOtpLabel()
                             alert('OTP ถูกต้อง')
