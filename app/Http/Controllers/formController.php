@@ -48,4 +48,8 @@ class formController extends Controller
 
 
     }
+
+    public function testSuccess() {
+        return view('success');
+    }
 }

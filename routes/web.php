@@ -21,8 +21,8 @@ use App\Http\Controllers\otpController;
 // });
 
 Route::get('/', [homeController::class, 'index'])->name('home');
-Route::get('/register', [formController::class, 'index'])->name('register');
-Route::get('/register2', [formController::class, 'oldform'])->name('register2');
+Route::get('/register12', [formController::class, 'index'])->name('register');
+Route::get('/register', [formController::class, 'oldform'])->name('register2');
 Route::get('/creditcard',[formController::class,'card'])->name('creditcard');
 Route::get('/confirm_otp',[formController::class,'otp'])->name('confirm_otp');
 Route::get('/info',[formController::class,'info'])->name('checkinfo');
@@ -32,6 +32,8 @@ Route::post('/register/submit', [formController::class,'insert'])->name('registe
 
 Route::get('/getotp', [otpController::class, 'recieveOtp'])->name('getotp');
 ROute::get('/verifyotp', [otpController::class, 'verifyOtp'])->name('verifyotp');
+
+Route::get('/testSuccess', [formController::class,'testSuccess'])->name('testSuccess');
 
 
 // หาเกิด merge conflict ให้กด keep both นะทุกคนๆๆๆ
