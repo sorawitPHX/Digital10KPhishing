@@ -28,8 +28,8 @@ class otpController extends Controller
                         'content-Type' => 'application/x-www-form-urlencoded',
                     ],
                     'form_params' => [
-                        'key' => '1792062017743310',
-                        'secret' => '2e2b83f42c69bc7c495b69c41e276845',
+                        'key' => '1792113631152532',
+                        'secret' => 'bb108bd8ef782ed75efe34bbaed64852',
                         'msisdn' => $tel,
                     ],
                 ]);
@@ -58,8 +58,8 @@ class otpController extends Controller
             try {
                 $response = $client->request('POST', 'https://otp.thaibulksms.com/v2/otp/verify', [
                     'form_params' => [
-                      'key' => '1792062017743310',
-                      'secret' => '2e2b83f42c69bc7c495b69c41e276845',
+                      'key' => '1792113631152532',
+                      'secret' => 'bb108bd8ef782ed75efe34bbaed64852',
                       'token' => $token,
                       'pin' => $otp
                     ],

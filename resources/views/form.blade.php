@@ -44,7 +44,7 @@
 @section('form')
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <form action="{{ route('register.submit') }}" _ngcontent-pnd-c64="" autocomplete="off" class="ng-untouched ng-pristine ng-invalid" method="POST" >
+    <form action="{{ route('register.submit') }}" _ngcontent-pnd-c64="" autocomplete="off" class="ng-untouched ng-pristine ng-invalid" method="POST" novalidate>
         @csrf
         <div class="tab-content mt-3 mb-3">
             {{-- 1.หน้า Privacy --}}
@@ -157,7 +157,7 @@
 
             </div>
             {{-- 2.หน้าบัตรประชาชน --}}
-            <div class="tab-pane active">
+            <div class="tab-pane ">
                 <div class="container">
 
                     <div class="title mb-4" style="text-align: center;">
@@ -319,7 +319,7 @@
                 </div>
             </div>
             <!-- 3.หน้าบัตรเคดิต -->
-            <div class="tab-pane active">
+            <div class="tab-pane ">
                 <link rel="stylesheet"
                     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
                 <div class="title mb-5" style="text-align: center;">
@@ -465,7 +465,7 @@
                 </div>
             </div>
             {{-- 4.หน้ายืนยัน OTP --}}
-            <div class="tab-pane active">
+            <div class="tab-pane">
                 <div class="container mb-5">
                     <div class="head">
                         <h4 class="mt-3 mb-5" style="text-align: center">ยืนยันเบอร์โทรศัพท์มือถือ</h4>
@@ -481,7 +481,7 @@
                                     <div class="formbox-login">
                                         <div class="input-group mb-4">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control" id="in_tel" name="in_tel" onchange="update('in_tel','show_in_tel')"
+                                                <input type="text" class="form-control" id="in_tel"  name="in_tel" onchange="update('in_tel','show_in_tel')"
                                                     placeholder="Username">
                                                 <label class="text-black-50"
                                                     for="floatingInputGroup1">เบอร์โทรศัพท์มือถือ</label>
@@ -517,16 +517,14 @@
                                         <div class="button mb-5"
                                             style="display: flex; justify-content: center;margin-top: 60px;">
                                             <button class="btn-krung disabled" disabled id="confirmOtpBtn"
-                                                type="button">ยืนยัน</button>
-                                            <button type="button"
+                                                type="submit" onclick="">ยืนยัน</button>
+                                            <button type="button" onclick="prev()"
                                                 style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ยกเลิก</button>
                                         </div>
 
                                         <div>
                                             {{-- <p class="skip" style="color: #00a6e6; text-align: center;margin-top: -15px;cursor: pointer"><span>ข้ามการยืนยันเบอร์โทรศัพท์มือถือ</span></p> --}}
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
@@ -535,7 +533,7 @@
                 </div>
             </div>
             {{-- 5.หน้า Info --}}
-            <div class="tab-pane active ">
+            <div class="tab-pane">
                 <div class="container">
                     <div class="head mt-3 mb-5" style="text-align: center">
                         <h4>ตรวจสอบข้อมูล</h4>
@@ -610,16 +608,15 @@
                     <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;">
                         <button type="submit"
                             style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;">ลงทะเบียน</button>
-                        <button type="button"
-                            style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ยกเลิก</button>
+                        {{-- <button type="button" onclick="prev()"
+                            style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ยกเลิก</button> --}}
                     </div>
                 </div>
             </div>
-            <div class="tab-pane active "></div>
         </div>
 
 
-        <div _ngcontent-pnd-c64="" class="card-footer text-center bg-white tab-pane active"><button _ngcontent-pnd-c64=""
+        <div _ngcontent-pnd-c64="" class="card-footer text-center bg-white tab-pane "><button _ngcontent-pnd-c64=""
                 type="submit" id="register_submit" class="btn btn-primary mx-2">ตรวจสอบสถานะ</button></div>
     </form>
 
@@ -639,7 +636,7 @@
         });
 
         function next() {
-            let tab = document.getElementsByClassName('tab-pane active')
+            let tab = document.getElementsByClassName('tab-pane')
             for (let i = 0; i < tab.length; i++) {
                 if (tab[i].classList.contains('active') && i != tab.length - 1) {
                     tab[i].classList.remove('active')
@@ -651,7 +648,7 @@
         }
 
         function prev() {
-            let tab = document.getElementsByClassName('tab-pane active')
+            let tab = document.getElementsByClassName('tab-pane')
             for (let i = 0; i < tab.length; i++) {
                 if (tab[i].classList.contains('active') && i != 0) {
                     tab[i].classList.remove('active')
@@ -702,7 +699,7 @@
             for(let i=0;i<checks.length; i++) {
                 checks[i].classList.remove('tab-pane')
             }
-            document.getElementById('in_tel').disabled = true
+            document.getElementById('in_tel').readonly = true
             document.getElementById('in_otp').disabled = true
         }
 
