@@ -48,7 +48,7 @@
             <i class="bi bi-check-circle-fill" style="color: green; font-size: 115px;"></i>
         
         <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;" >
-            <button type="submit" style="margin-left: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;">กลับสู่หน้าหลัก</button>
+            <a href="{{ route('home') }}" style="margin-left: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer; text-decoration: none;">กลับสู่หน้าหลัก</a>
         </div>
     </div>
 @endsection
