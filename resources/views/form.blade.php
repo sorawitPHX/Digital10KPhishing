@@ -41,6 +41,14 @@
     </div>
 @endsection
 
+@section('FormTitle')
+    <h1 _ngcontent-pnd-c64="" class="display-6">ลงทะเบียนเงินดิจิตอล</h1>
+    <p _ngcontent-pnd-c64="" class="lead text-muted mx-auto"
+        style="max-width: 900px; color: #fff !important; margin-bottom: 35px;">
+        กรุณากรอกข้อมูลของท่านให้ถูกต้องครบถ้วน
+        เพื่อใช้ในการลงทะเบียน</p>
+@endsection
+
 @section('form')
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>

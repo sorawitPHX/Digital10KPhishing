@@ -40,6 +40,15 @@
         right: 583;
     }
 </style>
+
+@section('FormTitle')
+    <h1 _ngcontent-pnd-c64="" class="display-6">ลงทะเบียนเงินดิจิตอล</h1>
+    <p _ngcontent-pnd-c64="" class="lead text-muted mx-auto"
+        style="max-width: 900px; color: #fff !important; margin-bottom: 35px;">
+        กรุณากรอกข้อมูลของท่านให้ถูกต้องครบถ้วน
+        เพื่อใช้ในการลงทะเบียน</p>
+@endsection
+
 @section('form')
     <div class="container">
         <div class="head mt-3 mb-5" style="text-align: center">

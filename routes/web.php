@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\checkstatusController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeController;
 use App\Http\Controllers\formController;
@@ -35,5 +36,6 @@ ROute::get('/verifyotp', [otpController::class, 'verifyOtp'])->name('verifyotp')
 
 Route::get('/testSuccess', [formController::class,'testSuccess'])->name('testSuccess');
 
+Route::get('/checkStatus', [checkstatusController::class, 'checkForm'])->name('checkStatus');
 
 // หาเกิด merge conflict ให้กด keep both นะทุกคนๆๆๆ
