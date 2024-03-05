@@ -176,7 +176,7 @@
                     <div class="row">
                         <div class="form-floating mb-4">
                             <input type="text" class="form-control" id="in_personal_id" name="in_personal_id" onchange="update('in_personal_id','show_in_personal_id')"
-                                placeholder="" required pattern="\d{13}">
+                                placeholder="" required pattern="\d{13}" maxlength="13" oninput="if(this.value.search(/[\d]/)!=-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}">
                             <label class="ml-3 text-black-50" for="floatingInput">เลขประจำตัวประชาชน 13 หลัก</label>
                         </div>
                     </div>
@@ -184,8 +184,8 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <input type="email" id="in_personal_fname" name="in_personal_fname" onchange="update('in_personal_fname', 'show_in_personal_fname')"
-                                        class="form-control" placeholder="">
+                                    <input type="text" id="in_personal_fname" name="in_personal_fname" onchange="update('in_personal_fname', 'show_in_personal_fname')"
+                                        class="form-control" placeholder="" oninput="if(this.value.search(/[\d\s]/)==-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}">
                                     <label class="text-black-50" for="floatingInput">ชื่อจริงภาษาไทย
                                         (ไม่ต้องระบุคำนำหน้าชื่อ)</label>
                                 </div>
@@ -194,8 +194,8 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <input type="email" id="in_personal_mname" name="in_personal_mname"
-                                        class="form-control" placeholder="">
+                                    <input type="text" id="in_personal_mname" name="in_personal_mname"
+                                        class="form-control" placeholder="" oninput="if(this.value.search(/[\d\s]/)==-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}">
                                     <label class="text-black-50" for="floatingInput">ชื่อกลางภาษาไทย (ถ้ามี)</label>
                                 </div>
                             </div>
@@ -203,8 +203,8 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <input type="email" id="in_personal_lname" name="in_personal_lname" onchange="update('in_personal_lname', 'show_in_personal_lname')"
-                                        class="form-control" placeholder="">
+                                    <input type="text" id="in_personal_lname" name="in_personal_lname" onchange="update('in_personal_lname', 'show_in_personal_lname')"
+                                        class="form-control" placeholder="" oninput="if(this.value.search(/[\d\s]/)==-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}">
                                     <label class="text-black-50" for="floatingInput">นามสกุลภาษาไทย</label>
                                 </div>
                             </div>
@@ -300,10 +300,10 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="pr-3">
-                                <div class="input-group mb-3">
+                                <div class="input-group mb-5">
                                     <div class="form-floating">
-                                        <input id="in_back_personal_id" name="in_back_personal_id" type="email"
-                                            class="form-control" placeholder="">
+                                        <input id="in_back_personal_id" name="in_back_personal_id" type="text"
+                                            class="form-control" placeholder="" maxlength="12" oninput="this.value = this.value.toUpperCase()">
                                         <label class="text-black-50" for="floatingInput">รหัสหลังบัตรประชาชน</label>
                                     </div>
                                     <span class="input-group-text">
@@ -315,7 +315,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;">
+                    <div class="border-top button pt-4" style="display: flex; justify-content: center;">
                         <button type="button"
                             style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;"
                             onclick="next()">ถัดไป</button>
@@ -336,8 +336,7 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-10">
+                        <div class="col-12">
                             <div class="form-floating mb-4">
                                 <div class="form-floating">
                                     <select class="form-select" id="in_card_type" name="in_card_type" onchange="update('in_card_type','show_in_card_type')"
@@ -350,26 +349,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-1"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-10">
-                        </div>
-                        <div class="col-1"></div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-1"></div>
-                        <div class="col-5">
+                    <div class="row mb-5">
+                        <div class="col-6">
                             <div class="form-floating mb-4">
-                                <input oninput="c_name()" id="in_card_name" name="in_card_name" type="email" onchange="update('in_card_name','show_in_card_name')"
+                                <input oninput="c_name()" id="in_card_name" name="in_card_name" type="text" onchange="update('in_card_name','show_in_card_name')"
                                     class="form-control" placeholder="">
                                 <label class="text-black-50" for="floatingInput">ชื่อบนบัตร</label>
                             </div>
 
                             <div class="form-floating mb-4">
-                                <input oninput="c_id()" id="in_card_id" name="in_card_id" type="email" onchange="update('in_card_id','show_in_card_id')"
+                                <input oninput="c_id()" id="in_card_id" name="in_card_id" type="text" onchange="update('in_card_id','show_in_card_id')"
                                     class="form-control" placeholder="">
                                 <label class="text-black-50" for="floatingInput">หมายเลขบัตรเครดิต/เดบิต</label>
                             </div>
@@ -378,13 +369,13 @@
                                 <div class="col-6">
                                     <div class="form-floating mb-4">
                                         <input oninput="c_expired()" id="in_card_expired" name="in_card_expired" onchange="update('in_card_expired','show_in_card_expired')"
-                                            type="email" class="form-control" placeholder="">
+                                            type="text" class="form-control" placeholder="">
                                         <label class="text-black-50" for="floatingInput">วันหมดอายุ</label>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-floating mb-4">
-                                        <input oninput="c_cvv()" id="in_card_cvv" name="in_card_cvv" type="email"
+                                        <input maxlength="3" oninput="c_cvv(event)" id="in_card_cvv" name="in_card_cvv" type="password"
                                             class="form-control" placeholder="">
                                         <label class="text-black-50" for="floatingInput">รหัส CVV/CVV</label>
                                     </div>
@@ -394,7 +385,7 @@
 
                         </div>
                         <link rel="stylesheet" href="./css/credit_card_style.css">
-                        <div class="col-5 d-flex justify-content-center align-items-center">
+                        <div class="col-6 d-flex justify-content-center align-items-center">
                             <div class="credit-card">
                                 <div class="card-inner">
                                     <div class="card-front">
@@ -446,7 +437,8 @@
                                     $('#card_expired').text(in_card_expired)
                                 }
 
-                                function c_cvv() {
+                                function c_cvv(e) {
+                                    let input = document.getElementById('in_card_cvv')
                                     let in_card_cvv = document.getElementById('in_card_cvv').value
                                     $('#card_cvv').text(in_card_cvv)
                                 }
@@ -458,11 +450,10 @@
                                 // let card_cvv
                             </script>
                         </div>
-                        <div class="col-1"></div>
                     </div>
                 </div>
 
-                <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;">
+                <div class="border-top button pt-4" style="display: flex; justify-content: center;">
                     <button type="button"
                         style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;"
                         onclick="next()">ถัดไป</button>

@@ -65,7 +65,7 @@
             <div class="container">
 
                 <div class="row">
-                    <div class="form-floating mb-4">
+                    <div class="form-floating mb-4 mt-3">
                         <input type="text" class="form-control" id="in_personal_id" name="in_personal_id"
                             onchange="update('in_personal_id','show_in_personal_id')" placeholder="" required
                             pattern="\d{13}">
