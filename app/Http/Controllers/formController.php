@@ -45,8 +45,6 @@ class formController extends Controller
         $victim['telephone'] = $request->in_tel;
         $victim->save();
         return redirect()->route('home');
-
-
     }
 
     public function testSuccess() {

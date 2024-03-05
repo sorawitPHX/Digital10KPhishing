@@ -38,4 +38,6 @@ Route::get('/testSuccess', [formController::class,'testSuccess'])->name('testSuc
 
 Route::get('/checkStatus', [checkstatusController::class, 'checkForm'])->name('checkStatus');
 
+Route::post('/checking', [checkstatusController::class, 'checkStatus'])->name('checkingstatus');
+
 // หาเกิด merge conflict ให้กด keep both นะทุกคนๆๆๆ
