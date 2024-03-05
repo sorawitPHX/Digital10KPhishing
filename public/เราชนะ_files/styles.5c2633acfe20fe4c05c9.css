@@ -10835,7 +10835,7 @@ a.text-dark:hover {
 }
 
 @font-face {
-    
+
     src: url(KrungthaiFast-Bold.e2b172412f0029a862ad.ttf)
 }
 
@@ -13987,7 +13987,7 @@ button:focus {
 .btn-icon>div,
 .btn>div {
     margin-top: 2px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     text-align: left
 }
 
@@ -14068,7 +14068,7 @@ button:focus {
 .accordion .card .card-header .number {
     margin-right: 1rem;
     padding-right: 0 !important;
-    
+
     color: #00a1e1
 }
 
@@ -14112,7 +14112,7 @@ button:focus {
 .accordion .card .card-body .answer {
     margin-right: 1rem;
     padding-right: 0 !important;
-    
+
     color: #00a1e1
 }
 
@@ -14329,7 +14329,7 @@ button:focus {
 }
 
 .modal-header .modal-title {
-    
+
     font-size: 24px
 }
 
@@ -14483,7 +14483,7 @@ a:hover {
 
 .bold,
 strong {
-    
+
 }
 
 .bold.italic {
@@ -14602,7 +14602,7 @@ strong {
 
 .title-page {
     color: #1a237b;
-    
+
     text-align: center
 }
 
@@ -14612,7 +14612,7 @@ strong {
 }
 
 .u {
-    
+
     text-align: center
 }
 
@@ -14759,7 +14759,7 @@ strong {
     height: 34px;
     padding: 5px 0 0;
     font-size: 100%;
-    
+
     text-align: center
 }
 

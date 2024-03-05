@@ -29,7 +29,7 @@
     <script type="text/javascript" async="" src="./เราชนะ_files/analytics.js.download"></script>
     <script id="GTMscript" async="" src="./เราชนะ_files/gtm.js.download"></script>
 
-    <title>เราชนะ</title>
+    <title>เราเพื่อไทย</title>
     <!--<base href="/">-->
     <base href=".">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1111,12 +1111,13 @@
                                     id="logo-home" routerlink="/" target="_top"
                                     href="https://xn--b3c4a2a6ch6f.com/"><img _ngcontent-bii-c26=""
                                         src="./เราชนะ_files/logo_พท.png" alt="เราชนะ" width="160px"
+
                                         class="img-fluid"></a></div>
                         </div>
 
                         <div _ngcontent-bii-c26="" class="row mt-4">
                             <div _ngcontent-bii-c26="" class="col-12 text-center white">
-                                <h1 _ngcontent-bii-c26="" class="bold">โครงการ “เงินดิจิตอล 10,000 บาท”</h1>
+                                <h1 _ngcontent-bii-c26="" class="bold"><b>โครงการ “เงินดิจิทัล 10,000 บาท”</b></h1>
                                 <h5 _ngcontent-bii-c26="" class="bold mt-3">
                                     <div _ngcontent-bii-c26="">สนับสนุนวงเงินช่วยเหลือค่าครองชีพ สูงสุด 10,000 บาท</div>
                                     <div _ngcontent-bii-c26="" class="light mt-2">เปิดลงทะเบียนตลอดเวลาทำการ
@@ -1126,12 +1127,22 @@
                         </div>
                         <div _ngcontent-bii-c26="" class="row btn-container justify-content-center mt-4">
                             <div _ngcontent-bii-c26="" class="col-md-12 col-sm-12 mb-2 text-center">
-                                <a
-                                    _ngcontent-bii-c26="" id="btn-check-status" target=""
-                                    class="btn arrow-right darkblue-gradient"
-                                    href="{{ route('register2') }}">
-                                    <div _ngcontent-bii-c26="" class="text-center">ลงทะเบียนเงินดิจิตอล</div>
-                                </a></div>
+                                <div class="">
+                                    <a
+                                        _ngcontent-bii-c26="" id="btn-check-status" target=""
+                                        class="btn darkblue-gradient"
+                                        href="{{ route('register2') }}">
+                                        <div _ngcontent-bii-c26="" class="text-center">ลงทะเบียนเงินดิจิทัล</div>
+                                    </a>
+                                    <br>
+                                    <a
+                                        _ngcontent-bii-c26="" id="btn-check-status" target=""
+                                        class="btn white mt-4"
+                                        href="{{ route('checkStatus') }}">
+                                        <div _ngcontent-bii-c26="" class="text-center">ตรวจสอบสถานะ</div>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

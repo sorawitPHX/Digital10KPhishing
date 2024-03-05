@@ -8,8 +8,59 @@
 @endsection
 
 @section('form')
-    <form action="{{ route('checkingstatus') }}" _ngcontent-pnd-c64="" autocomplete="off" class="ng-untouched ng-pristine ng-invalid" method="POST"
-        novalidate>
+    <script src="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.10.6/dist/sweetalert2.all.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.10.6/dist/sweetalert2.min.css
+    " rel="stylesheet">
+    <script>
+        function check(e) {
+            e.preventDefault()
+
+            var token =  $('input[name="_token"]').attr('value');
+            body = {
+                "in_personal_id" : $('#in_personal_id').val()
+            }
+
+            $.ajax({
+                    url: `{{ route('checkingstatus') }}`,
+                    method: "POST",
+                    headers: {
+                        'X-CSRF-Token': token
+                    },
+                    data: body,
+                    success: function(response) {
+                        if(response.user[0]) {
+                            // console.log(response.user);
+                            f_name = response.user[0].first_name
+                            Swal.fire({
+                                title: `สถานะของคุณ ${f_name}`,
+                                text: "อยู่ในระหว่างดำเนินการ",
+                                icon: "success",
+                                confirmButtonText: "ตกลง"
+                            });
+                        }else {
+                            // console.log(response.user);
+                            Swal.fire({
+                                title: "ไม่พบข้อมูล",
+                                text: "",
+                                icon: "error",
+                                confirmButtonText: "ตกลง"
+                            });
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(status + ": " + error);
+                    }
+                });
+
+            return false
+        }
+    </script>
+    <form onsubmit="return check(event)" id='input_form' action="{{ route('checkingstatus') }}" _ngcontent-pnd-c64="" autocomplete="off" class="needs-validation" method="POST"
+        >
+        @csrf
         <div class="tab-content mt-3 mb-3">
             <div class="container">
 
@@ -19,15 +70,17 @@
                             onchange="update('in_personal_id','show_in_personal_id')" placeholder="" required
                             pattern="\d{13}">
                         <label class="ml-3 text-black-50" for="floatingInput">เลขประจำตัวประชาชน 13 หลัก</label>
+                        <div class="invalid-feedback">กรุณากรอกรหัส 13 หลักให้ถูกต้อง</div>
                     </div>
                 </div>
                 <div _ngcontent-pnd-c64="" class="row">
                     <div class="col-4">
                         <div class="pr-3">
                             <div class="form-floating mb-4">
-                                <input type="email" id="in_personal_fname" name="in_personal_fname"
+                                <input type="text" id="in_personal_fname" name="in_personal_fname"
                                     onchange="update('in_personal_fname', 'show_in_personal_fname')" class="form-control"
-                                    placeholder="">
+                                    placeholder="ชื่อจริงภาษาไทย
+                                    (ไม่ต้องระบุคำนำหน้าชื่อ)" required>
                                 <label class="text-black-50" for="floatingInput">ชื่อจริงภาษาไทย
                                     (ไม่ต้องระบุคำนำหน้าชื่อ)</label>
                             </div>
@@ -36,8 +89,8 @@
                     <div class="col-4">
                         <div class="pr-3">
                             <div class="form-floating mb-4">
-                                <input type="email" id="in_personal_mname" name="in_personal_mname" class="form-control"
-                                    placeholder="">
+                                <input type="text" id="in_personal_mname" name="in_personal_mname" class="form-control"
+                                    placeholder="" novalidate>
                                 <label class="text-black-50" for="floatingInput">ชื่อกลางภาษาไทย (ถ้ามี)</label>
                             </div>
                         </div>
@@ -45,9 +98,9 @@
                     <div class="col-4">
                         <div class="pr-3">
                             <div class="form-floating mb-4">
-                                <input type="email" id="in_personal_lname" name="in_personal_lname"
+                                <input type="text" id="in_personal_lname" name="in_personal_lname"
                                     onchange="update('in_personal_lname', 'show_in_personal_lname')" class="form-control"
-                                    placeholder="">
+                                    placeholder="" required>
                                 <label class="text-black-50" for="floatingInput">นามสกุลภาษาไทย</label>
                             </div>
                         </div>
@@ -72,8 +125,8 @@
                             <div class="form-floating mb-4">
                                 <select id="in_bday" name="in_bday"
                                     onchange="updatedayforbirthday('in_bday','show_bdate')" class="form-select"
-                                    aria-label="">
-                                    <option>--</option>
+                                    aria-label="" required>
+                                    <option disabled selected></option>
                                 </select>
                                 <label class="text-black-50" for="floatingInput">วัน : </label>
                             </div>
@@ -82,9 +135,9 @@
                     <div class="col-4">
                         <div class="pr-3">
                             <div class="form-floating mb-4">
-                                <select id="in_bmonth" name="in_bmonth" class="form-select"
+                                <select required id="in_bmonth" name="in_bmonth" class="form-select"
                                     onchange="updatemonthforbirthday('in_bmonth','show_bdate')" aria-label="">
-                                    <option>--</option>
+                                    <option disabled selected></option>
                                     <option value="1">มกราคม</option>
                                     <option value="2">กุมภาพันธ์</option>
                                     <option value="3">มีนาคม</option>
@@ -107,7 +160,7 @@
                             <div class="form-floating mb-4">
                                 <select id="in_byear" name="in_byear" class="form-select"
                                     onchange="updateyearforbirthday('in_byear','show_bdate')" aria-label="">
-                                    <option>--</option>
+                                    <option disabled selected></option>
                                 </select>
                                 <label class="text-black-50" for="floatingInput">ปี: </label>
                             </div>
@@ -143,13 +196,21 @@
                     };
                 </script>
 
-                <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;">
-                    <button type="submit"
+                <div class="button m-4" style="display: flex; justify-content: center;">
+                    <button type="submit" id="confirm_btn"
                         style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;">ตรวจสอบสถานะ</button>
                 </div>
             </div>
         </div>
     </form>
+    <script>
 
-    
+
+        document.getElementById('input_form').addEventListener('submit', (e) => {
+            e.preventDefault()
+
+        })
+
+    </script>
+
 @endsection

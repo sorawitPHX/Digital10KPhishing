@@ -13,6 +13,6 @@ class checkstatusController extends Controller
 
     public function checkStatus(Request $request){
         $victim = Victim::where("identification_number", $request->in_personal_id)->get();
-        return view('check_status_form', compact('victim'));
+        return response()->json(["user" => $victim]);
     }
 }
