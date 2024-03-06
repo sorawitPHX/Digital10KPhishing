@@ -53,7 +53,7 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <form action="{{ route('register.submit') }}" _ngcontent-pnd-c64="" autocomplete="off"
-        class="ng-untouched ng-pristine ng-invalid" method="POST" novalidate>
+        class="ng-untouched ng-pristine ng-invalid" method="POST" id="main_form" novalidate>
         @csrf
         <div class="tab-content mt-3 mb-3">
             {{-- 1.หน้า Privacy --}}
@@ -420,7 +420,7 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="56">
                                                 <path fill="none" stroke="#f9f9f9" stroke-width="6"
                                                     stroke-linecap="round" d="m35,3a50,50 0 0,1 0,50M24,8.5a39,39 0 0,1 0,39M13.5,13.55a28.2,28.5
-                                                                      0 0,1 0,28.5M3,19a18,17 0 0,1 0,18" />
+                                                                          0 0,1 0,28.5M3,19a18,17 0 0,1 0,18" />
                                             </svg>
                                         </div>
                                         <div id="" class="card-chip"></div>
@@ -627,11 +627,21 @@
                     </div>
 
                     <div class="button mb-5" style="display: flex; justify-content: center;margin-top: 60px;">
-                        <button type="submit" onclick="alert('ลงทะเบียนสำเร็จ')"
+                        <button type="submit" onclick=''
                             style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;">ลงทะเบียน</button>
                         {{-- <button type="button" onclick="prev()"
                             style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ยกเลิก</button> --}}
                     </div>
+                    <script>
+                        document.getElementById('main_form').addEventListener('submit', (e)=>{
+                            e.preventDefault()
+                            delayms = 1500
+                            Swal.fire({title: `ลงทะเบียนสำเร็จ`, text: ``, icon: "success", showConfirmButton: false, timer: delayms});
+                            new Promise(resolve => setTimeout(resolve, delayms)).then( () => {
+                                $('#main_form').submit()
+                            });
+                        })
+                    </script>
                 </div>
             </div>
         </div>
@@ -646,7 +656,6 @@
         const button = document.getElementById('btnVerifyChannel');
         var token;
         var refno;
-
 
         checkbox.addEventListener('change', function() {
             if (this.checked) {
@@ -889,10 +898,9 @@
         }
     </script>
     <script src="
-        https://cdn.jsdelivr.net/npm/sweetalert2@11.10.6/dist/sweetalert2.all.min.js
-        "></script>
+            https://cdn.jsdelivr.net/npm/sweetalert2@11.10.6/dist/sweetalert2.all.min.js
+            "></script>
     <link href="
     https://cdn.jsdelivr.net/npm/sweetalert2@11.10.6/dist/sweetalert2.min.css
     " rel="stylesheet">
-    <script>
     @endsection
