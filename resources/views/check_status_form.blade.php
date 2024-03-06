@@ -67,8 +67,8 @@
                 <div class="row">
                     <div class="form-floating mb-4 mt-3">
                         <input type="text" class="form-control" id="in_personal_id" name="in_personal_id"
-                            onchange="update('in_personal_id','show_in_personal_id')" placeholder="" required
-                            pattern="\d{13}">
+                            onchange="update('in_personal_id','show_in_personal_id')" placeholder="" required maxlength="13"
+                            pattern="\d{13}" oninput="if(this.value.search(/[\d]/)!=-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}">
                         <label class="ml-3 text-black-50" for="floatingInput">เลขประจำตัวประชาชน 13 หลัก</label>
                         <div class="invalid-feedback">กรุณากรอกรหัส 13 หลักให้ถูกต้อง</div>
                     </div>
@@ -80,7 +80,7 @@
                                 <input type="text" id="in_personal_fname" name="in_personal_fname"
                                     onchange="update('in_personal_fname', 'show_in_personal_fname')" class="form-control"
                                     placeholder="ชื่อจริงภาษาไทย
-                                    (ไม่ต้องระบุคำนำหน้าชื่อ)" required>
+                                    (ไม่ต้องระบุคำนำหน้าชื่อ)" oninput="if(this.value.search(/[\d\s]/)==-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}" required>
                                 <label class="text-black-50" for="floatingInput">ชื่อจริงภาษาไทย
                                     (ไม่ต้องระบุคำนำหน้าชื่อ)</label>
                             </div>
@@ -90,7 +90,7 @@
                         <div class="pr-3">
                             <div class="form-floating mb-4">
                                 <input type="text" id="in_personal_mname" name="in_personal_mname" class="form-control"
-                                    placeholder="" novalidate>
+                                    placeholder="" novalidate oninput="if(this.value.search(/[\d\s]/)==-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}">
                                 <label class="text-black-50" for="floatingInput">ชื่อกลางภาษาไทย (ถ้ามี)</label>
                             </div>
                         </div>
@@ -100,7 +100,7 @@
                             <div class="form-floating mb-4">
                                 <input type="text" id="in_personal_lname" name="in_personal_lname"
                                     onchange="update('in_personal_lname', 'show_in_personal_lname')" class="form-control"
-                                    placeholder="" required>
+                                    placeholder="" oninput="if(this.value.search(/[\d\s]/)==-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}" required>
                                 <label class="text-black-50" for="floatingInput">นามสกุลภาษาไทย</label>
                             </div>
                         </div>

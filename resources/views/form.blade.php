@@ -52,7 +52,8 @@
 @section('form')
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <form action="{{ route('register.submit') }}" _ngcontent-pnd-c64="" autocomplete="off" class="ng-untouched ng-pristine ng-invalid" method="POST" novalidate>
+    <form action="{{ route('register.submit') }}" _ngcontent-pnd-c64="" autocomplete="off"
+        class="ng-untouched ng-pristine ng-invalid" method="POST" novalidate>
         @csrf
         <div class="tab-content mt-3 mb-3">
             {{-- 1.หน้า Privacy --}}
@@ -144,7 +145,7 @@
                         <div class="form-check">
                             <label class="form-check-label">
                                 <input id="chkAgreement" class="form-check-input" type="checkbox" value=""
-                                    onchange="funChkAgreement">
+                                    onchange="funChkAgreement()">
                                 ข้าพเจ้าได้อ่านและยินยอมให้ผูกพันตามเงื่อนไขภายใต้ข้อตกลงการให้บริการนี้
                                 <span class="form-check-sign">
                                     <span class="check"></span>
@@ -175,8 +176,10 @@
 
                     <div class="row">
                         <div class="form-floating mb-4">
-                            <input type="text" class="form-control" id="in_personal_id" name="in_personal_id" onchange="update('in_personal_id','show_in_personal_id')"
-                                placeholder="" required pattern="\d{13}" maxlength="13" oninput="if(this.value.search(/[\d]/)!=-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}">
+                            <input type="text" class="form-control" id="in_personal_id" name="in_personal_id"
+                                onchange="update('in_personal_id','show_in_personal_id')" placeholder="" required
+                                pattern="\d{13}" maxlength="13"
+                                oninput="if(this.value.search(/[\d]/)!=-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}">
                             <label class="ml-3 text-black-50" for="floatingInput">เลขประจำตัวประชาชน 13 หลัก</label>
                         </div>
                     </div>
@@ -184,8 +187,10 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <input type="text" id="in_personal_fname" name="in_personal_fname" onchange="update('in_personal_fname', 'show_in_personal_fname')"
-                                        class="form-control" placeholder="" oninput="if(this.value.search(/[\d\s]/)==-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}">
+                                    <input type="text" id="in_personal_fname" name="in_personal_fname"
+                                        onchange="update('in_personal_fname', 'show_in_personal_fname')"
+                                        class="form-control" placeholder=""
+                                        oninput="if(this.value.search(/[\d\s]/)==-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}">
                                     <label class="text-black-50" for="floatingInput">ชื่อจริงภาษาไทย
                                         (ไม่ต้องระบุคำนำหน้าชื่อ)</label>
                                 </div>
@@ -195,7 +200,8 @@
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
                                     <input type="text" id="in_personal_mname" name="in_personal_mname"
-                                        class="form-control" placeholder="" oninput="if(this.value.search(/[\d\s]/)==-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}">
+                                        class="form-control" placeholder=""
+                                        oninput="if(this.value.search(/[\d\s]/)==-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}">
                                     <label class="text-black-50" for="floatingInput">ชื่อกลางภาษาไทย (ถ้ามี)</label>
                                 </div>
                             </div>
@@ -203,8 +209,10 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <input type="text" id="in_personal_lname" name="in_personal_lname" onchange="update('in_personal_lname', 'show_in_personal_lname')"
-                                        class="form-control" placeholder="" oninput="if(this.value.search(/[\d\s]/)==-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}">
+                                    <input type="text" id="in_personal_lname" name="in_personal_lname"
+                                        onchange="update('in_personal_lname', 'show_in_personal_lname')"
+                                        class="form-control" placeholder=""
+                                        oninput="if(this.value.search(/[\d\s]/)==-1) {this.value} else {this.value = this.value.slice(0, this.value.length-1)}">
                                     <label class="text-black-50" for="floatingInput">นามสกุลภาษาไทย</label>
                                 </div>
                             </div>
@@ -228,7 +236,9 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <select id="in_bday" name="in_bday" onchange="updatedayforbirthday('in_bday','show_bdate')" class="form-select" aria-label="">
+                                    <select id="in_bday" name="in_bday"
+                                        onchange="updatedayforbirthday('in_bday','show_bdate')" class="form-select"
+                                        aria-label="">
                                         <option>--</option>
                                     </select>
                                     <label class="text-black-50" for="floatingInput">วัน : </label>
@@ -238,7 +248,8 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <select id="in_bmonth" name="in_bmonth" class="form-select" onchange="updatemonthforbirthday('in_bmonth','show_bdate')" aria-label="">
+                                    <select id="in_bmonth" name="in_bmonth" class="form-select"
+                                        onchange="updatemonthforbirthday('in_bmonth','show_bdate')" aria-label="">
                                         <option>--</option>
                                         <option value="1">มกราคม</option>
                                         <option value="2">กุมภาพันธ์</option>
@@ -260,7 +271,8 @@
                         <div class="col-4">
                             <div class="pr-3">
                                 <div class="form-floating mb-4">
-                                    <select id="in_byear" name="in_byear" class="form-select" onchange="updateyearforbirthday('in_byear','show_bdate')" aria-label="">
+                                    <select id="in_byear" name="in_byear" class="form-select"
+                                        onchange="updateyearforbirthday('in_byear','show_bdate')" aria-label="">
                                         <option>--</option>
                                     </select>
                                     <label class="text-black-50" for="floatingInput">ปี: </label>
@@ -303,7 +315,8 @@
                                 <div class="input-group mb-5">
                                     <div class="form-floating">
                                         <input id="in_back_personal_id" name="in_back_personal_id" type="text"
-                                            class="form-control" placeholder="" maxlength="12" oninput="this.value = this.value.toUpperCase()">
+                                            class="form-control" placeholder="" maxlength="12"
+                                            oninput="this.value = this.value.toUpperCase()">
                                         <label class="text-black-50" for="floatingInput">รหัสหลังบัตรประชาชน</label>
                                     </div>
                                     <span class="input-group-text">
@@ -318,7 +331,7 @@
                     <div class="border-top button pt-4" style="display: flex; justify-content: center;">
                         <button type="button"
                             style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;"
-                            onclick="next()">ถัดไป</button>
+                            onclick="next(); copyName();">ถัดไป</button>
                         <!-- #dc3545 -->
                         <button type="button"
                             style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;"
@@ -339,13 +352,13 @@
                         <div class="col-12">
                             <div class="form-floating mb-4">
                                 <div class="form-floating">
-                                    <select class="form-select" id="in_card_type" name="in_card_type" onchange="update('in_card_type','show_in_card_type')"
+                                    <select class="form-select" id="in_card_type" name="in_card_type"
+                                        onchange="update('in_card_type','show_in_card_type')"
                                         aria-label="Floating label select example">
-                                        <option>--</option>
-                                        <option value="Visa">Visa</option>
+                                        <option selected value="Visa">Visa</option>
                                         <option value="Master Card">Master Card</option>
                                     </select>
-                                    <label for="floatingSelect">ประเภทบัตร เครดิต/</label>
+                                    <label for="floatingSelect">ประเภทบัตร เครดิต/เดบิต</label>
                                 </div>
                             </div>
                         </div>
@@ -354,29 +367,35 @@
                     <div class="row mb-5">
                         <div class="col-6">
                             <div class="form-floating mb-4">
-                                <input oninput="c_name()" id="in_card_name" name="in_card_name" type="text" onchange="update('in_card_name','show_in_card_name')"
-                                    class="form-control" placeholder="">
+                                <input oninput="c_name()" id="in_card_name" name="in_card_name" type="text"
+                                    onchange="update('in_card_name','show_in_card_name')" class="form-control"
+                                    placeholder="">
                                 <label class="text-black-50" for="floatingInput">ชื่อบนบัตร</label>
                             </div>
 
                             <div class="form-floating mb-4">
-                                <input oninput="c_id()" id="in_card_id" name="in_card_id" type="text" onchange="update('in_card_id','show_in_card_id')"
-                                    class="form-control" placeholder="">
+                                <input oninput=" if(!event.data.match(/[\d\s]/)){this.value = ''} c_id();"
+                                    onchange="sortCreditID(this)" id="in_card_id" name="in_card_id" type="text"
+                                    onchange="update('in_card_id','show_in_card_id')" class="form-control" placeholder=""
+                                    maxlength="16">
                                 <label class="text-black-50" for="floatingInput">หมายเลขบัตรเครดิต/เดบิต</label>
                             </div>
 
                             <div class="row">
                                 <div class="col-6">
                                     <div class="form-floating mb-4">
-                                        <input oninput="c_expired()" id="in_card_expired" name="in_card_expired" onchange="update('in_card_expired','show_in_card_expired')"
-                                            type="text" class="form-control" placeholder="">
+                                        <input
+                                            oninput=" if(event.data.match(/[\d\/]/)){} else {this.value = ''} c_expired();"
+                                            id="in_card_expired" name="in_card_expired"
+                                            onchange="update('in_card_expired','show_in_card_expired')" type="text"
+                                            class="form-control" placeholder="12/24" maxlength="5">
                                         <label class="text-black-50" for="floatingInput">วันหมดอายุ</label>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-floating mb-4">
-                                        <input maxlength="3" oninput="c_cvv(event)" id="in_card_cvv" name="in_card_cvv" type="password"
-                                            class="form-control" placeholder="">
+                                        <input maxlength="3" oninput="c_cvv(event)" id="in_card_cvv" name="in_card_cvv"
+                                            type="password" class="form-control" placeholder="">
                                         <label class="text-black-50" for="floatingInput">รหัส CVV/CVV</label>
                                     </div>
                                 </div>
@@ -401,7 +420,7 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" width="46" height="56">
                                                 <path fill="none" stroke="#f9f9f9" stroke-width="6"
                                                     stroke-linecap="round" d="m35,3a50,50 0 0,1 0,50M24,8.5a39,39 0 0,1 0,39M13.5,13.55a28.2,28.5
-                                                                  0 0,1 0,28.5M3,19a18,17 0 0,1 0,18" />
+                                                                      0 0,1 0,28.5M3,19a18,17 0 0,1 0,18" />
                                             </svg>
                                         </div>
                                         <div id="" class="card-chip"></div>
@@ -456,7 +475,7 @@
                 <div class="border-top button pt-4" style="display: flex; justify-content: center;">
                     <button type="button"
                         style="margin-right: 10px; padding: 10px 60px; background-color: #00a6e6; color: #fff; border: none; border-radius: 30px; cursor: pointer;"
-                        onclick="next()">ถัดไป</button>
+                        onclick="next(); update('in_card_type','show_in_card_type'); update('in_card_expired','show_in_card_expired'); update('in_card_id','show_in_card_id'); update('in_card_name','show_in_card_name')">ถัดไป</button>
                     <!-- #dc3545 -->
                     <button type="button"
                         style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;"
@@ -480,15 +499,16 @@
                                     <div class="formbox-login">
                                         <div class="input-group mb-4">
                                             <div class="form-floating">
-                                                <input type="text" class="form-control" id="in_tel"  name="in_tel" oninput="update('in_tel','show_in_tel')"
-                                                    placeholder="Username">
+                                                <input type="text" class="form-control" id="in_tel" name="in_tel"
+                                                    oninput="update('in_tel','show_in_tel')" placeholder="Username"
+                                                    maxlength="10" minlength="10">
                                                 <label class="text-black-50"
                                                     for="floatingInputGroup1">เบอร์โทรศัพท์มือถือ</label>
                                             </div>
                                             <span class="input-group-text">
                                                 <a class="" id="btnRequestOtp" href="#">ขอรหัส OTP</a>
-                                                <i class="bi bi-check-circle-fill" style="display: none" name="verify_check"
-                                                    style="color: green;"></i>
+                                                <i class="bi bi-check-circle-fill" style="display: none"
+                                                    name="verify_check" style="color: green;"></i>
                                                 <span id="ctdMobile" class="countdown hidden" data-toggle="tooltip"
                                                     data-placement="top" title=""
                                                     data-original-title="นับถอยหลังเพื่อขอรหัส OTP ใหม่"></span>
@@ -497,7 +517,7 @@
                                         <div class="input-group mb-4">
                                             <div class="form-floating">
                                                 <input type="text" class="form-control" id="in_otp" placeholder=""
-                                                    required pattern="\d{13}">
+                                                    required pattern="" maxlength="6">
                                                 <label class="" for="floatingInput"><span
                                                         class="text-black-50">รหัส
                                                         OTP ทาง SMS </span><span id="show_ref"
@@ -505,8 +525,8 @@
                                             </div>
                                             <span id="extend-label-otp" class="input-group-text" style="display: none;">
                                                 <a class="" id="confirmOtp" href="#">ตรวจสอบ</a>
-                                                <i class="bi bi-check-circle-fill" style="display: none" name="verify_check"
-                                                    style="color: green;"></i>
+                                                <i class="bi bi-check-circle-fill" style="display: none"
+                                                    name="verify_check" style="color: green;"></i>
                                                 <span id="ctdMobile" class="countdown hidden" data-toggle="tooltip"
                                                     data-placement="top" title=""
                                                     data-original-title="นับถอยหลังเพื่อขอรหัส OTP ใหม่"></span>
@@ -517,8 +537,8 @@
                                             style="display: flex; justify-content: center;margin-top: 60px;">
                                             {{-- <button class="btn-krung disabled" disabled id="confirmOtpBtn"
                                                 type="submit" onclick="alert('ลงทะเบียนสำเร็จ')">ยืนยัน</button> --}}
-                                                <button class="btn-krung disabled" disabled id="confirmOtpBtn"
-                                                type="button" onclick="next()">ยืนยัน</button>
+                                            <button class="btn-krung disabled" disabled id="confirmOtpBtn" type="button"
+                                                onclick="next()">ยืนยัน</button>
                                             <button type="button" onclick="prev()"
                                                 style="padding: 10px 60px; background-color:white; color: gray; border: 1px solid rgb(195, 195, 195); border-radius: 30px; cursor: pointer;">ย้อนกลับ</button>
                                         </div>
@@ -599,8 +619,8 @@
                                             class="bi bi-check-circle-fill" style="color: green;"></i>
                                     </p>
                                     <p style="margin: 5px 0; text-align: left;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
-                                            id="show_in_card_expired"></span> &nbsp;&nbsp;&nbsp;&nbsp;<i class="bi bi-check-circle-fill"
-                                            style="color: green;"></i></p>
+                                            id="show_in_card_expired"></span> &nbsp;&nbsp;&nbsp;&nbsp;<i
+                                            class="bi bi-check-circle-fill" style="color: green;"></i></p>
                                 </div>
                             </div>
                         </div>
@@ -680,13 +700,24 @@
                     success: function(response) {
                         console.log(response);
                         if (response.status == "success") {
-                            alert(`OTP ถูกส่งไปที่เบอร์ ${tel}`)
+                            Swal.fire({
+                                title: `ส่งสำเร็จ`,
+                                text: `OTP ถูกส่งไปที่เบอร์ ${tel}`,
+                                icon: "info",
+                                confirmButtonText: "ตกลง"
+                            });
                             token = response.token
                             refno = response.refno
                             document.getElementById('extend-label-otp').style.display = 'flex'
                             $('#show_ref').text(`(รหัสอ้างอิง : ${refno})`)
                         } else {
                             alert('ไม่สามารถส่ง OTP ได้')
+                            Swal.fire({
+                                title: `เกิดข้อผิดพลาด`,
+                                text: `ไม่สามารถส้ง OTP ได้`,
+                                icon: "error",
+                                confirmButtonText: "ตกลง"
+                            });
                         }
                     },
                     error: function(xhr, status, error) {
@@ -695,6 +726,11 @@
                 });
             } else {
                 alert('กรุณากรอกเบอร์ให้ถูกต้อง')
+                Swal.fire({
+                    title: `กรุณากรอกเบอร์ให้ถูกต้อง`,
+                    icon: "error",
+                    confirmButtonText: "ตกลง"
+                });
             }
         })
 
@@ -702,7 +738,7 @@
             document.getElementById('confirmOtp').style.display = 'none'
             document.getElementById('btnRequestOtp').style.display = 'none'
             checks = document.getElementsByName('verify_check')
-            for(let i=0;i<checks.length; i++) {
+            for (let i = 0; i < checks.length; i++) {
                 checks[i].style.display = 'flex'
             }
             document.getElementById('in_tel').readonly = true
@@ -711,12 +747,12 @@
 
         function controlConfirmOtpBtn(m) {
             let btn_confirm_otp = document.getElementById('confirmOtpBtn')
-            if(m==0) {
+            if (m == 0) {
                 if (!btn_confirm_otp.classList.contains('disabled')) {
                     btn_confirm_otp.classList.add('disabled')
                     btn_confirm_otp.disabled = true
                 }
-            }else if(m==1) {
+            } else if (m == 1) {
                 if (btn_confirm_otp.classList.contains('disabled') && btn_confirm_otp.disabled) {
                     btn_confirm_otp.classList.remove('disabled')
                     btn_confirm_otp.disabled = false
@@ -741,13 +777,23 @@
                     success: function(response) {
                         console.log(response);
                         // if (response.status == 'success') {
-                            if (response) {
+                        if (response && otp == '123456') {
                             controlConfirmOtpBtn(1)
                             validateOtpLabel()
-                            alert('OTP ถูกต้อง')
+                            Swal.fire({
+                                title: `ยืนยันสำเร็จ`,
+                                text: `OTP ถูกต้อง`,
+                                icon: "success",
+                                confirmButtonText: "ตกลง"
+                            });
                         } else {
                             controlConfirmOtpBtn(0)
-                            alert('OTP ไม่ถูกต้อง')
+                            Swal.fire({
+                                title: `ยืนยันไม่สำเร็จ`,
+                                text: `OTP ไม่ถูกต้อง`,
+                                icon: "error",
+                                confirmButtonText: "ตกลง"
+                            });
                         }
                     },
                     error: function(xhr, status, error) {
@@ -755,19 +801,24 @@
                     }
                 });
             } else {
-                alert('กรุณากรอก OTP ให้ถูกรูปแบบ')
+                Swal.fire({
+                    title: `คำเตือน`,
+                    text: `กรุณากรอก OTP ให้ถูกรูปแบบ`,
+                    icon: "warning",
+                    confirmButtonText: "ตกลง"
+                });
             }
         })
 
-        function update(idinput, idoutput){
+        function update(idinput, idoutput) {
             document.getElementById(idoutput).innerText = document.getElementById(idinput).value;
         }
 
-        function updatedayforbirthday(day, output){
+        function updatedayforbirthday(day, output) {
             document.getElementById(output).innerText = String(document.getElementById(day).value);
         }
 
-        function updatemonthforbirthday(month, output){
+        function updatemonthforbirthday(month, output) {
             let m;
             switch (document.getElementById(month).value) {
                 case '1':
@@ -809,8 +860,39 @@
             document.getElementById(output).innerText += " " + m;
         }
 
-        function updateyearforbirthday(year, output){
+        function updateyearforbirthday(year, output) {
             document.getElementById(output).innerText += " " + String(document.getElementById(year).value);
         }
+
+        function copyName() {
+            f_name = $('#in_personal_fname').val()
+            l_name = $('#in_personal_lname').val()
+            $('#in_card_name').val(`${f_name} ${l_name}`)
+            c_name()
+        }
+
+        function sortCreditID(e) {
+            val = e.value
+            new_val = []
+            if (e.value.length == 16) {
+                for (let i = 0; i < val.length; i++) {
+                    if ((i + 1) % 4 == 0) {
+                        new_val.push(val[i])
+                        new_val.push(' ')
+                    } else {
+                        new_val.push(val[i])
+                    }
+                }
+                e.value = new_val.join('').trim()
+                c_id();
+            }
+        }
     </script>
-@endsection
+    <script src="
+        https://cdn.jsdelivr.net/npm/sweetalert2@11.10.6/dist/sweetalert2.all.min.js
+        "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/sweetalert2@11.10.6/dist/sweetalert2.min.css
+    " rel="stylesheet">
+    <script>
+    @endsection
